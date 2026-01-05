@@ -1,0 +1,19 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# mac
+.DS_Store
+
+# with personal information
+.env
+
+data/auth/
+data/new/
+
+url-list-question-clean.json
+url-list-answer-clean.json

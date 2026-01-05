@@ -1,0 +1,22 @@
+{
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    // "editor.formatOnSave": false
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "url-list.json": "url-list-*",
+    "url-get.json": "url-get-*",
+    "question-get.json": "question-get-*",
+    "answer-ai.json": "answer-ai-*",
+    "answer-get.json": "answer-get-*",
+    "typed-router.d.ts": "auto-imports.d.ts, components.d.ts",
+    "tsconfig.json": "tsconfig.*.json, env.d.ts",
+    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

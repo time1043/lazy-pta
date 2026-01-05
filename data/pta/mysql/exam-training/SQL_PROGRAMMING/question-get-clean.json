@@ -1,0 +1,417 @@
+[
+  {
+    "id": "2001908710051135488",
+    "description": "### 题干:\n找出所有姓“李”的学生姓名、民族和联系电话。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\n### 表样例\n上述表结构对应的表样例：\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/214c212b-d599-4d1b-9c4e-d60f9bb3031d.png)\n\n### 输出样例:\n输出样例：\n\n![1-2.png](https://images.ptausercontent.com/6edc0114-9a43-4dba-b00f-15e0992b1de5.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710051135489",
+    "description": "本题目要求编写SQL语句，\n检索出```course```表中前3门课程的课号及课程名称的记录。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE course (\n cno char(7) ,\n cname varchar(20) NOT NULL,\n  cpno char(7),\n  ccredit int NOT NULL,\n  PRIMARY KEY (cno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```course```表：\n\n|cno|cname|cpno|ccredit|\n|----|------|-----|--------|\n|0000001|数据库OCP考证||4|\n|0000002|C语言基础|0000027|9|\n|0000003|Linux操作系统|0000013|5|\n|0000004|C#程序设计|0000002|6|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|cno|cname||\n|----|------|\n|0000001|数据库OCP考证|\n|0000002|C语言基础|\n|0000003|Linux操作系统|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710051135490",
+    "description": "本题目要求编写SQL语句，\n检索出```students```表中姓名中含有“明”字的男生的学生姓名和班级。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE students (\n sno char(7) ,\n  sname char(8) NOT NULL,\n  class char(10),\n  ssex char(2),\n  bday date ,\n  bplace char(10) ,\n  IDNum char(18) ,\n  sdept char(16),\n  phone char(11),\n  PRIMARY KEY (sno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```students```表：\n\n|sno|sname|class|ssex|bday|bplace|IDNum|sdept|phone|\n|----|-------|-----|-----|-----|--------|-------|-------|-------|\n|1311104|李嘉欣|13英语1|女|1994-05-28|山西太原|330204199405281056|人文学院|15900002211|\n|1311105|苏有明|13英语1|男|1995-04-16|内蒙古包头|330204199504162036|人文学院|15900002222|\n|1711101|赵薇|17物流1|女|1999-02-11|安徽合肥|330203199902110925|经管学院|15900001177|\n|1711102|董洁|17物流1|女|1999-02-17|上海|330203199902170017|经管学院|15900001188|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|sname|class|\n|-------|-----|\n|苏有明|13英语1|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710051135491",
+    "description": "本题目要求编写SQL语句，\n检索出```students```表中姓名是两个字的学生信息。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE students (\n sno char(7) ,\n  sname char(8) NOT NULL,\n  class char(10),\n  ssex char(2),\n  bday date ,\n  bplace char(10) ,\n  IDNum char(18) ,\n  sdept char(16),\n  phone char(11),\n  PRIMARY KEY (sno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```students```表：\n\n|sno|sname|class|ssex|bday|bplace|IDNum|sdept|phone|\n|----|-------|-----|-----|-----|--------|-------|-------|-------|\n|1311104|李嘉欣|13英语1|女|1994-05-28|山西太原|330204199405281056|人文学院|15900002211|\n|1311105|苏有明|13英语1|男|1995-04-16|内蒙古包头|330204199504162036|人文学院|15900002222|\n|1711101|赵薇|17物流1|女|1999-02-11|安徽合肥|330203199902110925|经管学院|15900001177|\n|1711102|董洁|17物流1|女|1999-02-17|上海|330203199902170017|经管学院|15900001188|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|sno|sname|class|ssex|bday|bplace|IDNum|sdept|phone|\n|----|-------|-----|-----|-----|--------|-------|-------|-------|\n|1711101|赵薇|17物流1|女|1999-02-11|安徽合肥|330203199902110925|经管学院|15900001177|\n|1711102|董洁|17物流1|女|1999-02-17|上海|330203199902170017|经管学院|15900001188|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710051135492",
+    "description": "显示截止到2021年9月1日为止年满24周岁的男学生信息。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\n### 表样例\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/bb501d79-ad5e-4b3b-a24b-7bf630d888fc.png)\n\n### 输出样例:\n\n![5-6.png](https://images.ptausercontent.com/815caa54-8dae-4658-83f5-d89f29051c34.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710051135493",
+    "description": "本题目要求编写SQL语句，查询`sh_goods`表，先按商品分类`category_id`升序排列，对于相同分类的商品再按商品价格`price`降序排列 。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/17e69781-c3b6-424e-89ec-48dc00ba3d79.PNG)\n\n\n### 输出样例:\n\n![答案.PNG](https://images.ptausercontent.com/5072deec-3bb6-42f1-8b32-89b1cb0bc7f4.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329792",
+    "description": "本题目要求编写SQL语句，查询`sh_goods`表中`id`、`category_id`和`name`字段。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n![样例1.PNG](https://images.ptausercontent.com/af38f5c4-8594-4adf-a08f-290ee2c02706.PNG)\n\n\n### 输出样例:\n\n\n![样例2.PNG](https://images.ptausercontent.com/0582be2f-2df9-4411-b5ab-199372672049.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329793",
+    "description": "本题目要求编写SQL语句，\n在`sh_goods`表中，查询5星好评的商品库存增加850后的值，以及这些商品进行75折促销后的价格。查询结果显示字段依据输出样例设置。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/c67dd734-8b01-4474-856f-e511b0e5af80.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/d8cd14c4-5563-44da-a3f3-21a5f980c7c9.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329794",
+    "description": "本题目要求编写SQL语句，\n查询`sh_goods`表中价格在2000到6000元之间的商品编号、名称和价格，注意此范围包括2000元和6000元的商品。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/a64fa37a-2200-4042-867f-f9894068093a.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/c9a63be5-af8f-4660-9c33-c9b8b74de473.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329795",
+    "description": "本题目要求编写SQL语句，\n查询`goods`表中价格为NULL的商品信息。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE goods\n (\n    id INT PRIMARY key,         --商品id\n    name VARCHAR(32),           --商品名称\n    price INT ,                 --商品价格\n    description VARCHAR(255)    -- 商品描述\n );\n```\n\n### 表样例\n\n`goods`表：\n\n![样例1.PNG](https://images.ptausercontent.com/eff48a76-0e53-4b9e-b7d2-f3da1b1111f6.PNG)\n\n\n### 输出样例:\n\n\n![样例2.PNG](https://images.ptausercontent.com/adf4f32d-07a3-4511-abfa-abcb4d801ebe.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329796",
+    "description": "本题目要求编写SQL语句，\n获取`goods`表中商品名称含有“pad”的商品。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE goods\n (\n    id INT PRIMARY key,         --商品id\n    name VARCHAR(32),           --商品名称\n    price INT ,                 --商品价格\n    description VARCHAR(255)    -- 商品描述\n );\n```\n\n### 表样例\n\n`goods`表：\n\n\n![样例1.PNG](https://images.ptausercontent.com/d2238b63-d802-42b0-9039-0f69ad482688.PNG)\n\n\n\n### 输出样例:\n\n\n![样例2.PNG](https://images.ptausercontent.com/178c5afe-5f2a-4c9e-8a83-92cc1f160827.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329797",
+    "description": "本题目要求编写SQL语句，\n查询`sh_goods`表中商品分类编号（`category_id`）为3，并且用户评分为5星的商品信息。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/7902d0ac-ed6d-4cb4-9f93-af76ae30d3de.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/5cc0cf84-3d89-4407-ad21-63c0a9e866f4.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329798",
+    "description": "本题目要求编写SQL语句，\n查询`sh_goods`表中用户评分为4.5或者价格小于10元的商品信息。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/a7e03894-0606-49bf-a0e5-3b4adbec7736.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/41a09c40-73b9-4028-8221-1c6ad199333a.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329799",
+    "description": "本题目要求编写SQL语句，在`Teacher`r表中查询出所有教师所在部门编号，并消除重复记录。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCreate table Teacher(\nTeacherID   char(8) primary key,     --教师编号\nTeachername char(12) not null,       --教师姓名\nSex  char(2) not null check(sex in('男','女')),  --教师性别\nBrith datetime ,                                 --出生日期\nProfession char(8) check(profession in('教授','副教授','讲师','助教')),  --职称\nTelephone varchar(20),                          --联系电话\nHomeAddr varchar(50),                           --家庭地址\nDepartmentID char(4)                            --系部编号\n);\n```\n\n\n\n### 表样例\n\n`Teacher`表：\n\n![Teacher表.PNG](https://images.ptausercontent.com/e9e1e65f-8459-4174-91d8-7bfaac1f9e3f.PNG)\n\n\n\n\n### 输出样例:\n\n![答案.PNG](https://images.ptausercontent.com/f6db91be-875d-4e19-a563-b833d5caaace.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329800",
+    "description": "这是一个SQL编程题模板。本题目要求编写SQL语句，\n查询`Student`表中出出生日期最大（即年龄最小）的学生姓名及出生日期。。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCreate table Student(\nStudentID   char(12) primary key,\nStudentName char(8) not null,\nSex  char(2) not null ,\nBirth  datetime not null,\nHomeAddr varchar(80),\nEntranceTime datetime default getdate(),\nClassID char(8) \n);\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```Student```表：\n\n\n![Student表.PNG](https://images.ptausercontent.com/6ab3de80-02b1-49d1-875d-07f12ebc8c49.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/b2569ed7-ccee-4736-8e42-b78673900b7b.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329801",
+    "description": "这是一个SQL编程题模板。本题目要求编写SQL语句，查询`Class`表中学生人数大于5人的班级编号。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n```\nCreate table Class(\nClassID   char(8) primary key,    --班级编号\nClassName varchar(20) not null,   --班级名称\nMonitor  char(8),                 --班长姓名\nStudentNum int ,                  -- 学生人数\nDepartmentID char(4)              -- 系部编号\n);\n```\n\n### 表样例\n\n\n```Class```表：\n\n\n![Class表.PNG](https://images.ptausercontent.com/a691ba1c-ed20-4445-8970-0d108c8a73ae.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/8d8e524d-a674-421b-834b-f97a064b1961.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329802",
+    "description": "这是一个SQL编程题模板。本题目要求编写SQL语句，\n查询`Grade`表中课程“Dp010001”的最高分。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCreate table Grade(\nCourseID   char(8) ,    --班级编号\nStudentID char(12) ,    --学号\nSemester  int not null, --学期\nSchoolYear int ,        --学年\nGrade numeric(5,1),     --成绩\nprimary key(CourseID,StudentID)  \n);\n```\n\n### 表样例\n\n\n```Grade```表：\n\n![Grade表第1部分.PNG](https://images.ptausercontent.com/4c4c7dfe-1599-48cd-904f-14910295bfa1.PNG)\n\n\n![Grade表第2部分.PNG](https://images.ptausercontent.com/debe1c14-a547-4366-96be-d5b396c9b809.PNG)\n\n\n![Grade表第3部分.PNG](https://images.ptausercontent.com/d3d155c2-eb1c-4fe4-9c7c-a71e97fcc465.PNG)\n\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/76ec6859-fc7d-46d5-814e-4508108e1a4b.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710055329803",
+    "description": "这是一个SQL编程题模板。本题目要求编写SQL语句，\n查询`Grade`表中课程“Dp010004”的学生学号和成绩，并按成绩降序排列，成绩相同按学号升序排列。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCreate table Grade(\nCourseID   char(8) ,\nStudentID char(12) ,\nSemester  int not null,\nSchoolYear int ,\nGrade numeric(5,1),\nprimary key(CourseID,StudentID)\n);\n```\n\n### 表样例\n\n\n```Grade```表：\n\n\n![Grade表第1部分.PNG](https://images.ptausercontent.com/661c3086-9d33-4718-bacb-e38056d1c4e4.PNG)\n\n![Grade表第2部分.PNG](https://images.ptausercontent.com/df85b11c-474b-492b-8174-984f7e9c911b.PNG)\n\n![Grade表第3部分.PNG](https://images.ptausercontent.com/d208a14e-2b4e-4ef7-9220-ba5e3bc4f667.PNG)\n\n\n### 输出样例:\n\n![答案.PNG](https://images.ptausercontent.com/ac4e30a1-b90d-42ec-bd20-1a2694d4742d.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710059524096",
+    "description": "本题目要求编写SQL语句，\n检索出```sc```表、```course```表中选修课名中含有“数据库”三个字的课程且成绩在80～90分之间的学生学号及成绩。\n\n提示：请使用join连接作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE course (\n cno char(7) ,\n cname varchar(20) NOT NULL,\n  cpno char(7),\n  ccredit int NOT NULL,\n  PRIMARY KEY (cno)\n) ;\n\nCREATE TABLE sc (\n sno char(7) ,\n cno char(7) ,\n score decimal(4,1),\n point decimal(2,1),\n PRIMARY KEY (sno,cno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```course```表：\n\n|cno|cname|cpno|ccredit|\n|----|------|-----|--------|\n|0000002|C语言基础|0000027|9|\n|0000003|Linux操作系统|0000013|5|\n|0000004|C#程序设计|0000002|6|\n|0000052|数据库OCP考证|NULL|4|\n\n```sc```表：\n\n|sno|cno|score|point|\n|----|----|------|------|\n|1311104|0000011|53.0|0.0|\n|1311104|0000027|80.0|1.0|\n|1311105|0000027|84.0|1.0|\n|1711101|0000052|81.0|2.0|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|sno|score|\n|----|------|\n|1711101|81.0|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524097",
+    "description": "本题目要求编写UPDATE语句，\n将```sc```表中“高等数学”课程不及格的成绩全改为60分\n\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `cou` (\n  `cno` char(4) NOT NULL,\n  `cname` varchar(30) NOT NULL,\n  `credit` smallint(6) DEFAULT NULL,\n  `ptime` char(5) DEFAULT NULL,\n  `teacher` char(10) DEFAULT NULL,\n  PRIMARY KEY (`cno`)\n)\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  CONSTRAINT `fk_sc_cno` FOREIGN KEY (`cno`) REFERENCES `cou` (`cno`)\n)\n\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```cou```表：\n\n\n![cou.JPG](https://images.ptausercontent.com/9cb5a144-fbe6-4cf7-87c2-4aacb53c6280.JPG)\n\n```sc```表：\n\n\n![u1.JPG](https://images.ptausercontent.com/3dc111be-28b7-4512-abd8-854c41e17060.JPG)\n\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n![u2.JPG](https://images.ptausercontent.com/7803263b-de65-4a21-a771-a8bf245dfa17.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524098",
+    "description": "本题目要求编写SQL语句，\n增加一个仓库，编号为’D01’，城市为’绍兴’，大小为11000。\n\n\n### 表结构:\n\n```\nCREATE TABLE `warehouse` (\n  `Wno` varchar(10),   --仓库编号\n  `City` varchar(20),  --所在城市\n  `Size` int(11),      --面积\n);\n```\n\n### 表样例\n\n```warehouse```表：\n\n| Wno  | City | Size |\n| ---- | ---- | ---- |\n| A01  | 杭州 | 15000 |\n| A02  | 建德 | 5000  |\n| B01  | 宁波 | 1200  |\n| B02  | 奉化 | 7500  |\n| C01  | 温州 | 10000 |\n| C02  | 乐清 | 8000  |\n\n### 输出样例:\n\n| Wno  | City | Size |\n| ---- | ---- | ---- |\n| A01  | 杭州 | 15000 |\n| A02  | 建德 | 5000  |\n| B01  | 宁波 | 1200  |\n| B02  | 奉化 | 7500  |\n| C01  | 温州 | 10000 |\n| C02  | 乐清 | 8000  |\n| D01  | 绍兴 | 11000 |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524099",
+    "description": "本题目要求编写SQL语句，\n给所有产品名中含’螺母’的订单的数量增加40%。\n\n\n### 表结构:\n\n```\nCREATE TABLE `orders` (\n  `OrdNo` int(11),   --订单编号\n  `Sid` varchar(10), --供应商编号\n  `Eid` varchar(10), --职工编号\n  `Pid` varchar(20), --商品编号\n  `Price` decimal(10,2), --价格\n  `QTY` int(11),     --订购数量\n  `ordDate` date    --订单日期\n);\nCREATE TABLE `product` (\n  `Pid` varchar(20),   --商品编号\n  `PName` varchar(50), --商品名称\n  `Weight` decimal(10, 3)    --重量\n);\n```\n\n### 表样例\n```orders```表：\n\n| OrdNo | Sid  | Eid  | Pid  | Price | QTY  | ordDate    |\n| ----- | ---- | ---- | ---- | ----- | ---- | ---------- |\n| 1     | S01  | 0011 | P01  | 11    | 23   | 2022-02-13 |\n| 2     | S02  | 0012 | P03  | 12    | 25   | 2022-02-14 |\n| 3     | S03  | 0012 | P05  | 60    | 50  | 2022-02-14 |\n\n```product```表：\n\n| Pid  | PName   | Weight |\n| ---- | ------- | ------ |\n| P01  | M6螺栓  | 30     |\n| P02  | M8螺栓  | 40     |\n| P03  | M16螺栓 | 140    |\n| P04  | 螺帽    | 30     |\n| P05  | 螺母    | 45     |\n| P06  | 垫片    | 10     |\n| P07  | 铰链    | 70     |\n\n### 输出样例:\n\n\n```orders```表：\n\n| OrdNo | Sid  | Eid  | Pid  | Price | QTY  | ordDate    |\n| ----- | ---- | ---- | ---- | ----- | ---- | ---------- |\n| 1     | S01  | 0011 | P01  | 11    | 23   | 2022-02-13 |\n| 2     | S02  | 0012 | P03  | 12    | 25   | 2022-02-14 |\n| 3     | S03  | 0012 | P05  | 60    | 70  | 2022-02-14 |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524100",
+    "description": "要求编写SQL语句， 删除`Product`表中销售价格大于等于100的商品信息。\n\n\n### 表结构:\n\n\n```\nCREATE TABLE Product\n(product_id      CHAR(4)      NOT NULL, --商品编号\n product_name    VARCHAR(100) NOT NULL, --商品名称\n product_type    VARCHAR(32)  NOT NULL, --商品种类\n sale_price      INTEGER ,              --销售价格\n purchase_price  INTEGER ,              --进货价格\n regist_date     DATE ,                 --登记日期\n PRIMARY KEY (product_id)); \n\n```\n\n### 删除前查询结果：\n`Product`表\n\n![图1.png](https://images.ptausercontent.com/4af9eaea-7a2e-4ee0-adca-6b1383d7c6e3.png)\n\n\n\n### 删除后查询结果：\n`Product`表\n\n![图2.png](https://images.ptausercontent.com/ed4f36d3-5e44-454e-bc16-b3686f26a004.png)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710059524101",
+    "description": "### 题干:\n检索出生日期早于伍容华出生日期（不包含此日期）的所有学生信息。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n```student```表：\n\n\n![student.png](https://images.ptausercontent.com/989fcf26-df8b-464b-bab0-c647772ae412.png)\n\n```course```表：\n\n\n![course.png](https://images.ptausercontent.com/cbcd8de4-a8ac-450f-b316-19a950425c0c.png)\n\n```score```表：\n\n\n![score.png](https://images.ptausercontent.com/6dceeaa7-09d4-4868-ac59-ac50e498aad0.png)\n\n### 输出样例:\n\n![7-1.png](https://images.ptausercontent.com/02766a54-a7e9-4f63-a652-5e760fd8d17d.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524102",
+    "description": "本题目要求编写SQL语句，\n检索出```product```表中所有符合```40 <= Weight <= 65```的记录。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE `product` (\n  `Pid` varchar(20),   --商品编号\n  `PName` varchar(50), --商品名称\n  `Weight` decimal(10, 3)    --重量\n);\n```\n\n### 表样例\n\n```product```表：\n\n| Pid  | PName   | Weight |\n| ---- | ------- | ------ |\n| P01  | M6螺栓  | 30     |\n| P02  | M8螺栓  | 40     |\n| P03  | M16螺栓 | 140    |\n| P04  | 螺帽    | 30     |\n| P05  | 螺母    | 45     |\n| P06  | 垫片    | 10     |\n| P07  | 铰链    | 70     |\n| P21  | 螺钉    | 3      |\n\n### 输出样例:\n\n| Pid  | PName   | Weight |\n| ---- | ------- | ------ |\n| P02  | M8螺栓  | 40     |\n| P05  | 螺母    | 45     |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524103",
+    "description": "本题目要求编写SQL语句，\n检索出```supplier```表中所有符合```既不是’上海’，也不是’北京’和’天津’的供货商信息```的记录。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE `supplier` (\n  `Sid` varchar(10),   --供应商编号\n  `SName` varchar(50), --供应商名称\n  `City` varchar(20)   --供应商地址\n);\n```\n\n### 表样例\n\n```supplier```表：\n\n| Sid  | SName        | City |\n| ---- | ------------ | ---- |\n| S01  | 东风机械厂   | 武汉 |\n| S02  | 天鹰紧固件厂 | 温州 |\n| S05  | 长城机电     | 杭州 |\n\n### 输出样例:\n\n| Sid  | SName        | City |\n| ---- | ------------ | ---- |\n| S01  | 东风机械厂   | 武汉 |\n| S02  | 天鹰紧固件厂 | 温州 |\n| S05  | 长城机电     | 杭州 |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524104",
+    "description": "本题目要求编写SQL语句，\n检索出```product```表中所有符合```包含’M’且重量大于30```产品编号。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE `product` (\n  `Pid` varchar(20),   --商品编号\n  `PName` varchar(50), --商品名称\n  `Weight` decimal(10, 3)    --重量\n);\n```\n\n### 表样例\n\n```product```表：\n\n| Pid  | PName   | Weight |\n| ---- | ------- | ------ |\n| P01  | M6螺栓  | 30     |\n| P02  | M8螺栓  | 40     |\n| P03  | M16螺栓 | 140    |\n| P04  | 螺帽    | 30     |\n| P05  | 螺母    | 45     |\n| P06  | 垫片    | 10     |\n| P07  | 铰链    | 70     |\n| P21  | 螺钉    | 3      |\n\n\n### 输出样例:\n\n| Pid  |\n| ---- |\n| P02  |\n| P03  |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524105",
+    "description": "本题目要求编写SQL语句，\n检索出```employee```表中没有分配工作的员工编号、姓名。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n\n```\nCREATE TABLE `employee` (\n  `Eid` varchar(10),   --职工编号\n  `EName` varchar(30), --职工姓名\n  `Wno` varchar(10),   --所在仓库\n  `Salary` int(11)     --职工工资\n);\n```\n\n### 表样例\n\n```employee```表：\n\n| Eid | EName | Wno  | Salary |\n| ---- | ---- | ---- | ------ |\n| 0010 | 张三  | A01  |  3600  |\n| 0011 | 刘勇  | A01  |  2700  |\n| 0012 | 张立  | A01  |  8500  |\n| 0021 | 刘靖  | A02  |  2500  |\n| 0022 | 王强  | A02  |  5600  |\n| 0023 | 李军  |      |  5000  |\n| 0031 | 王林  |      |  3500  |\n\n\n### 输出样例:\n\n| Eid | EName \n| ---- | ---- |\n| 0023 | 李军  |\n| 0031 | 王林  |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908710059524106",
+    "description": "要求编写SQL语句，查询`Product`表中进货价格在50至150之间的商品记录。注意：查询结果中应包含50和150元的商品记录。\n\n\n### 表结构:\n\n\n```\nCREATE TABLE Product\n(product_id      CHAR(4)      NOT NULL, --商品编号\n product_name    VARCHAR(100) NOT NULL, --商品名称\n product_type    VARCHAR(32)  NOT NULL, --商品种类\n sale_price      INTEGER ,              --销售价格\n purchase_price  INTEGER ,              --进货价格\n regist_date     DATE ,                 --登记日期\n PRIMARY KEY (product_id)); \n\n```\n\n### 表样例\n`Product`表\n\n![图1.png](https://images.ptausercontent.com/5ac32c55-83e4-4f16-8e58-0d49f8230dd7.png)\n\n\n### 输出样例:\n`Product`表\n\n![图2.png](https://images.ptausercontent.com/2fbb7002-911b-4a4e-9bfc-8c5077666744.png)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908710059524107",
+    "description": "本题目要求编写SQL语句，\n检索出```product```表中每种产品的名称和重量(用kg表示)。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `product` (\n  `Pid` varchar(20),   --商品编号\n  `PName` varchar(50), --商品名称\n  `Weight_g` decimal(10, 3)    --重量\n);\n```\n\n### 表样例\n\n```product```表：\n\n| Pid  | PName   | Weight_g|\n| ---- | ------- | ------ |\n| P01  | M6螺栓  | 30     |\n| P02  | M8螺栓  | 40     |\n| P03  | M16螺栓 | 140    |\n| P04  | 螺帽    | 30     |\n| P05  | 螺母    | 45     |\n| P06  | 垫片    | 10     |\n| P07  | 铰链    | 70     |\n| P21  | 螺钉    | 3      |\n\n### 输出样例:\n\n| PName   | Weight_kg |\n| ------- | ------ |\n| M6螺栓  | 0.030  |\n| M8螺栓  | 0.040  |\n| M16螺栓 | 0.140  |\n| 螺帽    | 0.030  |\n| 螺母    | 0.045  |\n| 垫片    | 0.010  |\n| 铰链    | 0.070  |\n| 螺钉    | 0.003  |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836249329664",
+    "description": "本题目要求编写SQL语句，\n检索C002号课程的成绩最高的二人学号，姓名与成绩\n\n\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL,\n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`),\n);\n\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  CONSTRAINT `fk_sc_sno` FOREIGN KEY (`sno`) REFERENCES `stu` (`sno`)\n);\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n``` stu```表：\n\n\n![stu.JPG](https://images.ptausercontent.com/bbf57a3f-bfff-4cc3-b175-6e34f9658519.JPG)\n\n\n``` sc```表：\n\n\n![sc.JPG](https://images.ptausercontent.com/a88f12a4-f199-4034-b2f7-013aadcaf8b5.JPG)\n\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n![l225.JPG](https://images.ptausercontent.com/6bd95adb-d82c-4b8e-869e-b08829194b99.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836249329665",
+    "description": "本题目要求编写UPDATE语句，\n把所有低于７５分的女生成绩提高5%;\n\n\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\n\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL,\n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`)\n);\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  CONSTRAINT `fk_sc_sno` FOREIGN KEY (`sno`) REFERENCES `stu` (`sno`)\n)\n\n\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n``` stu```表：\n\n\n![stu.JPG](https://images.ptausercontent.com/d1009ca4-e96f-4400-81b7-aee761cf0861.JPG)\n\n\n``` sc```表：\n\n\n![sc.JPG](https://images.ptausercontent.com/7c9724c4-82b9-4073-be6b-5a921d90c20a.JPG)\n\n### 输出样例:\n\n例如：\n修改女生成绩后的```sc```表如下：\n\n![u2b.JPG](https://images.ptausercontent.com/507ca0d9-bb8b-497f-ba38-e9130b99471f.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523968",
+    "description": "本题目要求编写DELETE语句，删除选修’C语言’课程的女生的选课记录。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL, \n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,  --0为女生，1为男生。\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`)\n);\nCREATE TABLE `cou` (\n  `cno` char(4) NOT NULL,\n  `cname` varchar(30) NOT NULL,\n  `credit` smallint(6) DEFAULT NULL,\n  `ptime` char(5) DEFAULT NULL,\n  `teacher` char(10) DEFAULT NULL,\n  PRIMARY KEY (`cno`)\n)\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  CONSTRAINT `fk_sc_cno` FOREIGN KEY (`cno`) REFERENCES `cou` (`cno`),\n  CONSTRAINT `fk_sc_sno` FOREIGN KEY (`sno`) REFERENCES `stu` (`sno`)\n)\n\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n``` stu```表：\n\n\n![stu1.JPG](https://images.ptausercontent.com/fcad1d1f-9d5c-45a9-9533-e19c0c6a5fa6.JPG)\n\n```cou```表：\n\n\n![cou.JPG](https://images.ptausercontent.com/bb3c9397-96a3-4521-8cff-6b8c1b13a273.JPG)\n\n\n```sc```表：\n\n\n![sc1.JPG](https://images.ptausercontent.com/c0c78e29-ffc1-406e-a62f-ce67b8661b29.JPG)\n\n\n\n\n### 输出样例:\n\n删除记录后，```sc```表如下：\n\n\n\n![sc2.JPG](https://images.ptausercontent.com/97d96f20-6559-4eed-b062-089c504f5bf0.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523969",
+    "description": "在```产品表(products)```中找出```库存量(UnitsInStock)```小于```订购量(UnitsOnOrder)```的产品的```产品编号（ProductID）```和```产品名称（ProductName）```\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n|列名|数据类型|长度|主码|说明|\n|---|---|---|---|---|\n|ProductID|int|11|√|产品编号|\n|ProductName|varchar|40||产品名称|\n|SupplierID|int|11||供应商编号|\n|CategoryID|int|11||种类编号|\n|QuantityPerUnit|varchar|20||数量|\n|UnitPrice|decimal|10,4||单价|\n|UnitsInStock|smallint|2||库存数量|\n|UnitsOnOrder|smallint|2||订购数量|\n|ReorderLevel|smallint|2||再次订购量|\n|Discontinued|bit|1||中止|\n\n\n### 表样例\n\n\n```products```表：\n\n|ProductID|ProductName|UnitsInStock|UnitsOnOrder|\n|---|---|---|---|\n|1|Chai|39|0|\n|2|Chang|17|40|\n|3|Aniseed Syrup|13|70|\n|4|Chef Anton's Cajun Seasoning|53|0|\n|5|Chef Anton's Gumbo Mix|0|0|\n|6|Grandma's Boysenberry Spread|120|0|\n|7|Uncle Bob's Organic Dried Pears|15|0|\n|8|Northwoods Cranberry Sauce|6|0|\n|9|Mishi Kobe Niku|29|0|\n|10|Ikura|31|0|\n\n### 输出样例:\n\n|ProductID|ProductName|\n|---|---|\n|2|Chang|\n|3|Aniseed Syrup|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523970",
+    "description": "查询每位领导的直接下属数量，显示：领导的```员工编号（EmployeeID）```，下属数量（重命名为（```countSub```））\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n|列名|数据类型|长度|主码|说明|\n|---|---|---|---|---|\n|EmployeeID| int|11|√|员工编号|\n|LastName| varchar|20||姓|\n|FirstName| varchar|10||名|\n|Title| varchar|30||职务|\n|TitleOfCourtesy| varchar|25||礼貌称号|\n|BirthDate| datetime,|||出生日期|\n|HireDate| datetime,|||入职日期|\n|Address| varchar|60||地址|\n|City| varchar|15||城市|\n|Region| varchar|15||区域|\n|PostalCode| varchar|10||邮政编码|\n|Country| varchar|15||国家|\n|HomePhone| varchar|24||住宅电话|\n|Extension| varchar|4||范围|\n|Photo| longblob,|||照片|\n|ReportsTo| int|11||直接上级|\n|PhotoPath| varchar|255||照片|\n\n\n\n### 表样例\n\n\n```employees```表：\n\n|EmployeeID|LastName|FirstName|Title|TitleOfCourtesy|BirthDate|HireDate|Address|City|Region|PostalCode|Country|HomePhone|Extension|ReportsTo|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|1|Davolio|Nancy|Sales Representative|Ms.|1948/12/8 00:00:00|1992/5/1 00:00:00|507 - 20th Ave. E.Apt. 2A|Seattle|WA|98122|USA|(206) 555-9857|5467|2|\n|2|Fuller|Andrew|Vice President, Sales|Dr.|1952/2/19 00:00:00|1992/8/14 00:00:00|908 W. Capital Way|Tacoma|WA|98401|USA|(206) 555-9482|3457||\n|3|Leverling|Janet|Sales Representative|Ms.|1963/8/30 00:00:00|1992/4/1 00:00:00|722 Moss Bay Blvd.|Kirkland|WA|98033|USA|(206) 555-3412|3355|2|\n\n\n### 输出样例:\n\n|EmployeeID|countSub|\n|---|---|\n|2|2|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523971",
+    "description": "本题目要求编写SQL语句，\n查询比“网络工程”专业所有学生年龄都小的学生姓名。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL,\n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`),\n  KEY `fk_stu_mno` (`mno`),\n  CONSTRAINT `fk_stu_mno` FOREIGN KEY (`mno`) REFERENCES `major` (`mno`)\n);\nCREATE TABLE `major` (\n  `mno` char(2) NOT NULL,\n  `mname` varchar(20) NOT NULL,\n  PRIMARY KEY (`mno`)\n)\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```stu```表：\n\n![stu.JPG](https://images.ptausercontent.com/c9ad805e-7792-4269-ba0a-4be483aaac81.JPG)\n\n```major```表：\n\n![major.JPG](https://images.ptausercontent.com/e5b27180-f435-461d-b599-d857eabeeab1.JPG)\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n![midt01.JPG](https://images.ptausercontent.com/37a7b467-6f08-410a-8dd8-b25906c81710.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523972",
+    "description": "本题目要求编写SQL语句，\n查询软件工程专业中年龄最大的同学姓名.\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `major` (\n  `mno` char(2) NOT NULL,\n  `mname` varchar(20) NOT NULL,\n  PRIMARY KEY (`mno`)\n);\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL,\n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`),\n  KEY `fk_stu_mno` (`mno`),\n  CONSTRAINT `fk_stu_mno` FOREIGN KEY (`mno`) REFERENCES `major` (`mno`)\n)\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```stu```表：\n\n\n![stu.JPG](https://images.ptausercontent.com/b3ed8aa7-449f-4c5d-b202-f51d145e4a86.JPG)\n\n```major```表：\n\n![major.JPG](https://images.ptausercontent.com/246cf1c2-00c5-4558-84e2-96ae3f562214.JPG)\n\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n![midt01b.JPG](https://images.ptausercontent.com/11a1b3d7-ec24-4e25-8081-c01bd7d9a5f9.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523973",
+    "description": "本题目要求编写SQL语句，查询选修人数超过2人且成绩都在60分以上的课程的课程名、最高成绩、最低成绩和平均成绩。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `major` (\n  `mno` char(2) NOT NULL,\n  `mname` varchar(20) NOT NULL,\n  PRIMARY KEY (`mno`)\n);\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL,\n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`),\n  KEY `fk_stu_mno` (`mno`),\n  CONSTRAINT `fk_stu_mno` FOREIGN KEY (`mno`) REFERENCES `major` (`mno`)\n);\n\nCREATE TABLE `cou` (\n  `cno` char(4) NOT NULL,\n  `cname` varchar(30) NOT NULL,\n  `credit` smallint(6) DEFAULT NULL,\n  `ptime` char(5) DEFAULT NULL,\n  `teacher` char(10) DEFAULT NULL,\n  PRIMARY KEY (`cno`)\n)；\n\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  KEY `fk_sc_cno` (`cno`),\n  CONSTRAINT `fk_sc_cno` FOREIGN KEY (`cno`) REFERENCES `cou` (`cno`),\n  CONSTRAINT `fk_sc_sno` FOREIGN KEY (`sno`) REFERENCES `stu` (`sno`)\n)\n\n\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```stu```表：\n\n\n![stu.JPG](https://images.ptausercontent.com/b3ed8aa7-449f-4c5d-b202-f51d145e4a86.JPG)\n\n```major```表：\n\n![major.JPG](https://images.ptausercontent.com/246cf1c2-00c5-4558-84e2-96ae3f562214.JPG)\n\n```cou```表：\n\n![cou.JPG](https://images.ptausercontent.com/933f8460-affd-428c-b663-5beb3b9d0da5.JPG)\n\n\n```sc```表：\n\n![sc.JPG](https://images.ptausercontent.com/b27c21ce-8969-4dbc-9d89-727f338c84e6.JPG)\n\n\n\n## 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n![midt05b.JPG](https://images.ptausercontent.com/477adc02-9ee8-4fab-8eb7-254d2af1173a.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523974",
+    "description": "### 题干:\n将student表中的数计学院的学生信息插入到stu表中。\n\n提示：请使用INSERT语句作答，stu数据表已存在，结构同student一样。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\n### 表样例\n上述表结构对应的表样例：\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/214c212b-d599-4d1b-9c4e-d60f9bb3031d.png)\n\n### 输出样例:\n输出样例：\n\n```stu```表：\n\n![3-3.png](https://images.ptausercontent.com/d0fe9800-fdc2-43b9-bc3f-e06bffa9c0c8.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523975",
+    "description": "### 题干:\n没有被购买过的商品信息。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE good(\n\ngid CHAR(4) PRIMARY KEY,\n\ngname VARCHAR(40) NOT NULL,\n\nprice FLOAT(10,2),\n\nstock INT\n\n);\n\nCREATE TABLE recorder(\n\nid INT PRIMARY KEY  AUTO_INCREMENT,\n\ncid CHAR(4),\n\ngid CHAR(4),\n\nquantity INT NOT NULL,\n\nsale_date DATETIME,\n\nCONSTRAINT recorder_gid_fk FOREIGN KEY (gid) REFERENCES good(gid)\n\n);\n\n### 表样例\n上述表结构对应的表样例：\n\n```good```表：\n\n![good.png](https://images.ptausercontent.com/19c47604-68d2-49f0-9196-42b8f8416c98.png)\n\n```recorder```表：\n\n![recorder.png](https://images.ptausercontent.com/27c2014d-8b65-4a05-857e-497d01d67e71.png)\n\n\n### 输出样例:\n输出样例：\n\n![4-6.png](https://images.ptausercontent.com/485d30b0-f75d-431d-bfe4-1e5ff8e4a859.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523976",
+    "description": "本题目要求编写SQL语句，\n检索出``` sc```表中学号为S001的学生选修的而S003学号学生未选修的课程号。\n注意：查询结果忽略顺序只对比数据。\n\n提示：MSSQLServer 评测SQL语句。\n\n\n### 表结构:\n\n定义表结构的SQL语句如：\n\n```\n-- 学生选课成绩表\nCREATE TABLE  sc  (  \n   sno  char(4) NOT NULL,  -- 学生学号\n   cno  char(4) NOT NULL,  -- 课程号\n   grade  decimal(4,1) DEFAULT NULL,\n  PRIMARY KEY ( sno , cno )\n)\n```\n\n### 表样例\n\n上述表结构对应的表样例如\n\n``` sc```表：\n\n\n![sc.JPG](https://images.ptausercontent.com/e4451831-395f-44fd-b378-9426ddcff5ce.JPG)\n\n\n### 输出样例:\n\n输出样例如：\n\n\n![l218.JPG](https://images.ptausercontent.com/93a8f9d5-7eb2-45bb-a5d0-fd4ab34b16a6.JPG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523977",
+    "description": "查询选修课程数在2门以上（含2门）且所有选课成绩都在80分以上（含80分）的学生的姓名、专业名及总学分。\n\n提示：MSSQLServer 评测SQL语句。\n\n### 表结构:\n\n定义表结构的SQL语句如：\n\n```\n-- 专业表\nCREATE TABLE major (  \n  mno char(2) NOT NULL,\n  mname nvarchar(20) NOT NULL,\n  PRIMARY KEY (mno)\n);\n-- 学生表\nCREATE TABLE stu (    \n  sno char(4) NOT NULL,\n  sname nvarchar(8) NOT NULL,\n  sex smallint DEFAULT NULL,\n  mno char(2) DEFAULT NULL,\n  birdate datetime DEFAULT NULL,\n  memo ntext,\n  PRIMARY KEY (sno),\n  CONSTRAINT  fk_stu_mno FOREIGN KEY (mno) REFERENCES major (mno)\n);\n-- 课程表\nCREATE TABLE  cou  (  \n   cno  char(4) NOT NULL,\n   cname  nvarchar(30) NOT NULL,\n   credit  smallint DEFAULT NULL,\n   ptime  char(5) DEFAULT NULL,\n   teacher  nvarchar(10) DEFAULT NULL,\n  PRIMARY KEY ( cno )\n);\n-- 学生选课成绩表\nCREATE TABLE  sc  (  \n   sno  char(4) NOT NULL,  -- 学生学号\n   cno  char(4) NOT NULL,  -- 课程号\n   grade  decimal(4,1) DEFAULT NULL,\n  PRIMARY KEY ( sno , cno ),\n  CONSTRAINT  fk_sc_cno  FOREIGN KEY ( cno ) REFERENCES  cou  ( cno ),\n  CONSTRAINT  fk_sc_sno  FOREIGN KEY ( sno ) REFERENCES  stu  ( sno )\n)\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```stu```表：\n\n![stu表.PNG](https://images.ptausercontent.com/e0eef1b9-75cc-47ef-a678-aa3edbd702a5.PNG)\n\n```major```表：\n\n![major表.PNG](https://images.ptausercontent.com/5d0d470d-392b-4714-ae6a-692da9c0367d.PNG)\n\n```cou```表：\n\n![cou表.PNG](https://images.ptausercontent.com/3cdc6e02-b2f5-4a5e-bffd-286e7f289342.PNG)\n\n\n```sc```表：\n\n\n![sc表.PNG](https://images.ptausercontent.com/bb6c39e6-c800-45a1-bc42-7dca06d8ed3a.PNG)\n\n\n\n### 输出样例:\n\n输出样例如：\n\n\n![result.PNG](https://images.ptausercontent.com/0511f054-cb54-40a4-b61e-7d54337c1710.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523978",
+    "description": "本题目要求编写SQL语句，\n统计``sc```表中有学生选修的课程的门数，多人选修同一门只算一门，要求结果中列名显示“门数”\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE sc (\n sno char(7) ,\n cno char(7) ,\n  score decimal(4,1),\n\tpoint decimal(2,1),\n  PRIMARY KEY (sno,cno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```sc```表：\n\n|sno|cno|score|point|\n|----|----|------|------|\n|1711202|0000011|53.0|0.0|\n|1711202|0000027|80.0|1.0|\n|1911201|0000027|84.0|1.0|\n|1911201|0000052|71.0|2.0|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|门数|\n|-----|\n|3|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523979",
+    "description": "本题目要求编写SQL语句，\\\n统计出`sc`表中选修人数最多的3门课，要求结果中列名分别显示“课程号”、“选修人数”。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE sc (\n sno char(7) ,\n cno char(7) ,\n  score decimal(4,1),\n    point decimal(2,1),\n  PRIMARY KEY (sno,cno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n`sc`表：\n\n| sno | cno | score | point |\n| ----- | ----- | ----- | ----- |\n| 1711202 | 0000011 | 53\\.0 | 0\\.0 |\n| 1711202 | 0000027 | 80\\.0 | 1\\.0 |\n| 1911201 | 0000027 | 84\\.0 | 1\\.0 |\n| 1911201 | 0000052 | 71\\.0 | 2\\.0 |\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n| 课程号 | 选修人数 |\n| ----- | ----- |\n| 0000027 | 2 |\n| 0000011 | 1 |\n| 0000052 | 1 |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523980",
+    "description": "本题目要求编写SQL语句，\n检索出```students```表中与“陆毅”同一个系的同学姓名。\n\n提示：请使用嵌套查询语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE students (\n sno char(7) ,\n  sname char(8) NOT NULL,\n  class char(10),\n  ssex char(2),\n  bday date ,\n  bplace char(10) ,\n  IDNum char(18) ,\n  sdept char(16),\n  phone char(11),\n  PRIMARY KEY (sno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```students```表：\n\n|sno|sname|class|ssex|bday|bplace|IDNum|sdept|phone|\n|----|-------|-----|-----|-----|--------|-------|-------|-------|\n|1311104|李嘉欣|13英语1|女|1994-05-28|山西太原|330204199405281056|人文学院|15900002211|\n|1311105|苏有明|13英语1|男|1995-04-16|内蒙古包头|330204199504162036|人文学院|15900002222|\n|1711101|赵薇|17物流1|女|1999-02-11|安徽合肥|330203199902110925|经管学院|15900001177|\n|1711102|陆毅|17物流1|女|1999-02-17|上海|330203199902170017|经管学院|15900001188|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|sname|\n|-------|\n|赵薇|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523981",
+    "description": "本题目要求编写SQL语句，\n结合`sh_goods`表和`sh_goods_comment`表，查询在`sh_goods_comment`表中没有任何评论信息的商品记录。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n```\nCREATE TABLE sh_goods_comment (\n id INT  PRIMARY KEY,                  -- 评论id\n user_id INT  NOT NULL DEFAULT 0,      -- 用户id\n goods_id INT  NOT NULL DEFAULT 0 ,    -- 商品id\n content TEXT NOT NULL ,               -- 评论内容\n is_show TINYINT  NOT NULL DEFAULT 0,  -- 是否显示\n create_time INT  NOT NULL DEFAULT 0   -- 创建时间\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/b5305518-2aab-4a1c-87db-2cf240d7ca2b.PNG)\n\n\n`sh_goods_comment`表\n\n![sh_goods_comment表数据.PNG](https://images.ptausercontent.com/3a6ec02c-c125-4963-b452-071f647b3787.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/6d4941b7-f6f2-480c-9d0e-b0c35f1bf946.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523982",
+    "description": "本题目要求编写SQL语句，\n结合`sh_goods`表和`sh_goods_comment`表，查询用户评分为5星的商品对应的评论信息。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n```\nCREATE TABLE sh_goods_comment (\n id INT  PRIMARY KEY,                  -- 评论id\n user_id INT  NOT NULL DEFAULT 0,      -- 用户id\n goods_id INT  NOT NULL DEFAULT 0 ,    -- 商品id\n content TEXT NOT NULL ,               -- 评论内容\n is_show TINYINT  NOT NULL DEFAULT 0,  -- 是否显示\n create_time INT  NOT NULL DEFAULT 0   -- 创建时间\n) ;\n\n```\n\n\n### 表样例\n\n`sh_goods`表：\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/6a740e3d-2d6d-499b-9cc6-3d712c2333b2.PNG)\n\n`sh_goods_comment`表：\n\n![sh_goods_comment表数据.PNG](https://images.ptausercontent.com/af844572-5d17-436b-b66d-108324ca1b75.PNG)\n\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/727ed681-84ff-470c-8697-375127b3ce80.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523983",
+    "description": "本题目要求编写SQL语句，\n结合`sh_goods`表和`sh_goods_category`表，查询所有用户评分为5分的商品对应的商品id、商品id、分类id和分类名称和用户评分。注意，查询结果显示字段依据输出样例设置。\n\n提示：以`sh_goods`表为主表。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n\n```\nCREATE TABLE sh_goods_category (\nid INT  PRIMARY KEY ,-- 分类id\nparent_id INT  NOT NULL DEFAULT 0, --上级分类id\nname VARCHAR(120) NOT NULL  --分类名称\n);\n```\n\n### 表样例\n\n`sh_goods`表：\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/df3945e2-ace1-4cff-bbd4-b1a56a70d565.PNG)\n\n\n`sh_goods_category`表\n\n\n![sh_goods_category表数据.PNG](https://images.ptausercontent.com/32474b4b-94c3-45df-ba79-33833525c0bb.PNG)\n\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/2b83c9df-7299-4fc1-b34d-2c48e390590a.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523984",
+    "description": "本题目要求编写SQL语句，\n从`sh_goods_category`表中获取分类中商品价格小于500的商品对应的分类名称。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n```\nCREATE TABLE sh_goods_category (\nid INT  PRIMARY KEY ,-- 分类id\nparent_id INT  NOT NULL DEFAULT 0, --上级分类id\nname VARCHAR(120) NOT NULL  --分类名称\n);\n```\n\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/542e1021-ae5a-4922-b475-6625caef0e86.PNG)\n\n\n`sh_goods_category`表：\n\n\n![sh_goods_category表数据.PNG](https://images.ptausercontent.com/3c6eba1c-9fc4-42e8-8785-524ea75ce34b.PNG)\n\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/726ffd31-ce25-4432-98cd-1f671c8d9155.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523985",
+    "description": "### 题干:\n检索选修了三门课以上的学生学号、姓名、院部。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n```student```表：\n\n![student.png](https://images.ptausercontent.com/fc0ee9a4-816d-418e-a9d0-0e5b88f1c0c3.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/faa091af-6618-44c6-8030-bdb1d7bd0d79.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/48c9b210-cdfd-4afd-9276-bd3c7d0972b4.png)\n\n### 输出样例:\n\n\n![7-4.png](https://images.ptausercontent.com/0c3eaa41-6a3f-4085-90d9-a696992948ac.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523986",
+    "description": "### 题干:\n查询每门必修课的课程编号，课程名称和选修人数。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/fc0ee9a4-816d-418e-a9d0-0e5b88f1c0c3.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/faa091af-6618-44c6-8030-bdb1d7bd0d79.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/48c9b210-cdfd-4afd-9276-bd3c7d0972b4.png)\n\n### 输出样例:\n\n![7-5.png](https://images.ptausercontent.com/bb0cdb94-4fa1-4bb9-98ae-615ad64986d3.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523987",
+    "description": "### 题干:\n查找所有“大学语文”分数在80以上的学生的姓名，所在院系。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n```student```表：\n\n![student.png](https://images.ptausercontent.com/fc0ee9a4-816d-418e-a9d0-0e5b88f1c0c3.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/faa091af-6618-44c6-8030-bdb1d7bd0d79.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/48c9b210-cdfd-4afd-9276-bd3c7d0972b4.png)\n\n### 输出样例:\n\n![7-7.png](https://images.ptausercontent.com/3bc62764-3458-4f72-b4b7-a174045de6cc.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523988",
+    "description": "### 题干:\n显示每位员工的编号，姓名，工资及工资级别。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE  emp(\n\nempno INT(4) ,\n\nename VARCHAR(20),\n\njob VARCHAR(9),\n\nmgr INT(4),\n\nhiredate DATE,\n\nsal FLOAT(7, 2),\n\ncomm FLOAT(7, 2),\n\ndeptno INT(2),\n\nPRIMARY KEY(empno)\n\n);\n\nCREATE TABLE salgrade (  \n\ngrade  int, \n\nlosal  int,  \n\nhisal  int,\n\nPRIMARY KEY (grade)\n\n) ;\n\n### 表样例\n```emp```表：\n\n![emp.png](https://images.ptausercontent.com/e05e97b7-8dd8-4958-a317-b217b2df0970.png)\n\n```salgrade```表：\n\n![salgrade.png](https://images.ptausercontent.com/e62d06dd-2441-43b3-8a2a-4c9bbad025d6.png)\n\n\n### 输出样例:\n![8-4.png](https://images.ptausercontent.com/852c8085-c27b-4117-b77a-eb39da10f533.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523989",
+    "description": "### 题干:\n显示每位员工的编号，姓名及其上级领导的编号和姓名（要求显示出所有的员工）。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE  emp(\n\nempno INT(4) ,\n\nename VARCHAR(20),\n\njob VARCHAR(9),\n\nmgr INT(4),\n\nhiredate DATE,\n\nsal FLOAT(7, 2),\n\ncomm FLOAT(7, 2),\n\ndeptno INT(2),\n\nPRIMARY KEY(empno)\n\n);\n\n\n### 表样例\n```emp```表：\n\n![emp.png](https://images.ptausercontent.com/bf5a793e-60e9-439a-8da8-0b2699cfc205.png)\n\n### 输出样例:\n![8-5.png](https://images.ptausercontent.com/1e576503-deca-492c-bad7-4f5e1333a4f7.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523990",
+    "description": "本题目要求编写SQL语句，\n基于`Teacher表`和`Department`表，查询编号‘dep01001’教师的系主任名称。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCreate table Teacher(\nTeacherID   char(8) primary key,     --教师编号\nTeachername char(12) not null,       --教师姓名\nSex  char(2) not null check(sex in('男','女')),  --教师性别\nBrith datetime ,                                 --出生日期\nProfession char(8) check(profession in('教授','副教授','讲师','助教')),  --职称\nTelephone varchar(20),                          --联系电话\nHomeAddr varchar(50),                           --家庭地址\nDepartmentID char(4)                            --系部编号\n);\n\n```\n\n\n```\nCreate table Department(\nDepartmentID char(4) primary key,           -- 系部编号\nDepartmentName varchar(20) NOT NULL unique, -- 系部名称\nDepartmentHeader varchar(8) NOT NULL,       -- 系主任\nTeacherNum int                              -- 教师数量\n);\n```\n\n### 表样例\n\n\n```Teacher```表：\n\n![Teacher表.PNG](https://images.ptausercontent.com/876ad264-49b5-49a6-8253-c68d8b823d6f.PNG)\n\n\n`Department`表：\n\n\n![Department表.PNG](https://images.ptausercontent.com/d39fcc00-2b13-4f1c-8efd-e3bf9093b872.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/e4e80c0a-c7cc-4aef-89a3-0e45f1162fff.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523991",
+    "description": "本题目要求编写SQL语句，\n基于`Student`表和`Grade`表，查询没有课程成绩的学生对应的学号、姓名、性别。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCreate table Student(\nStudentID   char(12) primary key,\nStudentName char(8) not null,\nSex  char(2) not null ,\nBirth  datetime not null,\nHomeAddr varchar(80),\nEntranceTime datetime default getdate(),\nClassID char(8) \n);\n```\n\n\n```\nCreate table Grade(\nCourseID   char(8) ,    --班级编号\nStudentID char(12) ,    --学号\nSemester  int not null, --学期\nSchoolYear int ,        --学年\nGrade numeric(5,1),     --成绩\nprimary key(CourseID,StudentID)  \n);\n```\n\n### 表样例\n\n```Student```表：\n\n![Student表.PNG](https://images.ptausercontent.com/d25c480d-1311-4cd6-9d73-3b2e1984a38a.PNG)\n\n\n`Grade`表\n\n\n![Grade表第1部分.PNG](https://images.ptausercontent.com/70b044bb-ac37-4560-bd28-387711ecb378.PNG)\n\n![Grade表第2部分.PNG](https://images.ptausercontent.com/2219a912-6d08-481f-a001-bb72c6f4d1c2.PNG)\n\n![Grade表第3部分.PNG](https://images.ptausercontent.com/24e83f48-1899-4f61-a003-45ec1ad3416c.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/37eaf0e5-de28-4a97-aa70-f9e9f5944f06.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836253523992",
+    "description": "### 题干:\n查询出学生的选课情况，结果集包括学号、姓名、课号、课名、开设学期和成绩。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n```student```表：\n\n![student.png](https://images.ptausercontent.com/b8ba91ec-53bf-43ea-8438-24c3495a5ff1.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/9e62794e-c903-4bb1-ac3b-6e8ad2f7ceaf.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/93058cac-ae56-41d0-95e8-64c62995a472.png)\n\n\n### 输出样例(部分数据):\n\n![8-3.png](https://images.ptausercontent.com/dd3b6d49-ef81-4a77-a187-691ae942ccd7.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523993",
+    "description": "本题目要求编写SQL语句，\n查询每个同学超过他选修的平均成绩的课程。\n\n请使用：\n1）用相关子查询实现\n2）使用派生表实现。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `cou` (\n  `cno` char(4) NOT NULL,\n  `cname` varchar(30) NOT NULL,\n  `credit` smallint(6) DEFAULT NULL,\n  `ptime` char(5) DEFAULT NULL,\n  `teacher` char(10) DEFAULT NULL,\n  PRIMARY KEY (`cno`)\n)\n\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  CONSTRAINT `fk_sc_cno` FOREIGN KEY (`cno`) REFERENCES `cou` (`CNO`),\n);\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n``` cou```表：\n\n\n![cou.JPG](https://images.ptausercontent.com/df90a6cc-4834-40ac-a471-7801804310bc.JPG)\n\n``` sc```表：\n\n\n![sc.JPG](https://images.ptausercontent.com/3d6f8240-9eb5-4184-86a0-8fdaf69c77ec.JPG)\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n \n\n![l220.JPG](https://images.ptausercontent.com/3d792c3b-2c9f-4c0b-94e0-fe2c36bd90b2.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523994",
+    "description": "本题目要求编写SQL语句，\n查询选修了张老师所讲授的所有课程的学生。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `stu` (\n  `sno` char(4) NOT NULL,\n  `sname` char(8) NOT NULL,\n  `sex` tinyint(1) DEFAULT NULL,\n  `mno` char(2) DEFAULT NULL,\n  `birdate` datetime DEFAULT NULL,\n  `memo` text,\n  PRIMARY KEY (`sno`)\n);\nCREATE TABLE `cou` (\n  `cno` char(4) NOT NULL,\n  `cname` varchar(30) NOT NULL,\n  `credit` smallint(6) DEFAULT NULL,\n  `ptime` char(5) DEFAULT NULL,\n  `teacher` char(10) DEFAULT NULL,\n  PRIMARY KEY (`cno`)\n);\n\nCREATE TABLE `sc` (\n  `sno` char(4) NOT NULL,\n  `cno` char(4) NOT NULL,\n  `grade` decimal(6,1) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`cno`),\n  CONSTRAINT `fk_sc_cno` FOREIGN KEY (`cno`) REFERENCES `cou` (`CNO`),\n  CONSTRAINT `fk_sc_sno` FOREIGN KEY (`sno`) REFERENCES `stu` (`sno`)\n);\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```stu```表：\n\n![stu.JPG](https://images.ptausercontent.com/aa2d96b0-a8da-4250-892b-fa817eb7b9da.JPG)\n\n```cou```表：\n\n\n![cou.JPG](https://images.ptausercontent.com/eb717bfc-e2e7-4336-bd2d-cf406c775497.JPG)\n\n```sc```表：\n\n\n![sc.JPG](https://images.ptausercontent.com/624a7728-e0dd-4937-b611-a3bb192f82b8.JPG)\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n![l226.JPG](https://images.ptausercontent.com/3cf414af-387b-418a-b85c-fcc2c9efd6a9.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523995",
+    "description": "### 题干:\n检索没被学生选修的课程编号和课程名称。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/fc0ee9a4-816d-418e-a9d0-0e5b88f1c0c3.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/faa091af-6618-44c6-8030-bdb1d7bd0d79.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/48c9b210-cdfd-4afd-9276-bd3c7d0972b4.png)\n\n### 输出样例:\n\n![7-3.png](https://images.ptausercontent.com/6b265bf6-c48d-4779-9b7a-76a5a4e9f1b7.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523996",
+    "description": "### 题干:\n查询选修了2门以上课程的学生学号和平均成绩。\n\n提示：请使用SELECT语句作答，平均成绩四舍五入，保留1位有效数字。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n### 表样例\n上述表结构对应的表样例，部分数据如下：\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/636db679-91b8-4842-a248-beca695aea5c.png)\n\n### 输出样例:\n输出样例：\n\n![2-3.png](https://images.ptausercontent.com/288b54a8-d3c1-4716-b104-2a06a4202ef5.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523997",
+    "description": "### 题干:\n统计每种商品的销售数量。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE recorder(\n\nid INT PRIMARY KEY  AUTO_INCREMENT,\n\ncid CHAR(4),\n\ngid CHAR(4),\n\nquantity INT NOT NULL,\n\nsale_date DATETIME,\n\nCONSTRAINT salrecorder_cid_fk FOREIGN KEY (cid) REFERENCES customer(cid),\n\nCONSTRAINT salrecorder_gid_fk FOREIGN KEY (gid) REFERENCES good(gid)\n\n);\n\n### 表样例\n上述表结构对应的表样例：\n\n```recorder```表：\n\n![recorder.png](https://images.ptausercontent.com/12197a3e-1964-4ad0-b5e1-383ace95b6a2.png)\n\n### 输出样例:\n输出样例：\n\n![4-4.png](https://images.ptausercontent.com/873f25be-5526-4997-8659-4b417f3efb66.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836253523998",
+    "description": "本题目要求编写SQL语句，\n计算``sc```表中“0000001”课程的平均分、最高分和最低分，要求结果中列名分别显示“平均分”、“最高分”、“最低分”。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE sc (\n sno char(7) ,\n cno char(7) ,\n  score decimal(4,1),\n\tpoint decimal(2,1),\n  PRIMARY KEY (sno,cno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```sc```表：\n\n|sno|cno|score|point|\n|----|----|------|------|\n|1711202|0000001|53.0|0.0|\n|1711202|0000027|80.0|1.0|\n|1911201|0000001|84.0|1.0|\n|1911201|0000052|71.0|2.0|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|平均分|最高分|最低分|\n|-------|-------|-------|\n|68.50000|84.0|53.0|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836257718272",
+    "description": "本题目要求编写SQL语句，\\\n统计\\`\\`sc\\`\\`表中，每个学生的选课门数和考试总成绩，并按选课门数升序排列，要求结果中列名分别显示“学号”、“选课门数”、“考试总成绩”。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE sc (\n sno char(7) ,\n cno char(7) ,\n  score decimal(4,1),\n    point decimal(2,1),\n  PRIMARY KEY (sno,cno)\n) ;\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n`sc`表：\n\n| sno | cno | score | point |\n| ----- | ----- | ----- | ----- |\n| 1711202 | 0000011 | 53\\.0 | 0\\.0 |\n| 1711202 | 0000027 | 80\\.0 | 1\\.0 |\n| 1711202 | 0000052 | 77\\.0 | 1\\.0 |\n| 1911201 | 0000027 | 84\\.0 | 1\\.0 |\n| 1911201 | 0000052 | 71\\.0 | 2\\.0 |\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n\n\n| 学号 | 选课门数 | 考试总成绩 |\n| ----- | ----- | ----- |\n| 1411101 | 1 |  |\n| 1401102 | 3 | 156\\.0 |\n| 1811102 | 4 | 296\\.8 |\n| 1411201 | 7 | 501\\.6 |\n| 1511211 | 7 | 487\\.0 |\n| 1711101 | 7 | 525\\.6 |\n| 1711202 | 7 | 510\\.0 |\n| 1911201 | 7 | 532\\.2 |\n| 1701102 | 8 | 635\\.7 |\n| 1701101 | 8 | 704\\.1 |\n| 1711102 | 9 | 705\\.7 |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908836257718273",
+    "description": "本题目要求编写SQL语句，\n检索出`sh_goods`表中每项`keyword`对应的商品数量，查询结果显示字段依据输出样例设置。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/2ff8eac2-7c7b-4476-b5ec-eb26c0fc0584.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/e7c1c6e1-6ef8-40f7-80f7-e881862092ca.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836257718274",
+    "description": "本题目要求编写SQL语句，\n获取`sh_goods`表中每个分类下商品的最高价格。查询结果显示字段依据输出样例设置。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/96eb7e48-6573-4004-99de-4ee42dc6df0c.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/ef8652a3-51b5-4e9f-85e7-4cb89d2843a6.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836257718275",
+    "description": "本题目要求编写SQL语句，\n查询`sh_goods`表中商品库存`stock`的最高和最低值。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/09c2a1d6-1f93-4ca3-8c5e-bbb854b0b9c6.PNG)\n\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/a77370ac-c68b-4504-bac1-346f6a4b95ee.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908836257718276",
+    "description": "本题目要求编写SQL语句，\n在`sh_goods`表中查询不同商品分类（`category_id`）下商品数量大于2的商品的平均价格。查询结果显示字段依据输出样例设置。\n\n提示：请使用`SELECT`语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE sh_goods (\n  id INT  PRIMARY KEY,                         --商品id\n  category_id INT  NOT NULL DEFAULT 0 ,        -- 商品分类id\n  name VARCHAR(120) NOT NULL,                  --商品名称\n  keyword VARCHAR(255) NOT NULL,               -- 关键词编号\n  content TEXT NOT NULL ,                      --商品详情\n  price DECIMAL(10, 2)  NOT NULL DEFAULT 0 ,   --价格\n  stock INT  NOT NULL DEFAULT 0,               -- 库存\n  score DECIMAL(3, 2)  NOT NULL DEFAULT 0 ,    -- 用户评分\n  comment_count INT  NOT NULL DEFAULT 0        -- 评论数量\n) ;\n```\n\n### 表样例\n\n`sh_goods`表：\n\n\n![sh_goods表数据.PNG](https://images.ptausercontent.com/7dd0ff9a-0621-4670-8ee0-814e943673d7.PNG)\n\n\n### 输出样例:\n\n\n![答案.PNG](https://images.ptausercontent.com/aebd22da-0b3b-4a63-b75d-e25abab04dc2.PNG)",
+    "dialect": "SQLSERVER"
+  },
+  {
+    "id": "2001908928712818688",
+    "description": "本题目要求编写SQL语句，在```SPJ```数据库中，查询在供应工程项目零件时，比```p6```零件每次的供应数量都高的零件```pno```。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `j` (  --  工程项目表\n  `jno` char(3) NOT NULL,-- 工程项目号\n  `jname` varchar(10) DEFAULT NULL,\n  `city` varchar(10) DEFAULT NULL,\n  PRIMARY KEY (`jno`)\n);\nCREATE TABLE `p` (  -- 零件表\n  `pno` char(3) NOT NULL,  -- 零件号\n  `pname` varchar(10) DEFAULT NULL,\n  `color` char(2) DEFAULT NULL,\n  `weight` smallint(6) DEFAULT NULL,\n  PRIMARY KEY (`pno`)\n);\nCREATE TABLE `s` (  -- 供应商表\n  `sno` char(3) NOT NULL,  -- 供应商号\n  `sname` varchar(10) DEFAULT NULL,\n  `status` char(2) DEFAULT NULL,\n  `city` varchar(10) DEFAULT NULL,\n  PRIMARY KEY (`sno`)\n);\nCREATE TABLE `spj` (  -- 零件供应表\n  `sno` char(3) NOT NULL,\n  `pno` char(3) NOT NULL,\n  `jno` char(3) NOT NULL,\n  `qty` smallint(6) DEFAULT NULL,\n  PRIMARY KEY (`sno`,`pno`,`jno`),\n  CONSTRAINT `fk_jno` FOREIGN KEY (`jno`) REFERENCES `j` (`jno`),\n  CONSTRAINT `fk_pno` FOREIGN KEY (`pno`) REFERENCES `p` (`pno`),\n  CONSTRAINT `fk_sno` FOREIGN KEY (`sno`) REFERENCES `s` (`sno`)\n);\n```\n\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```s```表：\n\n\n![s.JPG](https://images.ptausercontent.com/c73d9251-aae3-41a4-bf69-53ce1ad449e2.JPG)\n\n```p```表：\n\n![p.JPG](https://images.ptausercontent.com/380bc506-c0b8-4e9c-b232-18bd9c1f6557.JPG)\n\n```j```表：\n\n\n![j.JPG](https://images.ptausercontent.com/4b3256f6-dc2c-476e-aa49-ac0721662110.JPG)\n\n```spj```表：\n\n\n\n![sc.JPG](https://images.ptausercontent.com/e8f1c1f6-ce38-41c4-981b-d71b48287fc9.JPG)\n\n\n\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n\n![12.JPG](https://images.ptausercontent.com/b010f077-913c-4970-af65-969eb1f08d00.JPG)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928712818689",
+    "description": "本题目要求编写SQL语句，\n查询生产```三```种不同型号的```PC```的厂商。\n\n\n### 表结构:\n\n\n```\nCREATE TABLE product\n( maker CHAR(20) ,          --制造商\n  model CHAR(20) NOT NULL,  --产品型号\n  type CHAR(20),            --产品类型\n  PRIMARY KEY(model)\n);\nCREATE TABLE pc\n( model CHAR(20) NOT NULL,    --型号\n  speed  DECIMAL(6,2),        --速度\n  ram  INT,                   --内存\n  hd DECIMAL(6,2),            --硬盘容量\n  cd CHAR(4),                 --光驱\n  price INT,                  --价钱\n  PRIMARY KEY(model),\n  FOREIGN KEY(model) REFERENCES product(model)\n);\n```\n\n### 表样例\n\n\n```product```表：\n\n|maker|model|type|\n|--|----|----|\n|D|2003|便携式电脑|\n|D|3001|打印机|\n|A|1001|个人电脑|\n|A|1002|个人电脑|\n|A|1003|个人电脑|\n|B|1004|个人电脑|\n|C|1005|个人电脑|\n\n```pc```表：\n\n|model|speed|ram|hd|cd|price|\n|--|----|---|---|----|----|\n|1001|133.00|16|1.60|6X|1595|\n|1002|120.00|16|1.60|6X|1399|\n|1003|166.00|24|2.00|6X|1899|\n|1004|166.00|32|2.50|8X|1999|\n|1005|166.00|16|2.00|8X|1999|\n\n\n\n### 输出样例:\n\n|maker|\n|--|\n|A|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928712818690",
+    "description": "本题目要求编写SQL语句，\n检索出```students```表和```sc```表中所有学生的选课情况（包括学号，姓名，课号，成绩），结果中包括没有选课的学生。\n\n提示：请使用join连接作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE students (\n sno char(7) ,\n  sname char(8) NOT NULL,\n  class char(10),\n  ssex char(2),\n  bday date ,\n  bplace char(10) ,\n  IDNum char(18) ,\n  sdept char(16),\n  phone char(11),\n  PRIMARY KEY (sno)\n) ;\n\nCREATE TABLE sc (\n sno char(7) ,\n cno char(7) ,\n score decimal(4,1),\n point decimal(2,1),\n PRIMARY KEY (sno,cno)\n) ;\n\n```\n### 表样例\n\n请在这里给出上述表结构对应的表样例。例如\n\n```students```表：\n\n|sno|sname|class|ssex|bday|bplace|IDNum|sdept|phone|\n|----|-------|-----|-----|-----|--------|-------|-------|-------|\n|1311104|李嘉欣|13英语1|女|1994-05-28|山西太原|330204199405281056|人文学院|15900002211|\n|1311105|苏有明|13英语1|男|1995-04-16|内蒙古包头|330204199504162036|人文学院|15900002222|\n|1711101|赵薇|17物流1|女|1999-02-11|安徽合肥|330203199902110925|经管学院|15900001177|\n|1711102|董洁|17物流1|女|1999-02-17|上海|330203199902170017|经管学院|15900001188|\n\n```sc```表：\n\n|sno|cno|score|point|\n|----|----|------|------|\n|1311104|0000011|53.0|0.0|\n|1311104|0000027|80.0|1.0|\n|1311105|0000027|84.0|1.0|\n|1711101|0000052|71.0|2.0|\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|sno|sname|cno|score|\n|----|-------|----|------|\n|1311104|李嘉欣|0000011|53.0|\n|1311104|李嘉欣|0000027|80.0|\n|1311105|苏有明|0000027|84.0|\n|1711101|赵薇|0000052|71.0|\n|1711102|董洁|NULL|NULL|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928712818691",
+    "description": "本题目要求编写SQL语句，\n检索出```product```表中所有产品名中包含’螺母’的产品种类数。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n请在这里写定义表结构的SQL语句。例如：\n\n```\nCREATE TABLE `product` (\n  `Pid` varchar(20),   --商品编号\n  `PName` varchar(50), --商品名称\n  `Weight` decimal(10, 3)    --重量\n);\n```\n\n### 表样例\n\n```product```表：\n\n| Pid  | PName   | Weight |\n| ---- | ------- | ------ |\n| P01  | M6螺栓  | 30     |\n| P02  | M8螺栓  | 40     |\n| P03  | M16螺栓 | 140    |\n| P04  | 螺帽    | 30     |\n| P05  | 螺母    | 45     |\n| P06  | 垫片    | 10     |\n| P07  | 铰链    | 70     |\n| P21  | 螺钉    | 3      |\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|count(*)|\n|--|\n|1|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928712818692",
+    "description": "本题目要求编写SQL语句，\n检索出```employee```表中所有员工中最高工资和最低工资。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE `employee` (\n  `Eid` varchar(10),   --职工编号\n  `EName` varchar(30), --职工姓名\n  `Wno` varchar(10),   --所在仓库\n  `Salary` int(11)     --职工工资\n);\n```\n\n### 表样例\n\n```employee```表：\n\n| Eid | EName | Wno  | Salary |\n| ---- | ---- | ---- | ------ |\n| 0010 | 张三  | A01  |  3600  |\n| 0011 | 刘勇  | A01  |  2700  |\n| 0012 | 张立  | A01  |  8500  |\n| 0021 | 刘靖  | A02  |  2500  |\n| 0022 | 王强  | A02  |  5600  |\n| 0023 | 李军  |      |  5000  |\n| 0031 | 王林  |      |  3500  |\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|max_Salary|min_Salary|\n|--|--|\n|8500|2500|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012992",
+    "description": "本题目要求编写SQL语句，\n检索出```employee```表中每个仓库的编号及员工数量。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE `employee` (\n  `Eid` varchar(10),   --职工编号\n  `EName` varchar(30), --职工姓名\n  `Wno` varchar(10),   --所在仓库\n  `Salary` int(11)     --职工工资\n);\n```\n\n### 表样例\n\n```employee```表：\n\n| Eid | EName | Wno  | Salary |\n| ---- | ---- | ---- | ------ |\n| 0010 | 张三  | A01  |  3600  |\n| 0011 | 刘勇  | A01  |  2700  |\n| 0012 | 张立  | A01  |  8500  |\n| 0021 | 刘靖  | A02  |  2500  |\n| 0022 | 王强  | A02  |  5600  |\n| 0023 | 李军  |      |  5000  |\n| 0031 | 王林  |      |  3500  |\n\n\n### 输出样例:\n\n请在这里给出输出样例。例如：\n\n|Wno|Count_Eid|\n|--|--|\n|A01|3|\n|A02|2|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012993",
+    "description": "本题目要求编写嵌套查询SQL语句，\n查询’A01’仓库中的职工中比’A02’所有职工薪水都高的职工编号与姓名。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE `employee` (\n  `Eid` varchar(10),   --职工编号\n  `EName` varchar(30), --职工姓名\n  `Wno` varchar(10),   --所在仓库\n  `Salary` int(11)     --职工工资\n);\n\n```\n\n### 表样例\n\n```employee```表：\n\n| Eid | EName | Wno  | Salary |\n| ---- | ---- | ---- | ------ |\n| 0010 | 张三  | A01  |  3600  |\n| 0011 | 刘勇  | A01  |  2700  |\n| 0012 | 张立  | A01  |  8500  |\n| 0021 | 刘靖  | A02  |  2500  |\n| 0022 | 王强  | A02  |  5600  |\n| 0023 | 李军  |      |  5000  |\n| 0031 | 王林  |      |  3500  |\n\n### 输出样例:\n\n| Eid | EName \n| ---- | ---- |\n| 0012 | 张立  |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012994",
+    "description": "本题目要求编写嵌套查询SQL语句，\n查询销售数量最多的供应商编号。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE `orders` (\n  `OrdNo` int(11),   --订单编号\n  `Sid` varchar(10), --供应商编号\n  `Eid` varchar(10), --职工编号\n  `Pid` varchar(20), --商品编号\n  `Price` decimal(10,2), --价格\n  `QTY` int(11),     --订购数量\n  `ordDate` date    --订单日期\n);\n```\n\n### 表样例\n\n```orders```表：\n\n| OrdNo | Sid  | Eid  | Pid  | Price | QTY  | ordDate    |\n| ----- | ---- | ---- | ---- | ----- | ---- | ---------- |\n| 1     | S01  | 0011 | P01  | 11    | 23   | 2022-02-13 |\n| 2     | S02  | 0012 | P01  | 12    | 25   | 2022-02-14 |\n| 3     | S03  | 0012 | P03  | 60    | 55   | 2022-02-14 |\n\n### 输出样例:\n\n| Sid | \n| ---- |\n| S03|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012995",
+    "description": "本题目要求编写SQL语句，\n查询销售过’0011’号员工销售的所有产品的其他员工编号和姓名。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n```\nCREATE TABLE `employee` (\n  `Eid` varchar(10),   --职工编号\n  `EName` varchar(30), --职工姓名\n  `Wno` varchar(10),   --所在仓库\n  `Salary` int(11)     --职工工资\n);\n\nCREATE TABLE `orders` (\n  `OrdNo` int(11),   --订单编号\n  `Sid` varchar(10), --供应商编号\n  `Eid` varchar(10), --职工编号\n  `Pid` varchar(20), --商品编号\n  `Price` decimal(10,2), --价格\n  `QTY` int(11),     --订购数量\n  `ordDate` date    --订单日期\n);\n\n```\n\n### 表样例\n\n```employee```表：\n\n| Eid | EName | Wno  | Salary |\n| ---- | ---- | ---- | ------ |\n| 0010 | 张三  | A01  |  3600  |\n| 0011 | 刘勇  | A01  |  2700  |\n| 0012 | 张立  | A01  |  8500  |\n| 0021 | 刘靖  | A02  |  2500  |\n| 0022 | 王强  | A02  |  5600  |\n| 0023 | 李军  |      |  5000  |\n| 0031 | 王林  |      |  3500  |\n\n\n```orders```表：\n\n| OrdNo | Sid  | Eid  | Pid  | Price | QTY  | ordDate    |\n| ----- | ---- | ---- | ---- | ----- | ---- | ---------- |\n| 1     | S01  | 0011 | P01  | 11    | 23   | 2022-02-13 |\n| 2     | S02  | 0012 | P01  | 12    | 25   | 2022-02-14 |\n| 3     | S03  | 0012 | P03  | 60    | 55   | 2022-02-14 |\n\n\n### 输出样例:\n\n\n| Eid | EName | \n| ---- | ---- | \n| 0012 | 张立  |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012996",
+    "description": "本题目要求编写SQL语句，\n 查询在具有最小内存容量的所有PC中具有最快处理器的PC制造商。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE product\n( maker CHAR(20) ,          --制造商\n  model CHAR(20) NOT NULL,  --产品型号\n  type CHAR(20),            --产品类型\n  PRIMARY KEY(model)\n);\nCREATE TABLE pc\n( model CHAR(20) NOT NULL,    --型号\n  speed  DECIMAL(6,2),        --速度\n  ram  INT,                   --内存\n  hd DECIMAL(6,2),            --硬盘容量\n  cd CHAR(4),                 --光驱\n  price INT,                  --价钱\n  PRIMARY KEY(model),\n  FOREIGN KEY(model) REFERENCES product(model)\n);\n```\n\n### 表样例\n\n```product```表：\n\n|maker|model|type|\n|--|----|----|\n|D|2003|便携式电脑|\n|D|3001|打印机|\n|A|1001|个人电脑|\n|A|1002|个人电脑|\n|A|1003|个人电脑|\n|B|1004|个人电脑|\n\n\n\n```pc```表：\n\n|model|speed|ram|hd|cd|price|\n|--|----|---|---|----|----|\n|1001|133.00|16|1.60|6X|1595|\n|1002|120.00|16|1.60|6X|1399|\n|1003|166.00|24|2.50|6X|1899|\n|1004|166.00|32|2.50|8X|1999|\n\n\n### 输出样例:\n\n\n\n|maker|\n|--|\n|A|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012997",
+    "description": "本题目要求编写SQL语句，\n查询至少生产两种不同型号的计算机(```PC```或```便携式电脑```)且机器速度至少为```133```的厂商，输出结果按照制造商升序排列。\n\n提示：\n\n本题有三种情况:\n（1）\t至少生产两种不同PC的厂商 \n（2）\t至少生产两种不同便携式电脑的厂商\n（3）\t至少生产一种PC且至少生产一种便携式电脑的厂商。\n\n### 表结构:\n```\nCREATE TABLE product\n( maker CHAR(20) ,          --制造商\n  model CHAR(20) NOT NULL,  --产品型号\n  type CHAR(20),            --产品类型\n  PRIMARY KEY(model)\n);\nCREATE TABLE pc\n( model CHAR(20) NOT NULL,    --型号\n  speed  DECIMAL(6,2),        --速度\n  ram  INT,                   --内存\n  hd DECIMAL(6,2),            --硬盘容量\n  cd CHAR(4),                 --光驱\n  price INT,                  --价钱\n  PRIMARY KEY(model),\n  FOREIGN KEY(model) REFERENCES product(model)\n);\nCREATE TABLE laptop\n( model CHAR(20) NOT NULL,    --型号\n  speed  DECIMAL(6,2),        --速度 \n  ram  INT,                   --内存\n  hd DECIMAL(6,2),            --硬盘容量\n  screen DECIMAL(6,2),        --屏幕大小\n  price INT,                  --价钱\n  PRIMARY KEY(model),\n  FOREIGN KEY(model) REFERENCES product(model) \n);\n```\n\n### 表样例\n\n\n```product```表：\n\n|maker|model|type|\n|--|----|----|\n|D|2001|便携式电脑|\n|D|2002|便携式电脑|\n|E|2004|便携式电脑|\n|D|3001|打印机|\n|B|3002|打印机|\n|A|1001|个人电脑|\n|A|1002|个人电脑|\n|A|1003|个人电脑|\n|D|1008|个人电脑|\n\n\n```pc```表：\n\n|model|speed|ram|hd|cd|price|\n|--|----|---|---|----|----|\n|1001|133.00|16|1.60|6X|1595|\n|1002|120.00|16|1.60|6X|1399|\n|1003|166.00|32|2.50|8X|1999|\n|1008|180.00|32|2.00|8X|3699|\n\n\n\n```laptop```表：\n\n|model|speed|ram|hd|screen|price|\n|--|----|---|----|----|----|\n|2001|100.00|20|1.10|9.50|1999|\n|2002|133.00|12|0.75|11.30|2499|\n|2004|133.00|16|1.10|11.20|3499 |\n\n\n\n### 输出样例:\n\n\n|maker |\n|--|\n|A|\n|D|",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012998",
+    "description": "本题目要求编写嵌套查询SQL语句，\n查询’A01’仓库中的职工中比’A02’任意一个职工薪水少的职工编号与姓名。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n\n```\nCREATE TABLE `employee` (\n  `Eid` varchar(10),   --职工编号\n  `EName` varchar(30), --职工姓名\n  `Wno` varchar(10),   --所在仓库\n  `Salary` int(11)     --职工工资\n);\n\n```\n\n### 表样例\n\n```employee```表：\n\n| Eid | EName | Wno  | Salary |\n| ---- | ---- | ---- | ------ |\n| 0010 | 张三  | A01  |  3600  |\n| 0011 | 刘勇  | A01  |  2700  |\n| 0012 | 张立  | A01  |  8500  |\n| 0021 | 刘靖  | A02  |  2500  |\n| 0022 | 王强  | A02  |  5600  |\n| 0023 | 李军  |      |  5000  |\n| 0031 | 王林  |      |  3500  |\n\n### 输出样例:\n\n| Eid | EName \n| ---- | ---- |\n| 0010 | 张三  |\n| 0011 | 刘勇  |",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717012999",
+    "description": "### 题干:\n统计每个学院的学生总人数，并按人数降序排列。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/5ba2c268-ccb2-45c0-9f90-abc1bb915712.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/aed71a58-8b5f-431c-8456-8627d6f6275d.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/43cc116d-5ab4-4363-91dc-16d79c515e6b.png)\n\n### 输出样例:\n\n![6-4.png](https://images.ptausercontent.com/51aba08c-3080-412d-9fbf-f6add6358c95.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717013000",
+    "description": "### 题干:\n查询选修了2门以上课程的学生学号和平均成绩。\n\n提示：请使用SELECT语句作答。\n\n### 表结构:\n\n定义表结构的SQL语句如下：\n\nCREATE TABLE student (\n\n  sno varchar(6) NOT NULL ,\n\n  sname varchar(10) ,\n\n  sex char(2) ,\n\n  nation char(2) ,\n\n  pnum char(18) ,\n\n  birth date ,\n\n  phone char(11) ,\n\n  dept varchar(20) ,\n\n  PRIMARY KEY (sno)\n\n) ;\n\nCREATE TABLE course (\n\n  cno varchar(6) NOT NULL,\n\n  cname varchar(20) ,\n\n  credit int(11) ,\n\n  attribute varchar(10) ,\n\n  PRIMARY KEY (cno)\n\n) ;\n\nCREATE TABLE score (\n\n  sno varchar(6) NOT NULL,\n\n  cno varchar(6) NOT NULL,\n\n  term varchar(15),\n\n  grade int(11),\n\n  PRIMARY KEY (sno,cno)\n\n) ;\n\n\n### 表样例\n\n```student```表：\n\n![student.png](https://images.ptausercontent.com/5ba2c268-ccb2-45c0-9f90-abc1bb915712.png)\n\n```course```表：\n\n![course.png](https://images.ptausercontent.com/aed71a58-8b5f-431c-8456-8627d6f6275d.png)\n\n```score```表：\n\n![score.png](https://images.ptausercontent.com/43cc116d-5ab4-4363-91dc-16d79c515e6b.png)\n\n### 输出样例:\n\n\n![6-6.png](https://images.ptausercontent.com/bc08cdd8-5087-41d7-8ae8-f6a1e8b2a34f.png)",
+    "dialect": "MYSQL"
+  },
+  {
+    "id": "2001908928717013001",
+    "description": "本题目要求编写SQL语句，删除所有期末成绩小于60分的选课记录。\n#### 现有教务管理系统的关系描述如下：\n* 每个院系（部门）有多个班级和多名教师，每名教师各自开设有多门课程。\n* 每位教师管理多个班级（班主任），每个班级只能被一位老师管理。\n* 每名学生属于一个班级，可以选修多门课程。\n* 每门课程可被多位老师讲授，并且有些课程具有先导课程，每门课程的成绩由平时成绩、期中成绩、期末成绩组成，最终计算总评成绩。\n* 课程信息表供教师和学生查询，包含课程信息、任课教师、上课班级、上课教室、上课日期（周几）、上课时间（第几节课）、上课学期学年等信息。\n##### 1.选课表sc\n######  表结构\n![sc-1.png](https://images.ptausercontent.com/5053c0e1-61b9-4a7e-a906-32d4ffac3223.png)\n######  表数据\n![sc-2.png](https://images.ptausercontent.com/16ba66d5-0702-4fad-87f6-dea6f3abd027.png)",
+    "dialect": "MYSQL"
+  }
+]

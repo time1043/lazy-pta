@@ -1,0 +1,1415 @@
+{
+  "organizationById": {
+    "191": {
+      "id": "191",
+      "name": "厦门理工学院",
+      "code": "xmut",
+      "type": "SCHOOL",
+      "logo": ""
+    }
+  },
+  "problemSetProblems": [
+    {
+      "id": "2005568343123853375",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "属性和操作",
+            "信息流",
+            "消息和事件",
+            "数据的集合"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "封装是指将对象的 ____ 结合在一起，组成一个独立的对象。",
+      "content": "封装是指将对象的（        ）结合在一起，组成一个独立的对象。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1621062974154829824",
+      "description": "封装是指将对象的（        ）结合在一起，组成一个独立的对象。",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 4,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853389",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "白盒测试方法",
+            "黑盒测试方法",
+            "灰盒测试方法",
+            "软件验收方法"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在软件测试中，逻辑覆盖标准主要用于（     ）",
+      "content": "在软件测试中，逻辑覆盖标准主要用于（     ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1472481715216777216",
+      "description": "在软件测试中，逻辑覆盖标准主要用于（     ）",
+      "problemPoolIndex": 8,
+      "indexInProblemPool": 2,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853358",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "功能需求",
+            "系统需求",
+            "业务需求",
+            "用户需求"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "需求的层次不包括 ____",
+      "content": "需求的层次不包括（   ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1620355896700391424",
+      "description": "需求的层次不包括（   ）",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853383",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "网络图",
+            "状态图",
+            "协作图",
+            "时序图"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在UML提供的图中， ____ 用于按时间顺序描述对象间的交互。",
+      "content": "在UML提供的图中，（    ）用于按时间顺序描述对象间的交互。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744532124113473536",
+      "description": "在UML提供的图中，（    ）用于按时间顺序描述对象间的交互。",
+      "problemPoolIndex": 7,
+      "indexInProblemPool": 4,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853391",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "逻辑覆盖",
+            "基本路径测试",
+            "条件覆盖",
+            "等价类划分"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下不属于白盒测试的是（    ）",
+      "content": "以下不属于白盒测试的是（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1472485145726533632",
+      "description": "以下不属于白盒测试的是（    ）",
+      "problemPoolIndex": 8,
+      "indexInProblemPool": 4,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853385",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "用例图",
+            "类图",
+            "对象图",
+            "部署图"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在UML提供的图中， ____ 用于描述系统与外部系统及用户之间的交互功能。",
+      "content": "在UML提供的图中，（   ）用于描述系统与外部系统及用户之间的交互功能。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744534009318916096",
+      "description": "在UML提供的图中，（   ）用于描述系统与外部系统及用户之间的交互功能。",
+      "problemPoolIndex": 7,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853380",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "继承",
+            "抽象",
+            "封装",
+            "多态"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在多个类中能够定义同一个属性名和操作，并在每一个类中有不同实现的一种方法是 ____",
+      "content": "在多个类中能够定义同一个属性名和操作，并在每一个类中有不同实现的一种方法是（     ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1621067993268695040",
+      "description": "在多个类中能够定义同一个属性名和操作，并在每一个类中有不同实现的一种方法是（     ）",
+      "problemPoolIndex": 7,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853379",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "继承",
+            "封装",
+            "抽象",
+            "多态"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "面向对象的 ____ 特性，可以方便开发更灵活、易于修改的系统。",
+      "content": "面向对象的（    ）特性，可以方便开发更灵活、易于修改的系统。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744530978804252672",
+      "description": "面向对象的（    ）特性，可以方便开发更灵活、易于修改的系统。",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 8,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853345",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "可执行程序",
+            "数据",
+            "过程文档",
+            "以上都是"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "软件是 ____",
+      "content": "软件是（  ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744355801432764416",
+      "description": "软件是（  ）",
+      "problemPoolIndex": 1,
+      "indexInProblemPool": 5,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853384",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "活动图",
+            "状态图",
+            "协作图",
+            "顺序图"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在UML提供的图中， ____ 用于描述系统的业务流程。",
+      "content": "在UML提供的图中，（    ）用于描述系统的业务流程。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744533623711379456",
+      "description": "在UML提供的图中，（    ）用于描述系统的业务流程。",
+      "problemPoolIndex": 7,
+      "indexInProblemPool": 5,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853355",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "技术可行性",
+            "经济可行性",
+            "人员可行性",
+            "社会可行性"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "可行性研究需要从3个方面分析项目的可行性，不包括 ____",
+      "content": "可行性研究需要从3个方面分析项目的可行性，不包括（      ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1601845986631352320",
+      "description": "可行性研究需要从3个方面分析项目的可行性，不包括（      ）",
+      "problemPoolIndex": 3,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853400",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "开发文档",
+            "产品文档",
+            "管理文档",
+            "维护文档"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "记录软件开发的历时文档是（    ）",
+      "content": "记录软件开发的历时文档是（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "HAL",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1473555938958942208",
+      "description": "记录软件开发的历时文档是（    ）",
+      "problemPoolIndex": 10,
+      "indexInProblemPool": 2,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853386",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "用例图",
+            "活动图",
+            "类图",
+            "时序图"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在UML提供的图中， ____ 用于描述系统静态结构及类之间的关联关系。",
+      "content": "在UML提供的图中，（   ）用于描述系统静态结构及类之间的关联关系。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744534308175642624",
+      "description": "在UML提供的图中，（   ）用于描述系统静态结构及类之间的关联关系。",
+      "problemPoolIndex": 7,
+      "indexInProblemPool": 7,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853366",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "概要",
+            "抽象",
+            "逻辑",
+            "详细"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "软件的（    ）设计又称为总体设计，其主要任务是建立软件系统的总体结构。",
+      "content": "软件的（    ）设计又称为总体设计，其主要任务是建立软件系统的总体结构。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1472051823838375936",
+      "description": "软件的（    ）设计又称为总体设计，其主要任务是建立软件系统的总体结构。",
+      "problemPoolIndex": 5,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853346",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "没有合适的软件开发人员",
+            "软件人员与用户的交流存在障碍",
+            "软件开发过程不规范，缺乏方法论和规范的指导",
+            "缺少有效的软件评测手段，提交用户软件质量差"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "产生软件危机的原因不包括 ____",
+      "content": "产生软件危机的原因不包括（   ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744364359075409920",
+      "description": "产生软件危机的原因不包括（   ）",
+      "problemPoolIndex": 1,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853371",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "外部接口",
+            "功能",
+            "算法和数据结构",
+            "数据库表结构"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "软件详细设计的主要任务是确定每个模块的 ____",
+      "content": "软件详细设计的主要任务是确定每个模块的（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744527795029712896",
+      "description": "软件详细设计的主要任务是确定每个模块的（    ）",
+      "problemPoolIndex": 5,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853374",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "消息对象",
+            "属性消息",
+            "对象消息",
+            "名称对象"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "从用例场景的时序图设计中，采用（      ）映射为类，对象消息映射为方法的原则，可以导出系统设计类图。",
+      "content": "从用例场景的时序图设计中，采用（      ）映射为类，对象消息映射为方法的原则，可以导出系统设计类图。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1472047999923322880",
+      "description": "从用例场景的时序图设计中，采用（      ）映射为类，对象消息映射为方法的原则，可以导出系统设计类图。",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 3,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853363",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "输入、输出、外部实体和过程",
+            "变换、过程、数据流和存储",
+            "过程、数据流、数据存储和外部实体",
+            "变换、数据存储、过程和数据流"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "数据流图是进行软件需求分析的常用图形工具，其基本图形符号是 ____",
+      "content": "数据流图是进行软件需求分析的常用图形工具，其基本图形符号是（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744389660106993664",
+      "description": "数据流图是进行软件需求分析的常用图形工具，其基本图形符号是（    ）",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853344",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "复杂性",
+            "抽象性",
+            "依赖性",
+            "可靠性"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在下列选项中， ____ 不是软件的固有特性。",
+      "content": "在下列选项中，（      ）不是软件的固有特性。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1620344190368559104",
+      "description": "在下列选项中，（      ）不是软件的固有特性。",
+      "problemPoolIndex": 1,
+      "indexInProblemPool": 4,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853356",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "6720",
+            "6000",
+            "5357",
+            "5280"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "假定年利率为12%，一年后可以收到6000元，这笔钱的当前价值约为 ____ 元。",
+      "content": "假定年利率为12%，一年后可以收到6000元，这笔钱的当前价值约为（        ）元。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1601850174820052992",
+      "description": "假定年利率为12%，一年后可以收到6000元，这笔钱的当前价值约为（        ）元。",
+      "problemPoolIndex": 3,
+      "indexInProblemPool": 2,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853353",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "整体开发",
+            "非整体开发",
+            "灵活性差",
+            "较晚产生工作软件"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "增量模型是一种 ____ 的模型。",
+      "content": "增量模型是一种（    ）的模型。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744369732578611200",
+      "description": "增量模型是一种（    ）的模型。",
+      "problemPoolIndex": 2,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853352",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "增量",
+            "螺旋",
+            "敏捷",
+            "瀑布"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下哪种软件过程模型增加了风险分析活动环节 ____ 。",
+      "content": "以下哪种软件过程模型增加了风险分析活动环节（       ）。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1620349983318958080",
+      "description": "以下哪种软件过程模型增加了风险分析活动环节（       ）。",
+      "problemPoolIndex": 2,
+      "indexInProblemPool": 5,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853390",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "白盒测试方法，黑盒测试方法",
+            "等价类划分法，边界值分析法",
+            "渐增式测试方法，非渐增式测试方法",
+            "因果图法，场景法"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "集成测试的方法主要有两种，它们是（    ）。",
+      "content": "集成测试的方法主要有两种，它们是（    ）。\n",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1472482565562679296",
+      "description": "集成测试的方法主要有两种，它们是（    ）。\n",
+      "problemPoolIndex": 8,
+      "indexInProblemPool": 3,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853351",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "开发完毕才能见到产品\n",
+            "及早提供工作软件\n",
+            "开发完毕才能见到工作软件\n",
+            "\n及早提供全部完整软件\n"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "原型模型的主要特点之一是 ____",
+      "content": "原型模型的主要特点之一是（ ）\n\n",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1620348660242542592",
+      "description": "原型模型的主要特点之一是（ ）\n\n",
+      "problemPoolIndex": 2,
+      "indexInProblemPool": 4,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853370",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "逻辑内聚",
+            "时间内聚",
+            "偶然内聚",
+            "功能内聚"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "模块的内聚性最高的是(　 　)",
+      "content": "模块的内聚性最高的是(　 　) ",
+      "type": "MULTIPLE_CHOICE",
+      "author": "HAL",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1473917535430680576",
+      "description": "模块的内聚性最高的是(　 　) ",
+      "problemPoolIndex": 5,
+      "indexInProblemPool": 5,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853348",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "需求分析",
+            "设计",
+            "测试",
+            "维护"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在软件生存周期中，工作量所占比例最大的阶段是（  ）阶段。",
+      "content": "在软件生存周期中，工作量所占比例最大的阶段是（  ）阶段。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1471488619088748544",
+      "description": "在软件生存周期中，工作量所占比例最大的阶段是（  ）阶段。",
+      "problemPoolIndex": 2,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853365",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "对算法的详细过程描述",
+            "对重要功能的描述",
+            "对数据的要求",
+            "软件的性能描述"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "软件需求规格说明文档的内容中不应该包括 ____",
+      "content": "软件需求规格说明文档的内容中不应该包括 (   )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744391825869422592",
+      "description": "软件需求规格说明文档的内容中不应该包括 (   )",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 8,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853394",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "等价类划分",
+            "边界值",
+            "场景法",
+            "条件覆盖"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下属于白盒测试技术的是（    ）",
+      "content": "以下属于白盒测试技术的是（    ）\n",
+      "type": "MULTIPLE_CHOICE",
+      "author": "HAL",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1473574437851824128",
+      "description": "以下属于白盒测试技术的是（    ）\n",
+      "problemPoolIndex": 8,
+      "indexInProblemPool": 7,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853376",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "工程化",
+            "软件开发",
+            "信息隐蔽",
+            "产生对象"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "封装是一种 ____ 技术，目的是使对象的生产者和使用者分离，使对象的定义和实现分开",
+      "content": "封装是一种（       ）技术，目的是使对象的生产者和使用者分离，使对象的定义和实现分开",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1621065324697309184",
+      "description": "封装是一种（       ）技术，目的是使对象的生产者和使用者分离，使对象的定义和实现分开",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 5,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853362",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "系统流程图和模块图",
+            "DFD图、数据字典、微规格说明",
+            "软件结构图、微规格说明",
+            "功能结构图、微规格说明"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "结构化需求分析的主要描述手段有 ____",
+      "content": "结构化需求分析的主要描述手段有（      ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744388827025940480",
+      "description": "结构化需求分析的主要描述手段有（      ）",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 5,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853393",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "集成测试",
+            "系统测试",
+            "模块测试",
+            "验收测试"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "单元测试又称为（    ），可以用白盒法也可以采用黑盒法测试",
+      "content": "单元测试又称为（    ），可以用白盒法也可以采用黑盒法测试\n",
+      "type": "MULTIPLE_CHOICE",
+      "author": "HAL",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1473574066061352960",
+      "description": "单元测试又称为（    ），可以用白盒法也可以采用黑盒法测试\n",
+      "problemPoolIndex": 8,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853347",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "理论性",
+            "工程性",
+            "原理性",
+            "逻辑性"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "与计算机科学的理论研究不同，软件工程是一门 ____ 学科。",
+      "content": "与计算机科学的理论研究不同，软件工程是一门（     ）学科。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744365409572401152",
+      "description": "与计算机科学的理论研究不同，软件工程是一门（     ）学科。",
+      "problemPoolIndex": 1,
+      "indexInProblemPool": 7,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853368",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "低内聚，高耦合",
+            "高内聚，高耦合",
+            "低内聚，低耦合",
+            "高内聚，低耦合"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "划分模块时尽量做到（     ），保持模块的独立性。",
+      "content": "划分模块时尽量做到（     ），保持模块的独立性。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1472052939719819264",
+      "description": "划分模块时尽量做到（     ），保持模块的独立性。",
+      "problemPoolIndex": 5,
+      "indexInProblemPool": 3,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853360",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "系统详细功能设计",
+            "通过需求分析设计系统框架结构",
+            "数据库设计和数据库管理",
+            "和用户沟通，获取系统需求"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在软件开发过程中，系统需求分析员主要负责 ____",
+      "content": "在软件开发过程中，系统需求分析员主要负责（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744380145663913984",
+      "description": "在软件开发过程中，系统需求分析员主要负责（    ）",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 3,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853359",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "研究系统开发的具体方案",
+            "解决系统是“做什么的问题”",
+            "分析系统的数据结构与类型",
+            "解决系统是“如何做的问题”"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "需求工程的主要目的是 ____",
+      "content": "需求工程的主要目的是（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1620357062440083456",
+      "description": "需求工程的主要目的是（    ）",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 2,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853354",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "开发完毕才见到产品",
+            "为用户及早提供工作软件",
+            "及早提供全部完整软件",
+            "非整体性开发"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "进化式原型模型的主要特点之一是 ____",
+      "content": "进化式原型模型的主要特点之一是（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1744378729457160192",
+      "description": "进化式原型模型的主要特点之一是（    ）",
+      "problemPoolIndex": 2,
+      "indexInProblemPool": 7,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853398",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "运行时误操作",
+            "隐含的错误",
+            "因修改软件而造成的错误",
+            "开发时的错误"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "软件维护的副作用是指（     ）",
+      "content": "软件维护的副作用是指（     ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1471494720613056512",
+      "description": "软件维护的副作用是指（     ）",
+      "problemPoolIndex": 9,
+      "indexInProblemPool": 4,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853378",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "实现关系",
+            "泛化关系",
+            "依赖关系",
+            "关联关系"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "面向对象建模过程中，用来表示事物之间一般和特殊关系的是 ____",
+      "content": "面向对象建模过程中，用来表示事物之间一般和特殊关系的是（    ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1622157076879462400",
+      "description": "面向对象建模过程中，用来表示事物之间一般和特殊关系的是（    ）",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 7,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853377",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "复用性强",
+            "系统易于维护",
+            "软件的执行效率更高",
+            "适应需求变化"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "下列选项中不属于面向对象优势的是 ____",
+      "content": "下列选项中不属于面向对象优势的是（     ）",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1621068574469214208",
+      "description": "下列选项中不属于面向对象优势的是（     ）",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 6,
+      "authorOrganizationId": "191"
+    },
+    {
+      "id": "2005568343123853397",
+      "label": "",
+      "score": 1,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "改正性维护",
+            "适应性维护",
+            "完善性维护",
+            "预防性维护"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在软件维护的内容中，占维护活动工作量比例最高的是（    ）。",
+      "content": "在软件维护的内容中，占维护活动工作量比例最高的是（    ）。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "Hal",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "2005568342876389376",
+      "problemId": "1471494217352200192",
+      "description": "在软件维护的内容中，占维护活动工作量比例最高的是（    ）。",
+      "problemPoolIndex": 9,
+      "indexInProblemPool": 3,
+      "authorOrganizationId": "191"
+    }
+  ],
+  "examLabelByProblemSetProblemId": {
+    "2005568343123853375": "R2-1",
+    "2005568343123853389": "R2-2",
+    "2005568343123853358": "R2-3",
+    "2005568343123853383": "R2-4",
+    "2005568343123853391": "R2-5",
+    "2005568343123853385": "R2-6",
+    "2005568343123853380": "R2-7",
+    "2005568343123853379": "R2-8",
+    "2005568343123853345": "R2-9",
+    "2005568343123853384": "R2-10",
+    "2005568343123853355": "R2-11",
+    "2005568343123853400": "R2-12",
+    "2005568343123853386": "R2-13",
+    "2005568343123853366": "R2-14",
+    "2005568343123853346": "R2-15",
+    "2005568343123853371": "R2-16",
+    "2005568343123853374": "R2-17",
+    "2005568343123853363": "R2-18",
+    "2005568343123853344": "R2-19",
+    "2005568343123853356": "R2-20",
+    "2005568343123853353": "R2-21",
+    "2005568343123853352": "R2-22",
+    "2005568343123853390": "R2-23",
+    "2005568343123853351": "R2-24",
+    "2005568343123853370": "R2-25",
+    "2005568343123853348": "R2-26",
+    "2005568343123853365": "R2-27",
+    "2005568343123853394": "R2-28",
+    "2005568343123853376": "R2-29",
+    "2005568343123853362": "R2-30",
+    "2005568343123853393": "R2-31",
+    "2005568343123853347": "R2-32",
+    "2005568343123853368": "R2-33",
+    "2005568343123853360": "R2-34",
+    "2005568343123853359": "R2-35",
+    "2005568343123853354": "R2-36",
+    "2005568343123853398": "R2-37",
+    "2005568343123853378": "R2-38",
+    "2005568343123853377": "R2-39",
+    "2005568343123853397": "R2-40"
+  }
+}

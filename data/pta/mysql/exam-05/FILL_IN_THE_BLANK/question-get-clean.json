@@ -1,0 +1,291 @@
+[
+  {
+    "id": "2004418985246494892",
+    "description": "请分析以下E-R图（超市销售）将其转换为相应的关系模式完成逻辑模型设计。\n\n![PTA-ER模型-超市-答案.jpg](~/3ac2a63e-52e2-4eaf-9eb1-5f2a123b3422.jpg)\n\n部门（，部门名称）\n\n员工（员工编号，员工姓名，性别，职务，）\n\n供应商（供应商编号，，地址，电话，联系人）\n\n商品（商品编号，商品名称，类别，数量，单价）\n\n（入库编号，，，入库时间，计量单位，入库价格）\n\n（，，数量，销售价格，业务员编号）\n\n员工关系的外键为：（若没有外键请填写无）",
+    "scores": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "blankLength": 19,
+    "blanks": [
+      {
+        "index": 108,
+        "multipleLine": false,
+        "length": 8,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 135,
+        "multipleLine": false,
+        "length": 8,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 148,
+        "multipleLine": false,
+        "length": 10,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 185,
+        "multipleLine": false,
+        "length": 4,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 191,
+        "multipleLine": false,
+        "length": 8,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 192,
+        "multipleLine": false,
+        "length": 8,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 210,
+        "multipleLine": false,
+        "length": 4,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 211,
+        "multipleLine": false,
+        "length": 10,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 212,
+        "multipleLine": false,
+        "length": 10,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 238,
+        "multipleLine": false,
+        "length": 8,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494893",
+    "description": "题目要求填写SQL语句，题目将用到以下表结构。\n\n![image.png](https://images.ptausercontent.com/5e7daf6a-8979-467e-ab66-e5e4e9cd2986.png \"image.png\")\\\n![image.png](https://images.ptausercontent.com/fafd0374-2b2d-4d91-a41d-3af09f0bd622.png \"image.png\")\n\n题目：**创建表并设置相应的约束2**\n\n注意：填写时要么都小写，要么都大写，使用英文符号，单词之间一个空格分隔不要多加。\n\n**代码如下：**<br>**CREATE TABLE sc (   /\\*创建sc表\\*/**\n\n  **cno CHAR(7) NOT NULL,**\n\n  **sno CHAR(7) NOT NULL,**\n\n  **score decimal(4,1) NULL,**\n\n  **point decimal(2,1) NULL,**\n\n /\\*主键\\*/\n\n**);**",
+    "scores": [
+      2
+    ],
+    "blankLength": 85,
+    "blanks": [
+      {
+        "index": 464,
+        "multipleLine": false,
+        "length": 21,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494894",
+    "description": "题目要求填写SQL语句，\n\n使用create index语句为`students`表（学生表）的sname、class和sdept字段（学生姓名、班级、系名）上创建名为ix_scs的组合索引。\n\n注意：填写时要么都小写，要么都大写，使用英文符号，不要有多余空格。\n\n**代码如下：**\n\n**CREATE INDEX ix_scs** **;**",
+    "scores": [
+      2
+    ],
+    "blankLength": 191,
+    "blanks": [
+      {
+        "index": 168,
+        "multipleLine": false,
+        "length": 30,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494895",
+    "description": "数据插入和删除以作为基本单位，数据修改以作为基本单位。\n\n提示：空格中填A或B，其中A为数据项，B为数据行",
+    "scores": [
+      1,
+      1
+    ],
+    "blankLength": 1,
+    "blanks": [
+      {
+        "index": 8,
+        "multipleLine": false,
+        "length": 1,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      },
+      {
+        "index": 20,
+        "multipleLine": false,
+        "length": 1,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494896",
+    "description": "在employees表的phone列上建立一个非聚集索引的SQL语句是：\n```\n CREATE  IDX1  employees(phone)\n\n```\n\n\n\n",
+    "scores": [
+      1,
+      1
+    ],
+    "blankLength": 17,
+    "blanks": [
+      {
+        "index": 49,
+        "multipleLine": false,
+        "length": 5,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      },
+      {
+        "index": 55,
+        "multipleLine": false,
+        "length": 2,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494897",
+    "description": "为student表添加一个\"resume”字段，字段类型为变长字符串，大小为200，请用小写",
+    "scores": [
+      2
+    ],
+    "blankLength": 44,
+    "blanks": [
+      {
+        "index": 46,
+        "multipleLine": false,
+        "length": 8,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494898",
+    "description": "本题目要求填写SQL语句，\\\n要求：将视图v_sc_39删除。<br>\n\n注意：填写时要么都小写，要么都大写。\n\n**代码如下：**<br> ;",
+    "scores": [
+      2
+    ],
+    "blankLength": 35,
+    "blanks": [
+      {
+        "index": 70,
+        "multipleLine": false,
+        "length": 17,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494899",
+    "description": "假设成绩表只有一列，为Grade列。 Grade 列中有三行，其值分别为：78、90和NULL，则 AVG(Grade) 得到的结果是，COUNT(*) 得到的结果是，MIN(Grade) 得到的结果是，SUM(Grade) 得到的结果是。\n\n",
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "blankLength": 3,
+    "blanks": [
+      {
+        "index": 67,
+        "multipleLine": false,
+        "length": 2,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      },
+      {
+        "index": 83,
+        "multipleLine": false,
+        "length": 1,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      },
+      {
+        "index": 101,
+        "multipleLine": false,
+        "length": 2,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      },
+      {
+        "index": 119,
+        "multipleLine": false,
+        "length": 3,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 1
+      }
+    ]
+  },
+  {
+    "id": "2004418985246494900",
+    "description": "设教学数据库中有3个关系：\n\n学生关系： S(SNO,SNAME,AGE,SEX)\n\n学习关系： SC(SNO,CNO,GRADE)\n\n课程关系： C(CNO,CNAME,TEACHER)\n\n下面用关系代数表达式表达每个查询语句。关系代数表达式使用的符号：σπ×∞÷∪∩－∧∨≠（复制粘贴使用）\n\n查询选修了DB这门课程的学生姓名、成绩。\n\nSNAME,(S∞SCσCNAME='DB'())\n",
+    "scores": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "blankLength": 5,
+    "blanks": [
+      {
+        "index": 171,
+        "multipleLine": false,
+        "length": 2,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 177,
+        "multipleLine": false,
+        "length": 5,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 182,
+        "multipleLine": false,
+        "length": 2,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      },
+      {
+        "index": 194,
+        "multipleLine": false,
+        "length": 1,
+        "choices": {},
+        "maxDisplayChoicesPerLine": 0
+      }
+    ]
+  }
+]

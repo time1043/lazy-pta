@@ -1,0 +1,729 @@
+{
+  "organizationById": {
+    "1": {
+      "id": "1",
+      "name": "浙江大学",
+      "code": "zju",
+      "type": "SCHOOL",
+      "logo": "ffecf2a6-4935-4344-b640-35360f3c1f88.png"
+    },
+    "4": {
+      "id": "4",
+      "name": "Google",
+      "code": "gg",
+      "type": "COMPANY",
+      "logo": ""
+    },
+    "8": {
+      "id": "8",
+      "name": "广东东软学院",
+      "code": "neusoft",
+      "type": "SCHOOL",
+      "logo": "a7f56d5c-ca09-4aa9-bf4d-c53be237c45b.png"
+    }
+  },
+  "problemSetProblems": [
+    {
+      "id": "1972144013889372160",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "sip:wugongyi@iso,org.internet.mgmt",
+            "sip:wugongyi@8622-23528917",
+            "sip:wugongyi@202.1.2.180",
+            "sip:wugongyi@nankai.edu.cn"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于 SIP 地址格式的描述中错误的是 ____",
+      "content": "以下关于 SIP 地址格式的描述中错误的是(    )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1669167146272153609",
+      "description": "以下关于 SIP 地址格式的描述中错误的是(    )",
+      "problemPoolIndex": 1,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372161",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "可以向 DHCP 服务器发起获取 IP 地址与配置参数的协商过程",
+            "可以从 DHCP 服务器获取全部或是部分配置参数",
+            "可以更新租用期，在无法更新时进行重绑定，在不需要时提前终止租用。",
+            "负责监测 TCP 报文是否丢失，以及丢失之后的重传"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于 DHCP 客户主机功能的描述中错误的是 ____",
+      "content": "以下关于 DHCP 客户主机功能的描述中错误的是(    )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1669167146272153610",
+      "description": "以下关于 DHCP 客户主机功能的描述中错误的是(    )",
+      "problemPoolIndex": 2,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372162",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "本地网络的默认路由器地址",
+            "本地主机外部网管代理地址",
+            "主机应该使用的网络掩码",
+            "本地网络的最大传输单元 MTU 长度值"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下哪个不属于主机接入 Internet 中必须配置的参数 ____",
+      "content": "以下哪个不属于主机接入 Internet 中必须配置的参数(    )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1669167146272153611",
+      "description": "以下哪个不属于主机接入 Internet 中必须配置的参数(    )",
+      "problemPoolIndex": 3,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372163",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "DHCP 服务器记录哪些 IP 地址已经被使用，哪些 IP 地址可用",
+            "DHCP 服务器储存和维护其他的主机配置参数",
+            "DHCP 服务器主动发出动态地址分配请求并管理 IP 地址租用期",
+            "DHCP 服务器允许管理员查看、改变和分析有关地址、租用、参数等信息"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于 DHCP 服务器主要功能的描述中错误的是 ____",
+      "content": "以下关于 DHCP 服务器主要功能的描述中错误的是(    )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1669167146276347904",
+      "description": "以下关于 DHCP 服务器主要功能的描述中错误的是(    )",
+      "problemPoolIndex": 4,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372164",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "配置管理是监控网络设备的配置信息，包括网络拓扑、设备与链路的互连",
+            "性能管理是测量和监控网络运行的状态，监视、收集和统计网络运行性能的数据",
+            "故障管理包括故障检测、差错跟踪。故障检测日志、产生报告与隔离定位",
+            "安全管理包括攻击检测与操作系统审计"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于网络管理功能的描述中错误的是 ____",
+      "content": "以下关于网络管理功能的描述中错误的是(    )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1669167146276347905",
+      "description": "以下关于网络管理功能的描述中错误的是(    )",
+      "problemPoolIndex": 5,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372165",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "SNMP 术语包含着 SNMP 体系结构与 SNMP 协议两部分内容",
+            "SNMP 体系结构包括管理进程、被管对象、代理进程、管理信息库、网络管理协议",
+            "么一个被管的网络设备都需要使用外部代理",
+            "一个外部代理能够管理多个网络设备"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于网络管理的基本概念与 SNMP 的描述中错误的是 ____",
+      "content": "以下关于网络管理的基本概念与 SNMP 的描述中错误的是(    )",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1669167146276347906",
+      "description": "以下关于网络管理的基本概念与 SNMP 的描述中错误的是(    )",
+      "problemPoolIndex": 6,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372166",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "应用层为数据加上报头组成应用层协议数据单元",
+            "传输层协议数据单元被称为数据报或分组",
+            "物理层传输的是比特",
+            "数据链路层协议数据单元被称为帧"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于OSI环境中数据传输的过程的描述中，错误的是。",
+      "content": "以下关于OSI环境中数据传输的过程的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090807939072",
+      "description": "以下关于OSI环境中数据传输的过程的描述中，错误的是。",
+      "problemPoolIndex": 7,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372167",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "在Internet 中广域网要实现广域网与广域网 .广域网与城域网的互联",
+            "广域网与广域网的互联构成了Internet 的核心主干网",
+            "广域网技术研究的重点要放在接入技术上",
+            "广域网是一种公共数据网络"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于广域网 WAN 特点的描述中 ，错误的是。",
+      "content": "以下关于广域网 WAN 特点的描述中 ，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090816327680",
+      "description": "以下关于广域网 WAN 特点的描述中 ，错误的是。",
+      "problemPoolIndex": 8,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372168",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "以能够相互共享资源的方式互联起来的自治计算机系统的集合",
+            "网络共享的资源主要指计算机的CPU.内存与操作系统",
+            "互联的计算机既可以联网工作，也可以脱网单机工作",
+            "联网计算机之间的通信必须遵循共同的网络协议"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于计算机网络定义的描述中，错误的是。",
+      "content": "以下关于计算机网络定义的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090816327681",
+      "description": "以下关于计算机网络定义的描述中，错误的是。",
+      "problemPoolIndex": 9,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372169",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "75.0%",
+            "76.5 %",
+            "77.5%",
+            "78\\.0 %"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "长度为200B的应用层数据，在传输层加上20B的TCP 报头，在网络层加上20B的分组头，在数据链路层有加上18B的Ethern",
+      "content": "长度为200B的应用层数据，在传输层加上20B的TCP 报头，在网络层加上20B的分组头，在数据链路层有加上18B的Ethernet帧头与帧尾，那么传输效率是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090820521984",
+      "description": "长度为200B的应用层数据，在传输层加上20B的TCP 报头，在网络层加上20B的分组头，在数据链路层有加上18B的Ethernet帧头与帧尾，那么传输效率是。",
+      "problemPoolIndex": 10,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372170",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "广域网",
+            "城域网",
+            "局域网",
+            "接入网"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下不属于按覆盖范围分类的计算机网络类型的是。",
+      "content": "以下不属于按覆盖范围分类的计算机网络类型的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090820521985",
+      "description": "以下不属于按覆盖范围分类的计算机网络类型的是。",
+      "problemPoolIndex": 11,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372171",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "TCP/IP参考模型的应用层与 OSI参考模型的应用层 .表示层 .会话层相对应",
+            "TCP/IP参考模型 的传输层与 OSI参考模型的传输层相对应",
+            "TCP/IP 参考模型的互联层与 OSI 参考模型的网络层相对应",
+            "TCP/IP 参考模型 的 网络接口层与 OSI 参考模型的数据链路层相对应"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于 TCP/IP参考模型层 次结构的描述中，错误的是。",
+      "content": "以下关于 TCP/IP参考模型层 次结构的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090820521986",
+      "description": "以下关于 TCP/IP参考模型层 次结构的描述中，错误的是。",
+      "problemPoolIndex": 12,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372172",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "路由器节点处理延时的大小取决于路由器计算能力与通信协议的类型",
+            "路由器节点排队延时的大小取决于队列长度与端口发送速率",
+            "一个端口发送延时的大小取决于端口发送速率",
+            "传播延时的大小取决于传输介质的长度"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于不同延时特点的描述中，错误的是。",
+      "content": "以下关于不同延时特点的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090820521987",
+      "description": "以下关于不同延时特点的描述中，错误的是。",
+      "problemPoolIndex": 13,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372173",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "数据报是分组交换技术中的一种",
+            "数据报方式适用于长报文.会话式通信",
+            "数据报方式中每个中间节点独立地进行路由选择",
+            "同一报文的不同分组可能要经过不同的传输路径通过通信子网"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于数据交换方式的描述中，错误的是。",
+      "content": "以下关于数据交换方式的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090824716288",
+      "description": "以下关于数据交换方式的描述中，错误的是。",
+      "problemPoolIndex": 14,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372174",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "拓扑学是研究将实体抽象成的“点”.“线”.“面”之间的关系",
+            "拓扑设计对网络性能.系统可靠性与通信费用都有重大影响",
+            "计算机网络拓扑反映出网中节点与通信线路之间的关系",
+            "计算机网络拓扑是指资源子网主机之间的结构"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于网络拓扑概念的描述中，错误的是。",
+      "content": "以下关于网络拓扑概念的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090824716289",
+      "description": "以下关于网络拓扑概念的描述中，错误的是。",
+      "problemPoolIndex": 15,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372175",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "网络延时是指一个分组从源主机发出到达目的主机所需要经历的时间",
+            "网络延时包括处理延时.排队延时.发送延时与传播延时",
+            "一个分组通过同一条虚电路传输时，网络延时数值不变",
+            "网络延时决定着分布式进程通信的质量"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于网络延时概念的描述中，错误的是。",
+      "content": "以下关于网络延时概念的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090824716290",
+      "description": "以下关于网络延时概念的描述中，错误的是。",
+      "problemPoolIndex": 16,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372176",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "虚电路方式在分组发送前，在发送方和接收方需要建立一条逻辑连接的虚电路",
+            "虚电路工作过程分为虚电路建立阶段.数据传输阶段与虚电路拆除阶段",
+            "通过虚电路传送的分组需要带有目的节点的地址",
+            "每个节点可以同时在多个节点之间建立虚电路"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "以下关于虚电路交换方式特点的描述中，错误的是。",
+      "content": "以下关于虚电路交换方式特点的描述中，错误的是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1844284090824716291",
+      "description": "以下关于虚电路交换方式特点的描述中，错误的是。",
+      "problemPoolIndex": 17,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372177",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "网络的层次",
+            "每一层使用的协议",
+            "协议的内部实现细节",
+            "每一层必须完成的功能"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "下列选项中，不属于网络体系结构所描述的内容是。",
+      "content": "下列选项中，不属于网络体系结构所描述的内容是。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "ZXD",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PRIVATE",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1845758603693350912",
+      "description": "下列选项中，不属于网络体系结构所描述的内容是。",
+      "problemPoolIndex": 18,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "4"
+    },
+    {
+      "id": "1972144013889372178",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "物理层",
+            "数据链路层",
+            "网络层",
+            "传输层"
+          ],
+          "maxDisplayChoicesPerLine": 4
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "在ISO/OSI参考模型中，实现两个相邻结点间流量控制功能的是",
+      "content": "在 ISO/OSI 参考模型中，实现两个相邻结点间流量控制功能的是",
+      "type": "MULTIPLE_CHOICE",
+      "author": "考研真题",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "REVIEWED",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1484002051498184704",
+      "description": "在 ISO/OSI 参考模型中，实现两个相邻结点间流量控制功能的是",
+      "problemPoolIndex": 19,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "1"
+    },
+    {
+      "id": "1972144013889372179",
+      "label": "",
+      "score": 5,
+      "problemConfig": {
+        "solutionVisible": false,
+        "answerVisible": false,
+        "multipleChoiceProblemConfig": {
+          "choices": [
+            "在 P2P 模型中，节点之间具有对等关系",
+            "在客户/服务器（C/S）模型中，客户与客户之间可以直接通信",
+            "在 C/S 模型中，主动发起通信的是客户，被动通信的是服务器",
+            "在向多用户分发一个文件时，P2P 模型通常比 C/S 模型所需时间短"
+          ],
+          "maxDisplayChoicesPerLine": 1
+        }
+      },
+      "deadline": "1970-01-01T00:00:00Z",
+      "title": "【2019 年 题 40】下列关于网络应用模型的叙述中，错误的是 ____ 。",
+      "content": "【2019 年 题 40】下列关于网络应用模型的叙述中，错误的是（\t）。",
+      "type": "MULTIPLE_CHOICE",
+      "author": "yyq",
+      "difficulty": 0,
+      "compiler": "NO_COMPILER",
+      "problemStatus": "PENDING_REVIEW",
+      "lastSubmissionId": "0",
+      "solution": "",
+      "problemSetId": "1972144013868400640",
+      "problemId": "1768526608548433921",
+      "description": "【2019 年 题 40】下列关于网络应用模型的叙述中，错误的是（\t）。",
+      "problemPoolIndex": 20,
+      "indexInProblemPool": 1,
+      "authorOrganizationId": "8"
+    }
+  ],
+  "examLabelByProblemSetProblemId": {
+    "1972144013889372160": "1-1",
+    "1972144013889372161": "1-2",
+    "1972144013889372162": "1-3",
+    "1972144013889372163": "1-4",
+    "1972144013889372164": "1-5",
+    "1972144013889372165": "1-6",
+    "1972144013889372166": "1-7",
+    "1972144013889372167": "1-8",
+    "1972144013889372168": "1-9",
+    "1972144013889372169": "1-10",
+    "1972144013889372170": "1-11",
+    "1972144013889372171": "1-12",
+    "1972144013889372172": "1-13",
+    "1972144013889372173": "1-14",
+    "1972144013889372174": "1-15",
+    "1972144013889372175": "1-16",
+    "1972144013889372176": "1-17",
+    "1972144013889372177": "1-18",
+    "1972144013889372178": "1-19",
+    "1972144013889372179": "1-20"
+  }
+}
