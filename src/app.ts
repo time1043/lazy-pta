@@ -1,9 +1,16 @@
 import path from "path";
-import { queGetClFile, queGetFile } from "./lib/constants/file";
+import {
+  ansGetClFile,
+  ansGetFile,
+  queGetClFile,
+  queGetFile,
+} from "./lib/constants/file";
 import { ProblemType } from "./lib/types/url";
 import { checkDir } from "./lib/utils/data-dir";
-import { queMd } from "./step/clean/question.md";
+import { ansClean } from "./step/clean/answer-get.clean";
 import { queClean } from "./step/clean/question-get.clean";
+import { ansMd } from "./step/md/answer.md";
+import { queMd } from "./step/md/question.md";
 
 // without get, only clean
 // It exists question-get.json, then generate question-get-clean.json
@@ -20,32 +27,15 @@ export async function questionGetClean(qtPaths: string[]) {
   }
 }
 
-// TODO
+// without get, only clean
+// It exists answer-get.json, then generate answer-get-clean.json and answer-get-clean-ai.json
 export async function answerGetClean(qtPaths: string[]) {
   for (const qtPath of qtPaths) {
     const problemType = path.basename(qtPath) as ProblemType;
 
-    switch (problemType) {
-      case "MULTIPLE_CHOICE":
-        console.log(qtPath);
-        break;
-      case "MULTIPLE_CHOICE_MORE_THAN_ONE_ANSWER":
-        break;
-      case "TRUE_OR_FALSE":
-        break;
-      case "FILL_IN_THE_BLANK":
-        break;
-
-      case "SUBJECTIVE":
-        break;
-      // sql must be before programming
-      case "SQL_PROGRAMMING":
-        break;
-      case "PROGRAMMING":
-        break;
-
-      default:
-        break;
+    if (await checkDir(qtPath, { in: [ansGetFile], ex: [ansGetClFile] })) {
+      await ansClean(qtPath, problemType);
+      await ansMd(qtPath, problemType);
     }
   }
 }

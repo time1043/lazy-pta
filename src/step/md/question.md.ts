@@ -1,50 +1,60 @@
-import { queGetClFile } from "@/lib/constants/file";
-import { QueChoices, QueFill, QueTf } from "@/lib/types/question";
+import fs from "fs";
+import { queGetClaiFile, queGetClFile } from "@/lib/constants/file";
+import { QueSingle, QueFill, QueTf } from "@/lib/types/question";
 import { ProblemType } from "@/lib/types/url";
 import { readJson, writeMd } from "@/lib/utils/file-io";
 import { withClean } from "@/lib/utils/text";
 import path from "path";
 
 export async function queMd(dirPath: string, problemType: ProblemType) {
-  const { queGetCleanData, queMdPath } = await getMeta(dirPath, problemType);
+  const { queGetClData, queMdPath } = await getMeta(dirPath, problemType);
   let queMdData: any[] = [];
 
   switch (problemType) {
     case "MULTIPLE_CHOICE":
     case "MULTIPLE_CHOICE_MORE_THAN_ONE_ANSWER":
-      queMdData = await queSingleMd(queGetCleanData);
+      queMdData = await queSingleMd(queGetClData);
       break;
     case "FILL_IN_THE_BLANK":
-      queMdData = await queFillMd(queGetCleanData);
+      queMdData = await queFillMd(queGetClData);
       break;
     case "TRUE_OR_FALSE":
     case "SUBJECTIVE":
     case "SQL_PROGRAMMING":
     case "PROGRAMMING":
-      queMdData = await queTfMd(queGetCleanData);
+      queMdData = await queTfMd(queGetClData);
       break;
 
     default:
       break;
   }
 
-  await writeMd(queMdPath, queMdData.join(""));
+  await writeMd(queMdPath!, queMdData.join(""));
 }
 
-async function getMeta(dirPath: string, problemType: ProblemType) {
-  // queGetCleanPath -> queGetCleanData ---> queMdData
+export async function getMeta(dirPath: string, problemType: ProblemType) {
+  // queGetClPath -> queGetClData ---> queMdData
   // queMdPath
-  const queGetCleanPath = path.join(dirPath, queGetClFile);
+
+  const queGetClaiPath = path.join(dirPath, queGetClaiFile);
+  const queGetClPath = path.join(dirPath, queGetClFile);
+  // if queGetClPath not exists, return error
+  if (!fs.existsSync(queGetClPath)) return { error: true };
+  // if queGetClaiPath exists, use it. Otherwise, use queGetClPath
+  const queGetCleanPath = fs.existsSync(queGetClaiPath)
+    ? queGetClaiPath
+    : queGetClPath;
+
   const queMdPath = path.join(dirPath, `${problemType}.md`);
-  const queGetCleanData = await readJson(queGetCleanPath);
-  return { queGetCleanData, queMdPath };
+  const queGetClData = await readJson(queGetCleanPath);
+  return { queGetClData, queMdPath };
 }
 
-export async function queSingleMd(queGetCleanData: QueChoices[]) {
+export async function queSingleMd(queGetCleanData: QueSingle[]) {
   const queMdData = queGetCleanData.map((q, index) => {
     const choicesText = q.choices.map((choice, i) => {
       const letter = String.fromCharCode(65 + i); // A, B, C, D...
-      return `${letter}.${choice}\n\n`;
+      return `${letter}.\n${choice}\n\n`;
     });
     return `## ${index + 1}.\n\n${q.description}\n\n${choicesText.join("")}`;
   });

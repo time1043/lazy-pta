@@ -8,7 +8,7 @@ import {
   urlListQueBuilder,
 } from "@/lib/domain/url/url-builder";
 import { urlListMatcher } from "@/lib/domain/url/url-matcher";
-import { UrlsGet } from "@/lib/types/question-get";
+import { UrlsGet } from "@/lib/types/url-get";
 import { readJson, writeJson } from "@/lib/utils/file-io";
 import path from "path";
 

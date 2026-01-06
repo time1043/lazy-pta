@@ -1,5 +1,4 @@
-// //////////////////////////////////////////////////////////////////
-type QueChoicesGet<TProblemConfig = {}> = {
+type QueGet<TProblemConfig = {}> = {
   problemSetProblems: {
     id: string;
     description: string;
@@ -18,22 +17,21 @@ type QueListGet<TProblemConfig = {}> = {
 
 // //////////////////////////////////////////////////////////////////
 
-// type QueSingleConfig =
-export type QueSingleGet = QueChoicesGet<{
+export type QueSingleGet = QueGet<{
   multipleChoiceProblemConfig: {
     choices: string[];
   };
 }>;
 
-export type QueMultipleGet = QueChoicesGet<{
+export type QueMultipleGet = QueGet<{
   multipleChoiceMoreThanOneAnswerProblemConfig: {
     choices: string[];
   };
 }>;
 
-export type QueTfGet = QueChoicesGet;
+export type QueTfGet = QueGet;
 
-export type QueFillGet = QueChoicesGet<{
+export type QueFillGet = QueGet<{
   fillInTheBlankProblemConfig: {
     scores: number[];
     blankLength: string;
@@ -43,19 +41,6 @@ export type QueFillGet = QueChoicesGet<{
 
 // //////////////////////////////////////////////////////////////////
 
-export type UrlsGet = {
-  total: number;
-  problemSetProblems: {
-    id: string; // url path param
-    title: string;
-  }[];
-};
-export type UrlsQueClean = string[];
-export type UrlsAnsClean = string[];
-
-// //////////////////////////////////////////////////////////////////
-
-// type QueProgrammingConfig =
 export type QueProgrammingListGet = QueListGet<{
   programmingProblemConfig: {
     exampleTestDatas: {
@@ -66,7 +51,6 @@ export type QueProgrammingListGet = QueListGet<{
   };
 }>;
 
-// type QueSqlConfig =
 export type QueSqlListGet = QueListGet<{
   sqlProgrammingProblemConfig: {
     dialect: string; // "MYSQL" ...

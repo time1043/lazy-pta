@@ -1,5 +1,5 @@
 import { getQtPaths } from "@/lib/utils/data-dir";
-import { questionGetClean } from "./app";
+import { answerGetClean, questionGetClean } from "./app";
 import { newDir } from "./lib/constants/file";
 
 // DATA_DIR/<Provider>/<Subject>/<Times>/<QuestionType>
@@ -7,3 +7,4 @@ import { newDir } from "./lib/constants/file";
 
 const qtPaths = await getQtPaths(newDir);
 await questionGetClean(qtPaths);
+await answerGetClean(qtPaths);

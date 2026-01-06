@@ -3,10 +3,11 @@ type Question = {
   description: string;
 };
 
-export type QueChoices = Question & { choices: string[] };
+export type QueSingle = Question & { choices: string[] };
+export type QueMultiple = Question & { choices: string[] };
 export type QueTf = Question;
 export type QueFill = Question & {
-  scores: number[];
+  // scores: number[];
   blankLength: string;
   blanks: { index: number; length: number }[];
 };

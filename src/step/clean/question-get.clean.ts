@@ -1,8 +1,9 @@
 import { queGetClFile, queGetFile } from "@/lib/constants/file";
 import {
-  QueChoices,
   QueFill,
+  QueMultiple,
   QueProgramming,
+  QueSingle,
   QueSql,
   QueTf,
 } from "@/lib/types/question";
@@ -62,7 +63,7 @@ async function getMeta(dirPath: string) {
 
 export async function queSingleClean(
   queGetData: QueSingleGet
-): Promise<QueChoices[]> {
+): Promise<QueSingle[]> {
   const queGetCleanData = queGetData.problemSetProblems.map((problem) => {
     // get fields
     const { id, description: des } = problem;
@@ -78,7 +79,7 @@ export async function queSingleClean(
 
 export async function queMultipleClean(
   queGetData: QueMultipleGet
-): Promise<QueChoices[]> {
+): Promise<QueMultiple[]> {
   const queGetCleanData = queGetData.problemSetProblems.map((problem) => {
     // get fields
     const { id, description: des } = problem;

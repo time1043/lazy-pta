@@ -7,12 +7,13 @@ export const cookiePath =
 // question
 export const queGetFile = "question-get.json";
 export const queGetClFile = "question-get-clean.json";
+export const queGetClaiFile = "question-get-clean-ai.json";
 // answer from user
 export const ansGetFile = "answer-get.json";
-export const ansGetCleanFile = "answer-get-clean.json";
+export const ansGetClFile = "answer-get-clean.json";
 // answer from ai
 export const ansAiFile = "answer-ai.json";
-export const ansAiCleanFile = "answer-ai-clean.json";
+export const ansAiClFile = "answer-ai-clean.json";
 
 // part 2: with url
 export const urlListFile = "url-list.json";

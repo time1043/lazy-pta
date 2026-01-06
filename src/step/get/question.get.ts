@@ -1,38 +1,28 @@
-import { queGetFile, urlListFile } from "@/lib/constants/file";
-import { ProblemType } from "@/lib/types/url";
-import { writeJson } from "@/lib/utils/file-io";
+import { queGetFile, urlsQueCleanFile } from "@/lib/constants/file";
+import { headers } from "@/lib/constants/req";
+import { UrlsQueClean } from "@/lib/types/url-get";
+import { readJson, writeJson } from "@/lib/utils/file-io";
+import { sleep } from "@/lib/utils/sleep";
 import { Page } from "@playwright/test";
 import path from "path";
 
-async function getTitle(page: Page) {
-  const rawTitle = await page.locator(".pc-text-raw.text-lg").textContent();
-  const safeTitle = (rawTitle || `unknown-${Date.now()}`)
-    .trim()
-    .replace(/[/\\?%*:|"<>]/g, "-");
-
-  return safeTitle;
+export async function queGet(dirPath: string, queGetData: any) {
+  const queGetPath = path.join(dirPath, queGetFile);
+  await writeJson(queGetPath, queGetData);
 }
 
-export async function getDirPath(page: Page, problemType: ProblemType) {
-  // title from page
-  // problemType from url
-  // data/new/<title>/<problemType>
-  const title = await getTitle(page);
-  const dirPath = path.join("data/new", title, problemType);
+export async function queListGet(dirPath: string, page: Page) {
+  const urlsQueCleanPath = path.join(dirPath, urlsQueCleanFile);
+  const queGetCleanPath = path.join(dirPath, queGetFile);
 
-  return dirPath;
-}
+  const urlsQueCleanData = (await readJson(urlsQueCleanPath)) as UrlsQueClean;
+  const queGetCleanData = [];
+  for (const url of urlsQueCleanData) {
+    await sleep();
+    const response = await page.request.get(url, { headers });
+    const data = await response.json();
+    queGetCleanData.push(data);
+  }
 
-export async function queGet(dirPath: string, qGetData: any) {
-  const questionGetPath = path.join(dirPath, queGetFile);
-  await writeJson(questionGetPath, qGetData);
-
-  return dirPath;
-}
-
-export async function urlListGet(dirPath: string, urlGetData: any) {
-  const urlGetPath = path.join(dirPath, urlListFile);
-  await writeJson(urlGetPath, urlGetData);
-
-  return dirPath;
+  await writeJson(queGetCleanPath, queGetCleanData);
 }
