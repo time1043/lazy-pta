@@ -13,39 +13,6 @@ import { test } from "@playwright/test";
 
 test.use({ storageState: cookiePath });
 
-test("question-get(independence)", async ({ page }) => {
-  await page.goto("https://pintia.cn");
-
-  // Register the listener: As long as there is a response, execute the logic inside
-  page.on("response", async (response) => {
-    const url = response.url();
-
-    if (urlQueMatcher(url) && response.status() === 200) {
-      const queGetData = await response.json();
-      const { problemType } = urlQueMatcher(url)!;
-      const dirPath = await getDirPath(page, problemType);
-
-      // get question
-      await queGet(dirPath, queGetData); // fake get
-    }
-
-    if (urlListMatcher(url) && response.status() === 200) {
-      const urlGetData = await response.json();
-      const { problemType } = urlListMatcher(url)!;
-      const dirPath = await getDirPath(page, problemType);
-
-      // get url and clean (for question and answer)
-      await urlListGet(dirPath, urlGetData); // fake get
-      await urlListClean(dirPath, url); // que, ans
-      // get question from url*.json
-      await queListGet(dirPath, page); // real get request
-    }
-  });
-
-  // Make sure the listener is working
-  await page.pause();
-});
-
 test("answer-get(independence)", async ({ page }) => {
   await page.goto("https://pintia.cn");
 
@@ -87,8 +54,3 @@ test("answer-get(independence)", async ({ page }) => {
   // Make sure the listener is working
   await page.pause();
 });
-
-// TODO
-test("submit from answer-get/ai.json", async ({ page }) => {});
-
-test("submit from ai", async ({ page }) => {});

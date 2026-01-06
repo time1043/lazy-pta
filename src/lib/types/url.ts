@@ -1,4 +1,4 @@
-const ProblemTypes = [
+const problemTypes = [
   "TRUE_OR_FALSE",
   "FILL_IN_THE_BLANK",
   "MULTIPLE_CHOICE",
@@ -7,9 +7,9 @@ const ProblemTypes = [
   "PROGRAMMING", // .java
   "SUBJECTIVE", // subjective.md
 ] as const;
-export type ProblemType = (typeof ProblemTypes)[number];
+export type ProblemType = (typeof problemTypes)[number];
 export function isProblemType(v: string | null): v is ProblemType {
-  return !!v && (ProblemTypes as readonly string[]).includes(v);
+  return !!v && (problemTypes as readonly string[]).includes(v);
 }
 
 export type UrlQuestion = {

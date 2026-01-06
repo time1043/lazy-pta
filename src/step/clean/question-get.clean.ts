@@ -13,6 +13,7 @@ import {
   QueProgrammingListGet,
   QueSingleGet,
   QueSqlListGet,
+  QueSubjectiveListGet,
   QueTfGet,
 } from "@/lib/types/question-get";
 import { ProblemType } from "@/lib/types/url";
@@ -31,7 +32,6 @@ export async function queClean(dirPath: string, problemType: ProblemType) {
     case "MULTIPLE_CHOICE_MORE_THAN_ONE_ANSWER":
       queGetCleanData = await queMultipleClean(queGetData);
       break;
-    case "SUBJECTIVE":
     case "TRUE_OR_FALSE":
       queGetCleanData = await queTfClean(queGetData);
       break;
@@ -39,6 +39,9 @@ export async function queClean(dirPath: string, problemType: ProblemType) {
       queGetCleanData = await queFillClean(queGetData);
       break;
 
+    case "SUBJECTIVE":
+      queGetCleanData = await queSubjectiveListClean(queGetData);
+      break;
     case "SQL_PROGRAMMING":
       queGetCleanData = await queSqlListClean(queGetData);
       break;
@@ -117,6 +120,20 @@ export async function queFillClean(queGetData: QueFillGet): Promise<QueFill[]> {
     const description = des;
     // return item
     return { id, description, scores, blankLength, blanks };
+  });
+  return queGetCleanData;
+}
+
+export async function queSubjectiveListClean(
+  queGetData: QueSubjectiveListGet
+): Promise<QueTf[]> {
+  const queGetCleanData = queGetData.map((problem) => {
+    // get fields
+    const { id, description: des } = problem.problemSetProblem;
+    // transform image url
+    const description = withClean(des);
+    // return item
+    return { id, description };
   });
   return queGetCleanData;
 }

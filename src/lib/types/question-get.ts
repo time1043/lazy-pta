@@ -56,3 +56,5 @@ export type QueSqlListGet = QueListGet<{
     dialect: string; // "MYSQL" ...
   };
 }>;
+
+export type QueSubjectiveListGet = QueListGet;

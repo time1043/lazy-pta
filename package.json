@@ -5,8 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "env:gen": "sed 's/=.*/=/' .env > .env.example",
-    "dev": "tsc --noEmit && dotenvx run -- tsx watch src/main.ts"
+    "pta:login": "dotenvx run -- playwright test pta-login.spec.ts",
+    "que-get": "dotenvx run -- playwright test question-get.spec.ts",
+    "ans-get": "dotenvx run -- playwright test answer-get.spec.ts",
+    "dev": "tsc --noEmit && dotenvx run -- tsx watch src/main.ts",
+    "env:gen": "sed 's/=.*/=/' .env > .env.example"
   },
   "keywords": [],
   "author": "",

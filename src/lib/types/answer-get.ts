@@ -1,17 +1,27 @@
-type AnsGet<TSubmissionDetail = {}> = {
+const status = ["ACCEPTED", "WRONG_ANSWER", "PARTIAL_ACCEPTED"] as const;
+export type Status = (typeof status)[number];
+
+type AnsGet<TSubmissionDetail = {}, TJudgeResponseContent = {}> = {
   submission: {
     submissionDetails: ({
       problemSetProblemId: string;
     } & TSubmissionDetail)[];
-    judgeResponseContents: {}[] | [];
+    judgeResponseContents: ({
+      problemSetProblemId: string;
+      status: Status;
+    } & TJudgeResponseContent)[];
   };
 };
 
-type AnsListGet<TSubmissionDetail = {}> = {
+type AnsListGet<TSubmissionDetail = {}, TJudgeResponseContent = {}> = {
   submission: {
     submissionDetails: ({
       problemSetProblemId: string;
     } & TSubmissionDetail)[];
+    judgeResponseContents: ({
+      problemSetProblemId: string;
+      status: Status;
+    } & TJudgeResponseContent)[];
   };
 }[];
 

@@ -1,5 +1,10 @@
 import { ansGetClFile } from "@/lib/constants/file";
-import { AnsMultiple, AnsProgramming, AnsSingle } from "@/lib/types/answer";
+import {
+  AnsMultiple,
+  AnsProgramming,
+  AnsSingle,
+  statusMap,
+} from "@/lib/types/answer";
 import { ProblemType } from "@/lib/types/url";
 import { readJson, writeMd } from "@/lib/utils/file-io";
 import path from "path";
@@ -58,7 +63,7 @@ export async function ansMd(dirPath: string, problemType: ProblemType) {
   const { ansMdaPath, ansMdqaPath } = ansMdPath;
   const { ansMdaData, ansMdqaData } = ansMdData;
   await writeMd(ansMdaData.join(""), ansMdaPath);
-  await writeMd(ansMdqaData.join(""), ansMdaPath);
+  await writeMd(ansMdqaData.join(""), ansMdqaPath);
 }
 
 async function getMeta(dirPath: string, problemType: ProblemType) {
@@ -78,7 +83,8 @@ export async function ansSingleMd(
   queMdData: string[]
 ) {
   const ans = ansGetCleanData.map((a) => {
-    return `### Answer\n\n${a.answer}\n\n`;
+    const status = statusMap[a.status];
+    return `### Answer ${status}\n\n${a.answer}\n\n`;
   });
   const ansMdaData = ans.map((a, index) => `## ${index + 1}.\n\n${a}`);
   const ansMdqaData = queMdData.map((qMd, index) => qMd + ans[index]);
@@ -90,7 +96,8 @@ export async function ansMultipleMd(
   queMdData: string[]
 ) {
   const ans = ansGetCleanData.map((a) => {
-    return `### Answer\n\n${a.answers.join("\n")}\n\n`;
+    const status = statusMap[a.status];
+    return `### Answer ${status}\n\n${a.answers.join("\n")}\n\n`;
   });
   const ansMdaData = ans.map((a, index) => `## ${index + 1}.\n\n${a}`);
   const ansMdqaData = queMdData.map((qMd, index) => qMd + ans[index]);
@@ -102,8 +109,9 @@ export async function ansProgrammingMd(
   queMdData: string[]
 ) {
   const ans = ansGetCleanData.map((a) => {
+    const status = statusMap[a.status];
     const code = `\`\`\`${a.lang}\n ${a.program}\n\`\`\``;
-    return `### Answer\n\n${code}\n\n`;
+    return `### Answer ${status}\n\n${code}\n\n`;
   });
   const ansMdaData = ans.map((a, index) => `## ${index + 1}.\n\n${a}`);
   const ansMdqaData = queMdData.map((qMd, index) => qMd + ans[index]);

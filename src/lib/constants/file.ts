@@ -1,6 +1,8 @@
 export const dataDir = process.env.DATA_DIR ?? "data";
 export const newDir = `${dataDir}/new`;
-export const cookiePath = "./data/auth/auth-pta-zz.json";
+export const cookiePath =
+  process.env.COOKIE_PATH ?? "./data/auth/auth-pta-me.json";
+console.log({ cookiePath });
 
 // part 1: simple
 // question
