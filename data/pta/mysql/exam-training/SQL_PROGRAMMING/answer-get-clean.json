@@ -1,0 +1,500 @@
+[
+  {
+    "problemSetProblemId": "2001908710051135488",
+    "lang": "sql",
+    "program": "select sname,nation,phone\nfrom student\nwhere sname like '%李%'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710051135489",
+    "lang": "sql",
+    "program": "select cno,cname\nfrom course\nlimit 3",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710051135490",
+    "lang": "sql",
+    "program": "select sname,class\nfrom students\nwhere sname like '%明%'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710051135491",
+    "lang": "sql",
+    "program": "select *\nfrom students\nwhere char_length(sname) = 2;\n\n-- 或者\nselect *\nfrom students\nwhere sname like '__';",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710051135492",
+    "lang": "sql",
+    "program": "select *\nfrom student\nwhere sex='男' and TIMESTAMPDIFF(year,birth,'2021-09-01')>=24;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710051135493",
+    "lang": "sql",
+    "program": "select name,category_id ,price \nfrom sh_goods \norder by category_id asc,price desc",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329792",
+    "lang": "sql",
+    "program": "select id,category_id,name\nfrom sh_goods",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329793",
+    "lang": "sql",
+    "program": "select name,price as old_price,\n        stock as old_stock,price * 0.75 as new_price,\n        stock + 850 as new_stock\nfrom sh_goods \nwhere score = 5.0",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329794",
+    "lang": "sql",
+    "program": "select id,name ,price \nfrom sh_goods \nwhere price between 2000 and 6000",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329795",
+    "lang": "sql",
+    "program": "select id,name,price\nfrom goods\nwhere price is NULL",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329796",
+    "lang": "sql",
+    "program": "select id,name,price\nfrom goods\nwhere name like '%pad%'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329797",
+    "lang": "sql",
+    "program": "select id,name,price\nfrom sh_goods\nwhere category_id=3 and score = 5.0",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329798",
+    "lang": "sql",
+    "program": "select name,price,score\nfrom sh_goods \nwhere score = 4.5 or price <10",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329799",
+    "lang": "sql",
+    "program": "select distinct DepartmentID \nfrom Teacher",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329800",
+    "lang": "sql",
+    "program": "select StudentName ,Birth  \nfrom Student\nwhere Birth>=all(select Birth from Student)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329801",
+    "lang": "sql",
+    "program": "select ClassID\nfrom Class\nwhere StudentNum > 5",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329802",
+    "lang": "sql",
+    "program": "select max(grade) as max_grade\nfrom Grade \nwhere CourseID='Dp010001'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710055329803",
+    "lang": "sql",
+    "program": "select StudentID,Grade\nfrom Grade\nwhere CourseID = 'Dp010004'\norder by Grade desc,StudentID asc;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524096",
+    "lang": "sql",
+    "program": "select distinct sno,score\nfrom course join sc on course.cno = sc.cno\nwhere cname like '%数据库%' and score between 80 and 90",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524097",
+    "lang": "sql",
+    "program": "update sc join cou on cou.cno=sc.cno  \nset grade=60 where grade<60 and cname='高等数学'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524098",
+    "lang": "sql",
+    "program": "insert into warehouse(Wno,city,size)\n values('D01','绍兴',11000);",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524099",
+    "lang": "sql",
+    "program": "update orders \nset QTY = QTY * 1.4\nwhere Pid in (select Pid from product where PName like '%螺母%')",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524100",
+    "lang": "sql",
+    "program": "delete from product\n where sale_price>=100",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524101",
+    "lang": "sql",
+    "program": "select *\nfrom student\nwhere birth < (select birth from student where sname = '伍容华')",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524102",
+    "lang": "sql",
+    "program": "select *\nfrom `product`\nwhere Weight between 40 and 65;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524103",
+    "lang": "sql",
+    "program": "select *\nfrom `supplier`\nwhere City not in ('上海','北京','天津');",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524104",
+    "lang": "sql",
+    "program": "select Pid\nfrom `product`\nwhere PName like '%M%' and Weight >30",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524105",
+    "lang": "sql",
+    "program": "select Eid,EName\nfrom `employee`\nwhere Wno is null",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524106",
+    "lang": "sql",
+    "program": "SELECT * FROM Product WHERE  purchase_price  BETWEEN 50 AND 150;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908710059524107",
+    "lang": "sql",
+    "program": "SELECT PName, Weight_g / 1000 as Weight_kg\nFROM product;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836249329664",
+    "lang": "sql",
+    "program": "select stu.sno,sname,grade\nfrom stu join sc on stu.sno=sc.sno\nwhere cno='C002'\norder by grade desc \nlimit 2",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836249329665",
+    "lang": "sql",
+    "program": "update sc join stu on sc.sno=stu.sno\nset grade=grade*1.05\nwhere grade < 75 and sex=0",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523968",
+    "lang": "sql",
+    "program": "delete sc from sc join cou on sc.cno=cou.cno join stu on sc.sno=stu.sno\nwhere cname='C语言' and sex=0;\n\n-- 或者\ndelete from sc \nwhere cno in(select cno from cou where  cname='C语言') \n    and sno in (select sno from stu where sex=0);",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523969",
+    "lang": "sql",
+    "program": "select ProductID, ProductName\nfrom products\nwhere UnitsInStock < UnitsOnOrder",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523970",
+    "lang": "sql",
+    "program": "select ReportsTo EmployeeID,count(EmployeeID) countSub\nfrom employees\nwhere ReportsTo is not null\ngroup by ReportsTo;\n\n\n-- 或\nselect b.EmployeeID, count(*) countSub\nfrom employees a, employees b\nwhere a.ReportsTo = b.EmployeeID\ngroup by b.EmployeeID;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523971",
+    "lang": "sql",
+    "program": "select sname\nfrom stu\nwhere birdate > (\n    select max(birdate)\n    from stu, major\n    where mname = '网络工程' and stu.mno = major.mno\n);\n\n-- or \nselect sname\nfrom stu\nwhere birdate >all (\n    select birdate\n    from stu, major\n    where mname = '网络工程' and stu.mno = major.mno\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523972",
+    "lang": "sql",
+    "program": "select sname \nfrom stu \njoin major on major.mno=stu.mno\norder by birdate ASC\nlimit 1;\n\n-- or\nselect sname\nfrom stu join major ON major.mno=stu.mno\nwhere mname = '软件工程'\n  and birdate = (\n    select min(birdate) \n    from stu\n    WHERE stu.mno = major.mno and mname = '软件工程'\n  );",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523973",
+    "lang": "sql",
+    "program": "select sc.cno 课程号,cname 课程名,max(grade) 最高成绩,min(grade) 最低成绩,avg(grade) 平均成绩\nfrom sc join cou on sc.cno=cou.cno\ngroup by sc.cno,cname\nhaving count(sno)>2 and min(grade)>=60 and sc.cno not in(\n    select cno\n    from sc \n    where grade is null\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523974",
+    "lang": "sql",
+    "program": "Insert into stu\nselect * \nfrom student\nwhere dept='数计学院'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523975",
+    "lang": "sql",
+    "program": "select gid, gname, price, stock\nfrom good\nwhere gid not in(\n    select gid\n    from recorder\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523976",
+    "lang": "sql",
+    "program": "select cno 课程号\nfrom sc \nwhere sno='S001' and cno not in\n(select cno from sc where sno ='S003')",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523977",
+    "lang": "sql",
+    "program": "select sname 姓名,mname 专业名,SUM(credit) 总学分\nFROM stu,major,cou,sc\nWHERE stu.sno=sc.sno and cou.cno=sc.cno and stu.mno=major.mno\ngroup by sname,mname\nhaving count(sc.cno)>=2 and min(grade)>=80 and count(sc.cno)=count(grade)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523978",
+    "lang": "sql",
+    "program": "select count(distinct cno) 门数 from sc",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523979",
+    "lang": "sql",
+    "program": "select cno 课程号,count(sno) 选修人数\nfrom sc\ngroup by 课程号\norder by 选修人数 desc\nlimit 3;",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523980",
+    "lang": "sql",
+    "program": "select sname\nfrom students\nwhere sdept = (\n    select sdept\n    from students\n    where sname = '陆毅'\n)and sname != '陆毅'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523981",
+    "lang": "sql",
+    "program": "select sh_goods.id, name\nfrom sh_goods left join sh_goods_comment on sh_goods.id = sh_goods_comment.goods_id \nwhere sh_goods_comment.content is null",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523982",
+    "lang": "sql",
+    "program": "select sg.name, sgc.content\nfrom sh_goods sg, sh_goods_comment sgc\nwhere sg.id = sgc.goods_id and score = 5",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523983",
+    "lang": "sql",
+    "program": "select sg.id gid, sgc.id cid, sgc.name cname, score\nfrom sh_goods sg join sh_goods_category sgc on sg.category_id = sgc.id\nwhere score = 5",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523984",
+    "lang": "sql",
+    "program": "select name\nfrom sh_goods_category\nwhere id in (\n    select category_id\n    from sh_goods\n    where price < 500\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523985",
+    "lang": "sql",
+    "program": "select sno, sname, dept\nfrom student\nwhere sno in(\n    select sno\n    from score\n    group by sno\n    having count(*) >= 3\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523986",
+    "lang": "sql",
+    "program": "select course.cno,cname,count(sno) total\nfrom course left join score on course.cno=score.cno\nwhere attribute ='必修'\ngroup by course.cno,cname",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523987",
+    "lang": "sql",
+    "program": "select sname,dept from student,score,course\nwhere student.sno = score.sno \nand course.cno = score.cno \nand cname='大学语文' \nand grade >80",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523988",
+    "lang": "sql",
+    "program": "select empno,ename,sal,grade from emp,salgrade\nwhere sal between losal and hisal",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523989",
+    "lang": "sql",
+    "program": "select a.empno 员工编号,a.ename 员工姓名,a.mgr 上司编号,b.ename 上司姓名\nfrom emp a left join emp b on a.mgr = b.empno",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523990",
+    "lang": "sql",
+    "program": "select DepartmentHeader from Teacher,Department\nwhere Teacher.DepartmentID = Department.DepartmentID and TeacherID = 'dep01001'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523991",
+    "lang": "sql",
+    "program": "select StudentID, StudentName, Sex\nfrom Student s\nwhere StudentID not in(\n    select StudentID\n    from Grade\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523992",
+    "lang": "sql",
+    "program": "select student.sno, sname, course.cno, cname, term, grade\nfrom student, course, score\nwhere student.sno = score.sno and course.cno = score.cno",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523993",
+    "lang": "sql",
+    "program": "select sc.sno 学号,cname 课程名,grade 成绩\nfrom cou,sc,(select sno,avg(grade) avgscore from sc  group by sno) sc_avg\nwhere cou.cno=sc.cno  and sc.sno=sc_avg.sno and grade>avgscore",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523994",
+    "lang": "sql",
+    "program": "select sname\nfrom stu\nwhere not exists(\n    select *\n    from cou \n    where teacher='张老师' and not exists\n        (\n            select *\n            from sc\n            where sno=stu.sno and cno=cou.cno\n        )\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523995",
+    "lang": "sql",
+    "program": "select cno, cname\nfrom course\nwhere cno not in(\n    select cno\n    from score\n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523996",
+    "lang": "sql",
+    "program": "select sno 学号,round(avg(grade),1) 平均成绩\nfrom score\ngroup by sno\nhaving count(cno)>=2",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523997",
+    "lang": "sql",
+    "program": "select gid 商品编号,sum(quantity) 销售总数量\nfrom recorder\ngroup by gid",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836253523998",
+    "lang": "sql",
+    "program": "select avg(score) 平均分, max(score) 最高分, min(score) 最低分\nfrom sc\nwhere cno = '0000001'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836257718272",
+    "lang": "sql",
+    "program": "select sno 学号,count(*) 选课门数,sum(score) 考试总成绩\nfrom sc\ngroup by sno\norder by sno",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836257718273",
+    "lang": "sql",
+    "program": "select keyword, count(*) goodscount\nfrom sh_goods\ngroup by keyword",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836257718274",
+    "lang": "sql",
+    "program": "select category_id, max(price) max_price\nfrom sh_goods\ngroup by category_id",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836257718275",
+    "lang": "sql",
+    "program": "select max(stock) stock1, min(stock) stock2\nfrom sh_goods",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908836257718276",
+    "lang": "sql",
+    "program": "select category_id, avg(price) average\nfrom sh_goods\ngroup by category_id\nhaving count(*) > 2",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928712818688",
+    "lang": "sql",
+    "program": "select pno\n from spj\n group by pno\n having min(qty) >all (\n     select qty\n     from spj\n     where pno='p6'\n )",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928712818689",
+    "lang": "sql",
+    "program": "select maker from product\nwhere model in (select model from pc)\ngroup by maker\nhaving count(*) >=3",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928712818690",
+    "lang": "sql",
+    "program": "select students.sno,sname,cno,score\nfrom students left join sc on sc.sno = students.sno",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928712818691",
+    "lang": "sql",
+    "program": "select count(*)\nfrom product\nwhere PName like '%螺母%'",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928712818692",
+    "lang": "sql",
+    "program": "select max(Salary) max_Salary,min(Salary) min_Salary\nfrom employee",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012992",
+    "lang": "sql",
+    "program": "select Wno,count(Eid) Count_Eid\nfrom employee\nwhere Wno is not null\ngroup by Wno",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012993",
+    "lang": "sql",
+    "program": "select Eid,EName\nfrom employee\nwhere Wno = 'A01' and Salary > (select max(Salary) from employee where Wno = 'A02')",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012994",
+    "lang": "sql",
+    "program": "select Sid\nfrom orders\ngroup by sid\nhaving sum(qty) >=all\n    (    select sum(qty)\n        from orders\n        group by sid\n    )",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012995",
+    "lang": "sql",
+    "program": "select Eid,EName\nfrom employee where Eid != '0011' and not exists\n(select * from orders b where Eid = '0011' and not exists \n(select * from orders where employee.Eid=Eid))",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012996",
+    "lang": "sql",
+    "program": "select maker\nfrom product,pc\nwhere product.model=pc.model \nand ram = (select min(ram) from pc)\nand speed = (select max(speed) from pc where ram = (select min(ram) from pc))",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012997",
+    "lang": "sql",
+    "program": "select maker \nfrom product\nwhere model in (select model from pc where speed>=133) \n      or model in (select model from laptop where speed>=133)\ngroup by maker\nhaving count(model)>=2",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012998",
+    "lang": "sql",
+    "program": "select Eid,EName\nfrom employee\nwhere Wno = 'A01' and Salary < any(\n    select Salary from employee where Wno = 'A02')",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717012999",
+    "lang": "sql",
+    "program": "select dept 院部,count(sno) 总人数\nfrom student\ngroup by dept\norder by count(sno) desc",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717013000",
+    "lang": "sql",
+    "program": "select sno 学号, avg(grade) 平均分\nfrom score\ngroup by sno\nhaving count(*) >= 2",
+    "status": "ACCEPTED"
+  },
+  {
+    "problemSetProblemId": "2001908928717013001",
+    "lang": "sql",
+    "program": "delete \nfrom sc\nwhere SCScore3 < 60",
+    "status": "ACCEPTED"
+  }
+]

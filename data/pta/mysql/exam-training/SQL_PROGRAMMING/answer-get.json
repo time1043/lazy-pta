@@ -1,0 +1,4850 @@
+[
+  {
+    "submission": {
+      "id": "2008823993502642176",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710051135488",
+      "submitAt": "2026-01-07T08:52:16Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000127,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710051135488",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname,nation,phone\nfrom student\nwhere sname like '%李%'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710051135488",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1-2": {
+                "result": "ACCEPTED",
+                "time": 0.000127,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1-2": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:17Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824006383333376",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710051135489",
+      "submitAt": "2026-01-07T08:52:19Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000103,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710051135489",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select cno,cname\nfrom course\nlimit 3"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710051135489",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000103,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:20Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824019234680832",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710051135490",
+      "submitAt": "2026-01-07T08:52:22Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000139,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710051135490",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname,class\nfrom students\nwhere sname like '%明%'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710051135490",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000139,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:23Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824032106999808",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710051135491",
+      "submitAt": "2026-01-07T08:52:26Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000171,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710051135491",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select *\nfrom students\nwhere char_length(sname) = 2;\n\n-- 或者\nselect *\nfrom students\nwhere sname like '__';"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710051135491",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000171,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:26Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824044962557952",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710051135492",
+      "submitAt": "2026-01-07T08:52:29Z",
+      "status": "ACCEPTED",
+      "score": 5,
+      "compiler": "NO_COMPILER",
+      "time": 0.000161,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710051135492",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select *\nfrom student\nwhere sex='男' and TIMESTAMPDIFF(year,birth,'2021-09-01')>=24;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 5,
+          "problemSetProblemId": "2001908710051135492",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "5-6": {
+                "result": "ACCEPTED",
+                "time": 0.000161,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "5-6": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:29Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824057834897408",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710051135493",
+      "submitAt": "2026-01-07T08:52:32Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710051135493",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select name,category_id ,price \nfrom sh_goods \norder by category_id asc,price desc"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710051135493",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:32Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824070690418688",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329792",
+      "submitAt": "2026-01-07T08:52:35Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329792",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select id,category_id,name\nfrom sh_goods"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329792",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:35Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824083566915584",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329793",
+      "submitAt": "2026-01-07T08:52:38Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329793",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select name,price as old_price,\n        stock as old_stock,price * 0.75 as new_price,\n        stock + 850 as new_stock\nfrom sh_goods \nwhere score = 5.0"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329793",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:38Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824096456048640",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329794",
+      "submitAt": "2026-01-07T08:52:41Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329794",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select id,name ,price \nfrom sh_goods \nwhere price between 2000 and 6000"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329794",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:41Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824109293322240",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329795",
+      "submitAt": "2026-01-07T08:52:44Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329795",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select id,name,price\nfrom goods\nwhere price is NULL"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329795",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:44Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824122102726656",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329796",
+      "submitAt": "2026-01-07T08:52:47Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329796",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select id,name,price\nfrom goods\nwhere name like '%pad%'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329796",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:48Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824134909390848",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329797",
+      "submitAt": "2026-01-07T08:52:50Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329797",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select id,name,price\nfrom sh_goods\nwhere category_id=3 and score = 5.0"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329797",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:51Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824147739803648",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329798",
+      "submitAt": "2026-01-07T08:52:53Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329798",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select name,price,score\nfrom sh_goods \nwhere score = 4.5 or price <10"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329798",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:54Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824160574373888",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329799",
+      "submitAt": "2026-01-07T08:52:56Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329799",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select distinct DepartmentID \nfrom Teacher"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329799",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:52:57Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824173403254784",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329800",
+      "submitAt": "2026-01-07T08:52:59Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329800",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select StudentName ,Birth  \nfrom Student\nwhere Birth>=all(select Birth from Student)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329800",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:00Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824186243493888",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329801",
+      "submitAt": "2026-01-07T08:53:02Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329801",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select ClassID\nfrom Class\nwhere StudentNum > 5"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329801",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:03Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824199082258432",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329802",
+      "submitAt": "2026-01-07T08:53:05Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329802",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select max(grade) as max_grade\nfrom Grade \nwhere CourseID='Dp010001'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710055329802",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:06Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824211895877632",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710055329803",
+      "submitAt": "2026-01-07T08:53:08Z",
+      "status": "ACCEPTED",
+      "score": 4,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710055329803",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select StudentID,Grade\nfrom Grade\nwhere CourseID = 'Dp010004'\norder by Grade desc,StudentID asc;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 4,
+          "problemSetProblemId": "2001908710055329803",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:09Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824224691204096",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524096",
+      "submitAt": "2026-01-07T08:53:11Z",
+      "status": "ACCEPTED",
+      "score": 5,
+      "compiler": "NO_COMPILER",
+      "time": 0.000321,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524096",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select distinct sno,score\nfrom course join sc on course.cno = sc.cno\nwhere cname like '%数据库%' and score between 80 and 90"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 5,
+          "problemSetProblemId": "2001908710059524096",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000321,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:12Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824237525774336",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524097",
+      "submitAt": "2026-01-07T08:53:15Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524097",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "update sc join cou on cou.cno=sc.cno  \nset grade=60 where grade<60 and cname='高等数学'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524097",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:15Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824250361819136",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524098",
+      "submitAt": "2026-01-07T08:53:18Z",
+      "status": "ACCEPTED",
+      "score": 5,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524098",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "insert into warehouse(Wno,city,size)\n values('D01','绍兴',11000);"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 5,
+          "problemSetProblemId": "2001908710059524098",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:53:18Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824932829626368",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524099",
+      "submitAt": "2026-01-07T08:56:00Z",
+      "status": "ACCEPTED",
+      "score": 5,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524099",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "update orders \nset QTY = QTY * 1.4\nwhere Pid in (select Pid from product where PName like '%螺母%')"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 5,
+          "problemSetProblemId": "2001908710059524099",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:01Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824945754976256",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524100",
+      "submitAt": "2026-01-07T08:56:03Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524100",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "delete from product\n where sale_price>=100"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524100",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:04Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824958645567488",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524101",
+      "submitAt": "2026-01-07T08:56:06Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000238,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524101",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select *\nfrom student\nwhere birth < (select birth from student where sname = '伍容华')"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524101",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "7-1": {
+                "result": "ACCEPTED",
+                "time": 0.000238,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:07Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824971576606720",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524102",
+      "submitAt": "2026-01-07T08:56:10Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000131,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524102",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select *\nfrom `product`\nwhere Weight between 40 and 65;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524102",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000131,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:10Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824984448905216",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524103",
+      "submitAt": "2026-01-07T08:56:13Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000162,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524103",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select *\nfrom `supplier`\nwhere City not in ('上海','北京','天津');"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524103",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000127,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000162,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:13Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008824997374279680",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524104",
+      "submitAt": "2026-01-07T08:56:16Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.000131,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524104",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Pid\nfrom `product`\nwhere PName like '%M%' and Weight >30"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524104",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000131,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:16Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825010271764480",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524105",
+      "submitAt": "2026-01-07T08:56:19Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0.00011,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524105",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Eid,EName\nfrom `employee`\nwhere Wno is null"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524105",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.00011,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 3
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:19Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825023179091968",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524106",
+      "submitAt": "2026-01-07T08:56:22Z",
+      "status": "ACCEPTED",
+      "score": 3,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524106",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "SELECT * FROM Product WHERE  purchase_price  BETWEEN 50 AND 150;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 3,
+          "problemSetProblemId": "2001908710059524106",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 2
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 1
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:22Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825036051447808",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908710059524107",
+      "submitAt": "2026-01-07T08:56:25Z",
+      "status": "ACCEPTED",
+      "score": 4,
+      "compiler": "NO_COMPILER",
+      "time": 0.000125,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908710059524107",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "SELECT PName, Weight_g / 1000 as Weight_kg\nFROM product;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 4,
+          "problemSetProblemId": "2001908710059524107",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000125,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 4
+              }
+            }
+          }
+        }
+      ],
+      "hints": {},
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:25Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825048947441664",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836249329664",
+      "submitAt": "2026-01-07T08:56:28Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000207,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836249329664",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select stu.sno,sname,grade\nfrom stu join sc on stu.sno=sc.sno\nwhere cno='C002'\norder by grade desc \nlimit 2"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836249329664",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000207,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:29Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825061838028800",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836249329665",
+      "submitAt": "2026-01-07T08:56:31Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836249329665",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "update sc join stu on sc.sno=stu.sno\nset grade=grade*1.05\nwhere grade < 75 and sex=0"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836249329665",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:56:32Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008826101413015552",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523968",
+      "submitAt": "2026-01-07T09:00:39Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523968",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "delete sc from sc join cou on sc.cno=cou.cno join stu on sc.sno=stu.sno\nwhere cname='C语言' and sex=0;\n\n-- 或者\ndelete from sc \nwhere cno in(select cno from cou where  cname='C语言') \n    and sno in (select sno from stu where sex=0);"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523968",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "似样例"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T09:00:40Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008826114339876864",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523969",
+      "submitAt": "2026-01-07T09:00:42Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.00014,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523969",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select ProductID, ProductName\nfrom products\nwhere UnitsInStock < UnitsOnOrder"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523969",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000133,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.00014,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "",
+        "1": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T09:00:43Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825260575244288",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523970",
+      "submitAt": "2026-01-07T08:57:18Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000175,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523970",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select ReportsTo EmployeeID,count(EmployeeID) countSub\nfrom employees\nwhere ReportsTo is not null\ngroup by ReportsTo;\n\n\n-- 或\nselect b.EmployeeID, count(*) countSub\nfrom employees a, employees b\nwhere a.ReportsTo = b.EmployeeID\ngroup by b.EmployeeID;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523970",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000173,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000175,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "",
+        "1": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:19Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825273436434432",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523971",
+      "submitAt": "2026-01-07T08:57:22Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000248,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523971",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname\nfrom stu\nwhere birdate > (\n    select max(birdate)\n    from stu, major\n    where mname = '网络工程' and stu.mno = major.mno\n);\n\n-- or \nselect sname\nfrom stu\nwhere birdate >all (\n    select birdate\n    from stu, major\n    where mname = '网络工程' and stu.mno = major.mno\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523971",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000248,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:22Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825286279393280",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523972",
+      "submitAt": "2026-01-07T08:57:25Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000193,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523972",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname \nfrom stu \njoin major on major.mno=stu.mno\norder by birdate ASC\nlimit 1;\n\n-- or\nselect sname\nfrom stu join major ON major.mno=stu.mno\nwhere mname = '软件工程'\n  and birdate = (\n    select min(birdate) \n    from stu\n    WHERE stu.mno = major.mno and mname = '软件工程'\n  );"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523972",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000193,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:25Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825299126583296",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523973",
+      "submitAt": "2026-01-07T08:57:28Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000435,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523973",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sc.cno 课程号,cname 课程名,max(grade) 最高成绩,min(grade) 最低成绩,avg(grade) 平均成绩\nfrom sc join cou on sc.cno=cou.cno\ngroup by sc.cno,cname\nhaving count(sno)>2 and min(grade)>=60 and sc.cno not in(\n    select cno\n    from sc \n    where grade is null\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523973",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000435,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:28Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825311961133056",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523974",
+      "submitAt": "2026-01-07T08:57:31Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523974",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "Insert into stu\nselect * \nfrom student\nwhere dept='数计学院'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523974",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "3-3": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "3-3": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:31Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825324799881216",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523975",
+      "submitAt": "2026-01-07T08:57:34Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000249,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523975",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select gid, gname, price, stock\nfrom good\nwhere gid not in(\n    select gid\n    from recorder\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523975",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "4-6": {
+                "result": "ACCEPTED",
+                "time": 0.000249,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "4-6": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:35Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825337663827968",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523976",
+      "submitAt": "2026-01-07T08:57:37Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523976",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select cno 课程号\nfrom sc \nwhere sno='S001' and cno not in\n(select cno from sc where sno ='S003')"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523976",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:37Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825350510964736",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523977",
+      "submitAt": "2026-01-07T08:57:40Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523977",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname 姓名,mname 专业名,SUM(credit) 总学分\nFROM stu,major,cou,sc\nWHERE stu.sno=sc.sno and cou.cno=sc.cno and stu.mno=major.mno\ngroup by sname,mname\nhaving count(sc.cno)>=2 and min(grade)>=80 and count(sc.cno)=count(grade)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523977",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:40Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825363345534976",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523978",
+      "submitAt": "2026-01-07T08:57:43Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000208,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523978",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select count(distinct cno) 门数 from sc"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523978",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000208,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:43Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825376182845440",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523979",
+      "submitAt": "2026-01-07T08:57:46Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000308,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523979",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select cno 课程号,count(sno) 选修人数\nfrom sc\ngroup by 课程号\norder by 选修人数 desc\nlimit 3;"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523979",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000308,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:47Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825389052424192",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523980",
+      "submitAt": "2026-01-07T08:57:49Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000203,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523980",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname\nfrom students\nwhere sdept = (\n    select sdept\n    from students\n    where sname = '陆毅'\n)and sname != '陆毅'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523980",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000203,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:50Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825401899614208",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523981",
+      "submitAt": "2026-01-07T08:57:52Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523981",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sh_goods.id, name\nfrom sh_goods left join sh_goods_comment on sh_goods.id = sh_goods_comment.goods_id \nwhere sh_goods_comment.content is null"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523981",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:53Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825414759313408",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523982",
+      "submitAt": "2026-01-07T08:57:55Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523982",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sg.name, sgc.content\nfrom sh_goods sg, sh_goods_comment sgc\nwhere sg.id = sgc.goods_id and score = 5"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523982",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:56Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825427635863552",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523983",
+      "submitAt": "2026-01-07T08:57:58Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523983",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sg.id gid, sgc.id cid, sgc.name cname, score\nfrom sh_goods sg join sh_goods_category sgc on sg.category_id = sgc.id\nwhere score = 5"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523983",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:57:59Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825440520728576",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523984",
+      "submitAt": "2026-01-07T08:58:01Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523984",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select name\nfrom sh_goods_category\nwhere id in (\n    select category_id\n    from sh_goods\n    where price < 500\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523984",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:02Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825453397258240",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523985",
+      "submitAt": "2026-01-07T08:58:04Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000309,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523985",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sno, sname, dept\nfrom student\nwhere sno in(\n    select sno\n    from score\n    group by sno\n    having count(*) >= 3\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523985",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "7-4": {
+                "result": "ACCEPTED",
+                "time": 0.000309,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "7-4": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:05Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825466263908352",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523986",
+      "submitAt": "2026-01-07T08:58:07Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000313,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523986",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select course.cno,cname,count(sno) total\nfrom course left join score on course.cno=score.cno\nwhere attribute ='必修'\ngroup by course.cno,cname"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523986",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "7-5": {
+                "result": "ACCEPTED",
+                "time": 0.000313,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "7-5": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:08Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825479120908288",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523987",
+      "submitAt": "2026-01-07T08:58:11Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000256,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523987",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname,dept from student,score,course\nwhere student.sno = score.sno \nand course.cno = score.cno \nand cname='大学语文' \nand grade >80"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523987",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "7-7": {
+                "result": "ACCEPTED",
+                "time": 0.000256,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "7-7": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:11Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825491962413056",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523988",
+      "submitAt": "2026-01-07T08:58:14Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000153,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523988",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select empno,ename,sal,grade from emp,salgrade\nwhere sal between losal and hisal"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523988",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "8-4": {
+                "result": "ACCEPTED",
+                "time": 0.000153,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "8-4": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:14Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825504785854464",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523989",
+      "submitAt": "2026-01-07T08:58:17Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000188,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523989",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select a.empno 员工编号,a.ename 员工姓名,a.mgr 上司编号,b.ename 上司姓名\nfrom emp a left join emp b on a.mgr = b.empno"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523989",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "8-5": {
+                "result": "ACCEPTED",
+                "time": 0.000188,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "8-5": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:17Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825517788196864",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523990",
+      "submitAt": "2026-01-07T08:58:20Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523990",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select DepartmentHeader from Teacher,Department\nwhere Teacher.DepartmentID = Department.DepartmentID and TeacherID = 'dep01001'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523990",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:20Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825530635386880",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523991",
+      "submitAt": "2026-01-07T08:58:23Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523991",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select StudentID, StudentName, Sex\nfrom Student s\nwhere StudentID not in(\n    select StudentID\n    from Grade\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523991",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:23Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825543482519552",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523992",
+      "submitAt": "2026-01-07T08:58:26Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000249,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523992",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select student.sno, sname, course.cno, cname, term, grade\nfrom student, course, score\nwhere student.sno = score.sno and course.cno = score.cno"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523992",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "8-3": {
+                "result": "ACCEPTED",
+                "time": 0.000249,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "8-3": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:26Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825556324003840",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523993",
+      "submitAt": "2026-01-07T08:58:29Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000319,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523993",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sc.sno 学号,cname 课程名,grade 成绩\nfrom cou,sc,(select sno,avg(grade) avgscore from sc  group by sno) sc_avg\nwhere cou.cno=sc.cno  and sc.sno=sc_avg.sno and grade>avgscore"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523993",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000319,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:29Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825569150189568",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523994",
+      "submitAt": "2026-01-07T08:58:32Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000288,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523994",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sname\nfrom stu\nwhere not exists(\n    select *\n    from cou \n    where teacher='张老师' and not exists\n        (\n            select *\n            from sc\n            where sno=stu.sno and cno=cou.cno\n        )\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523994",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000288,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:33Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825581993148416",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523995",
+      "submitAt": "2026-01-07T08:58:35Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000254,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523995",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select cno, cname\nfrom course\nwhere cno not in(\n    select cno\n    from score\n)"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523995",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "7-3": {
+                "result": "ACCEPTED",
+                "time": 0.000254,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "7-3": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:36Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825594837577728",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523996",
+      "submitAt": "2026-01-07T08:58:38Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000184,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523996",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sno 学号,round(avg(grade),1) 平均成绩\nfrom score\ngroup by sno\nhaving count(cno)>=2"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523996",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "2-3": {
+                "result": "ACCEPTED",
+                "time": 0.000184,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "2-3": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:39Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825607663779840",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523997",
+      "submitAt": "2026-01-07T08:58:41Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000193,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523997",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select gid 商品编号,sum(quantity) 销售总数量\nfrom recorder\ngroup by gid"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523997",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "4-4": {
+                "result": "ACCEPTED",
+                "time": 0.000193,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "4-4": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:42Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825620502523904",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836253523998",
+      "submitAt": "2026-01-07T08:58:44Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.0002,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836253523998",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select avg(score) 平均分, max(score) 最高分, min(score) 最低分\nfrom sc\nwhere cno = '0000001'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836253523998",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.0002,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:45Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825633344012288",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836257718272",
+      "submitAt": "2026-01-07T08:58:47Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0.000191,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836257718272",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sno 学号,count(*) 选课门数,sum(score) 考试总成绩\nfrom sc\ngroup by sno\norder by sno"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836257718272",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000191,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:48Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825646358937600",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836257718273",
+      "submitAt": "2026-01-07T08:58:50Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836257718273",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select keyword, count(*) goodscount\nfrom sh_goods\ngroup by keyword"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836257718273",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:51Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825659201892352",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836257718274",
+      "submitAt": "2026-01-07T08:58:53Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836257718274",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select category_id, max(price) max_price\nfrom sh_goods\ngroup by category_id"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836257718274",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:54Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825672058892288",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836257718275",
+      "submitAt": "2026-01-07T08:58:57Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836257718275",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select max(stock) stock1, min(stock) stock2\nfrom sh_goods"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836257718275",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:58:57Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825684893462528",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908836257718276",
+      "submitAt": "2026-01-07T08:59:00Z",
+      "status": "ACCEPTED",
+      "score": 10,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908836257718276",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select category_id, avg(price) average\nfrom sh_goods\ngroup by category_id\nhaving count(*) > 2"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 10,
+          "problemSetProblemId": "2001908836257718276",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 5
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "无",
+        "1": "无"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:00Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825697740615680",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928712818688",
+      "submitAt": "2026-01-07T08:59:03Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000272,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928712818688",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select pno\n from spj\n group by pno\n having min(qty) >all (\n     select qty\n     from spj\n     where pno='p6'\n )"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928712818688",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000272,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:03Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825710577926144",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928712818689",
+      "submitAt": "2026-01-07T08:59:06Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.0003,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928712818689",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select maker from product\nwhere model in (select model from pc)\ngroup by maker\nhaving count(*) >=3"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928712818689",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.0003,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:06Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825723401383936",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928712818690",
+      "submitAt": "2026-01-07T08:59:09Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000653,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928712818690",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select students.sno,sname,cno,score\nfrom students left join sc on sc.sno = students.sno"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928712818690",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.000653,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "1": "结果正确"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:09Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825736238678016",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928712818691",
+      "submitAt": "2026-01-07T08:59:12Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000135,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928712818691",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select count(*)\nfrom product\nwhere PName like '%螺母%'"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928712818691",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000135,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:12Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825749062156288",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928712818692",
+      "submitAt": "2026-01-07T08:59:15Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000127,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928712818692",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select max(Salary) max_Salary,min(Salary) min_Salary\nfrom employee"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928712818692",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000127,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:15Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825761884143616",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012992",
+      "submitAt": "2026-01-07T08:59:18Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000207,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012992",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Wno,count(Eid) Count_Eid\nfrom employee\nwhere Wno is not null\ngroup by Wno"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012992",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000207,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:18Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825774714519552",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012993",
+      "submitAt": "2026-01-07T08:59:21Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000186,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012993",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Eid,EName\nfrom employee\nwhere Wno = 'A01' and Salary > (select max(Salary) from employee where Wno = 'A02')"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012993",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000186,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:22Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825787555983360",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012994",
+      "submitAt": "2026-01-07T08:59:24Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.00028,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012994",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Sid\nfrom orders\ngroup by sid\nhaving sum(qty) >=all\n    (    select sum(qty)\n        from orders\n        group by sid\n    )"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012994",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000258,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.00028,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "",
+        "1": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:25Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825800396222464",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012995",
+      "submitAt": "2026-01-07T08:59:27Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.00027,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012995",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Eid,EName\nfrom employee where Eid != '0011' and not exists\n(select * from orders b where Eid = '0011' and not exists \n(select * from orders where employee.Eid=Eid))"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012995",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000256,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              },
+              "1": {
+                "result": "ACCEPTED",
+                "time": 0.00027,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 10
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": "",
+        "1": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:28Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825813222424576",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012996",
+      "submitAt": "2026-01-07T08:59:30Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000284,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012996",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select maker\nfrom product,pc\nwhere product.model=pc.model \nand ram = (select min(ram) from pc)\nand speed = (select max(speed) from pc where ram = (select min(ram) from pc))"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012996",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000284,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:31Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825826068086784",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012997",
+      "submitAt": "2026-01-07T08:59:33Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000485,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012997",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select maker \nfrom product\nwhere model in (select model from pc where speed>=133) \n      or model in (select model from laptop where speed>=133)\ngroup by maker\nhaving count(model)>=2"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012997",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000485,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:34Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825838906851328",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012998",
+      "submitAt": "2026-01-07T08:59:36Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000202,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012998",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select Eid,EName\nfrom employee\nwhere Wno = 'A01' and Salary < any(\n    select Salary from employee where Wno = 'A02')"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012998",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "0": {
+                "result": "ACCEPTED",
+                "time": 0.000202,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "0": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:37Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825851758194688",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717012999",
+      "submitAt": "2026-01-07T08:59:39Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000181,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717012999",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select dept 院部,count(sno) 总人数\nfrom student\ngroup by dept\norder by count(sno) desc"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717012999",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "6-4": {
+                "result": "ACCEPTED",
+                "time": 0.000181,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "6-4": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:40Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825864602611712",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717013000",
+      "submitAt": "2026-01-07T08:59:42Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0.000174,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717013000",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "select sno 学号, avg(grade) 平均分\nfrom score\ngroup by sno\nhaving count(*) >= 2"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717013000",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "6-6": {
+                "result": "ACCEPTED",
+                "time": 0.000174,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "6-6": ""
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:43Z"
+    }
+  },
+  {
+    "submission": {
+      "id": "2008825877439918080",
+      "userId": "1970285532932608000",
+      "problemType": "SQL_PROGRAMMING",
+      "problemSetProblemId": "2001908928717013001",
+      "submitAt": "2026-01-07T08:59:46Z",
+      "status": "ACCEPTED",
+      "score": 20,
+      "compiler": "NO_COMPILER",
+      "time": 0,
+      "memory": 0,
+      "submissionDetails": [
+        {
+          "problemSetProblemId": "2001908928717013001",
+          "problemId": "0",
+          "sqlProgrammingSubmissionDetail": {
+            "program": "delete \nfrom sc\nwhere SCScore3 < 60"
+          }
+        }
+      ],
+      "judgeResponseContents": [
+        {
+          "status": "ACCEPTED",
+          "score": 20,
+          "problemSetProblemId": "2001908928717013001",
+          "sqlProgrammingJudgeResponseContent": {
+            "testcaseJudgeResults": {
+              "test": {
+                "result": "ACCEPTED",
+                "time": 0,
+                "errorDescription": "",
+                "errorDiffResult": {
+                  "rowNumber": 0,
+                  "expectedRowData": [],
+                  "userRowData": [],
+                  "expectedColumns": [],
+                  "userColumns": []
+                },
+                "testcaseScore": 20
+              }
+            }
+          }
+        }
+      ],
+      "hints": {
+        "test": "注意表名和列名拼写正确，列顺序与原表保持一致。"
+      },
+      "problemSetId": "2001908709139529728",
+      "previewSubmission": false,
+      "cause": "",
+      "judgeAt": "2026-01-07T08:59:46Z"
+    }
+  }
+]
