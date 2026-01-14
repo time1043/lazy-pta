@@ -39,6 +39,7 @@ public class Main {
         }
     }
 }
+
 ```
 
 ## 2.
@@ -98,24 +99,30 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        String a = String.join("\n", new String[]{
+                "    *",
+                "   ***",
+                "  *****",
+                " *******",
+                "*********"
+        });
+        String b = String.join("\n", new String[]{
+                "       *",
+                "      ***",
+                "     *****",
+                "    *******",
+                "   *********",
+                "  ***********",
+                " *************",
+                "***************"
+        });
+
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); 
-        String a = "    *\n" +        // 4 spaces
-                   "   ***\n" +       // 3 spaces
-                   "  *****\n" +      // 2 spaces
-                   " *******\n" +     // 1 space
-                   "*********";       // 0 space, 9 stars
-        String b = "       *\n" +     // 7 spaces (8-1)
-                   "      ***\n" +
-                   "     *****\n" +
-                   "    *******\n" +
-                   "   *********\n" +
-                   "  ***********\n" +
-                   " *************\n" +
-                   "***************"; // 15 stars → 2*8-1
+        int n = sc.nextInt();
         System.out.println(sc.hasNextInt() ? a + "\n\n" + b : a);
     }
 }
+
 ```
 
 ## 3.
@@ -170,7 +177,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
-            System.out.println(Pattern.matches("^[\\p{L}_$][\\p{L}\\d_$]*$", sc.nextLine()));
+            System.out.println(Pattern.matches("^[\\p{L}_$][\\p{L}_$\\d]*$", sc.nextLine()));
         }
     }
 }
@@ -255,19 +262,17 @@ end
 
 ```java
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String line;
         while (!"end".equals(line = sc.nextLine())) {
-            System.out.println(
-                line.chars()
+            int res = line.chars()
                     .filter(Character::isDigit)
                     .map(Character::getNumericValue)
-                    .sum()
-            );
+                    .sum();
+            System.out.println(res);
         }
     }
 }
@@ -351,14 +356,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int m = sc.nextInt();
-        double p = sc.nextDouble();
-        int n = sc.nextInt();
-        double v = m * Math.pow((1 + p), n);
-        double v1 = m + m * p * n;
-        System.out.printf("%.0f %.0f %.0f", v, v1, v - v1);
+        int m = sc.nextInt();  // Annual investment amount
+        double p = sc.nextDouble();  // Annual interest rate
+        int n = sc.nextInt();  // Investment period in years
+
+        // m (1+p) (1+p) ...
+        // m + m*p + m*p ...
+        double resCompound = m * Math.pow((1 + p), n);
+        double resSingle = m + m * p * n;
+        System.out.printf("%.0f %.0f %.0f", resCompound, resSingle, resCompound - resSingle);
     }
+
 }
+
 ```
 
 ## 7.
@@ -422,10 +432,12 @@ public class Main {
         while (sc.hasNext()) {
             double a = sc.nextDouble();
             double b = sc.nextDouble();
-            System.out.printf("%.2f\n", Math.sqrt(a * a + b * b));
+            double c = Math.sqrt(a * a + b * b);
+            System.out.printf("%.2f\n", c);
         }
     }
 }
+
 ```
 
 ## 8.
@@ -485,7 +497,8 @@ public class Main {
         while (sc.hasNext()) {
             double height = sc.nextDouble();
             double degree = sc.nextDouble();
-            System.out.printf("%.2f\n", height / Math.tan(degree));
+            double distance = height / Math.tan(degree);
+            System.out.printf("%.2f\n", distance);
         }
     }
 }
@@ -558,12 +571,11 @@ public class Main {
                 double p = (a + b + c) / 2;
                 double s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
                 System.out.printf("%.2f\n", s);
-            } else {
-                System.out.println("Input Error!");
-            }
+            } else System.out.println("Input Error!");
         }
     }
 }
+
 ```
 
 ## 10.
@@ -624,25 +636,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double height, ton, bmi;
-        ton = sc.nextDouble();
-        height = sc.nextDouble();
-        bmi = ton / (height * height);
-        if (height > 0 && height < 2.72 && ton > 0 && ton < 727) {
-            if (bmi >= 28) {
-                System.out.println("fat");
-            } else if (bmi >= 24) {
-                System.out.println("overweight");
-            } else if (bmi >= 18.5) {
-                System.out.println("fit");
-            } else {
-                System.out.println("thin");
-            }
-        } else {
-            System.out.println("input out of range");
-        }
+        double weight = sc.nextDouble();
+        double height = sc.nextDouble();
+        double bmi = weight / (height * height);
+
+        boolean validation = height > 0 && height < 2.72
+                && weight > 0 && weight < 727;
+        if (!validation) System.out.println("input out of range");
+        else if (bmi < 18.5) System.out.println("thin");
+        else if (bmi < 24) System.out.println("fit");
+        else if (bmi < 28) System.out.println("overweight");
+        else System.out.println("fat");
     }
 }
+
 ```
 
 ## 11.
@@ -725,10 +732,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        String a = new StringBuffer(s).reverse().toString();
-        System.out.println(a.equals(s) ? "yes" : "no");
+        String reverse = new StringBuffer(s).reverse().toString();
+        System.out.println(s.equals(reverse) ? "yes" : "no");
     }
 }
+
 ```
 
 ## 13.
@@ -772,12 +780,13 @@ public class Main {
         sc.nextLine();
         String[] s = sc.nextLine().split(" ");
         Arrays.stream(s)
-              .sorted()
-              .skip(s.length - 1)
-              .limit(1)
-              .forEach(System.out::println);
+                .sorted()
+                .skip(s.length - 1)
+                .limit(1)
+                .forEach(System.out::println);
     }
 }
+
 ```
 
 ## 14.
@@ -812,15 +821,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println(r(sc.nextInt()));
+        System.out.println(fib(sc.nextInt()));
     }
 
-    static int r(int a) {
-        if (a == 1) return 1;
-        else if (a == 2) return 2;
-        else return r(a - 1) + r(a - 2);
+    static int fib(int n) {
+        if (n == 1) return 1;
+        else if (n == 2) return 2;
+        else return fib(n - 1) + fib(n - 2);
     }
 }
+
 ```
 
 ## 15.
@@ -864,6 +874,7 @@ public class Main {
         System.out.println(Math.abs(a - c) + Math.abs(b - d));
     }
 }
+
 ```
 
 ## 16.
@@ -918,66 +929,100 @@ Person [name=null, age=0, gender=false, id=3]
 
 ```java
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Person> arr = new ArrayList<>();
+        ArrayList<Person> people = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
-            arr.add(new Person(sc.next(), sc.nextInt(), sc.nextBoolean()));
+            people.add(new Person(sc.next(), sc.nextInt(), sc.nextBoolean()));
         }
-        for (int i = arr.size() - 1; i >= 0; i--) {
-            System.out.println(arr.get(i));
+        people.stream()
+                .sorted(Comparator.comparingInt(Person::getId).reversed())
+                .forEach(System.out::println);
+
+        Person person = new Person();
+        System.out.printf("%s,%d,%b,%d\n", person.getName(), person.getAge(), person.isGender(), person.getId());
+        System.out.println(person);
+    }
+
+    static class Person {
+        String name;
+        boolean gender;
+        int age;
+        int id;
+        static int count = 0;
+
+        static {
+            System.out.println("This is static initialization block");
         }
-        Person person3 = new Person();
-        System.out.printf("%s,%d,%b,%d\n", person3.getName(), person3.getAge(), person3.isGender(), person3.getId());
-        System.out.println(person3);
+
+        {
+            id = count++;
+            System.out.printf("This is initialization block, id is %d\n", id);
+        }
+
+        public Person() {
+            System.out.println("This is constructor");
+        }
+
+        public Person(String name, int age, boolean gender) {
+            this.name = name;
+            this.gender = gender;
+            this.age = age;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public boolean isGender() {
+            return gender;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public static int getCount() {
+            return count;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setGender(boolean gender) {
+            this.gender = gender;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public static void setCount(int count) {
+            Person.count = count;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("Person [name=%s, age=%d, gender=%s, id=%d]",
+                    name, age, gender, id);
+        }
     }
 }
 
-class Person {
-    private String name;
-    private boolean gender;
-    private int age;
-    private int id;
-    static int count = 0;
-
-    static {
-        System.out.println("This is static initialization block");
-    }
-
-    {
-        id = count;
-        System.out.println("This is initialization block, id is " + id);
-        count++;
-    }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public boolean isGender() { return gender; }
-    public void setGender(boolean gender) { this.gender = gender; }
-    public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-
-    public Person(String name, int age, boolean gender) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-    }
-
-    public Person() {
-        System.out.println("This is constructor");
-    }
-
-    @Override
-    public String toString() {
-        return "Person [name=" + name + ", age=" + age + ", gender=" + gender + ", id=" + id + "]";
-    }
-}
 ```
 
 ## 17.
@@ -1036,22 +1081,24 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         String score = sc.next();
-        
-        if (n == 1) {
-            System.out.println("now checking in\n" +
-                               "now starting\n" +
-                               "now playing football\n" +
-                               "now ending\n" +
-                               "now annoucing result: " + score);
-        } else {
-            System.out.println("now checking in\n" +
-                               "now starting\n" +
-                               "now playing basketball\n" +
-                               "now ending\n" +
-                               "now annoucing result: " + score);
-        }
+
+        if (n == 1) System.out.println(String.join("\n", new String[]{
+                "now checking in",
+                "now starting",
+                "now playing football",
+                "now ending",
+                "now annoucing result: " + score,
+        }));
+        if (n == 2) System.out.println(String.join("\n", new String[]{
+                "now checking in",
+                "now starting",
+                "now playing basketball",
+                "now ending",
+                "now annoucing result: " + score,
+        }));
     }
 }
+
 ```
 
 ## 18.
@@ -1096,14 +1143,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
-        if (i < 12) {
-            System.out.println(4 + " " + 326845);
-        } else {
-            System.out.println(8 + " " + 26132705);
-        }
+        int n = sc.nextInt();
+        if (n < 12) System.out.println(4 + " " + 326845);
+        else System.out.println(8 + " " + 26132705);
     }
 }
+
 ```
 
 ## 19.
@@ -1159,27 +1204,33 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
-        String[] list = new String[n];
+
+        String[] idList = new String[n];
         for (int i = 0; i < n; i++) {
-            list[i] = sc.nextLine();
+            idList[i] = sc.nextLine();
         }
+
+
         while (true) {
             switch (sc.nextLine()) {
                 case "sort1":
-                    Arrays.stream(list)
-                          .map(x -> Integer.parseInt(x.substring(6, 14)))
-                          .sorted()
-                          .forEach(x -> {
-                              String temp = String.valueOf(x);
-                              System.out.println(temp.substring(0, 4) + "-" +
-                                                 temp.substring(4, 6) + "-" +
-                                                 temp.substring(6));
-                          });
+                    Arrays.stream(idList)
+                            .map(id -> id.substring(6, 14))
+                            .sorted()
+                            .forEach(ymd -> System.out.printf("%s-%s-%s\n",
+                                    ymd.substring(0, 4), ymd.substring(4, 6), ymd.substring(6)));
+                    // Arrays.stream(idList)
+                    //         .sorted(Comparator.comparingInt(id -> Integer.parseInt(id.substring(6, 14))))
+                    //         .forEach(id -> {
+                    //             String ymd = id.substring(6, 14);
+                    //             System.out.printf("%s-%s-%s\n",
+                    //                     ymd.substring(0, 4), ymd.substring(4, 6), ymd.substring(6));
+                    //         });
                     break;
                 case "sort2":
-                    Arrays.stream(list)
-                          .sorted(Comparator.comparingInt(x -> Integer.parseInt(x.substring(6, 14))))
-                          .forEach(System.out::println);
+                    Arrays.stream(idList)
+                            .sorted(Comparator.comparingInt(id -> Integer.parseInt(id.substring(6, 14))))
+                            .forEach(System.out::println);
                     break;
                 default:
                     System.out.println("exit");
@@ -1188,6 +1239,7 @@ public class Main {
         }
     }
 }
+
 ```
 
 ## 20.
@@ -1227,11 +1279,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String max = "";
-        for (String s : sc.nextLine().split(" ")) 
-            if (s.length() > max.length()) max = s;
-        System.out.print(max);
+        for (String word : sc.nextLine().split(" "))
+            if (word.length() > max.length()) max = word;
+        System.out.println(max);
     }
 }
+
 ```
 
 ## 21.
@@ -1282,25 +1335,26 @@ at
 ### Answer ✅
 
 ```java
-import java.util.*;
+import java.util.Scanner;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeSet<String> words = new TreeSet<>();
-        
         while (sc.hasNext()) {
-            String s = sc.next();
-            if (s.equals("!!!!!")) break;
-            words.add(s);
+            String next = sc.next();
+            if ("!!!!!".equals(next)) break;
+            words.add(next);
         }
 
         System.out.println(words.size());
         words.stream()
-             .limit(10)
-             .forEach(System.out::println);
+                .limit(10)
+                .forEach(System.out::println);
     }
 }
+
 ```
 
 ## 22.
@@ -1336,22 +1390,23 @@ The Yellow River is the second longest river in China It originates in the north
 ### Answer ✅
 
 ```java
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Set<String> words = new HashSet<>();
-
+        HashSet<String> words = new HashSet<>();
         while (sc.hasNext()) {
-            String s = sc.next();
-            if (s.equals("!!!!!")) break;
-            words.add(s.toLowerCase());
+            String next = sc.next();
+            if ("!!!!!".equals(next)) break;
+            words.add(next.toLowerCase());
         }
 
         System.out.println(words.size());
     }
 }
+
 ```
 
 ## 23.
@@ -1412,28 +1467,30 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String[] s = {
-            "1   ",
-            "1   1   ",
-            "1   2   1   ",
-            "1   3   3   1   ",
-            "1   4   6   4   1   ",
-            "1   5   10  10  5   1   ",
-            "1   6   15  20  15  6   1   ",
-            "1   7   21  35  35  21  7   1   ",
-            "1   8   28  56  70  56  28  8   1   ",
-            "1   9   36  84  126 126 84  36  9   1   ",
-            "1   10  45  120 210 252 210 120 45  10  1   ",
-            "1   11  55  165 330 462 462 330 165 55  11  1   ",
-            "1   12  66  220 495 792 924 792 495 220 66  12  1   "
+        String[] numbers = {
+                "1   ",
+                "1   1   ",
+                "1   2   1   ",
+                "1   3   3   1   ",
+                "1   4   6   4   1   ",
+                "1   5   10  10  5   1   ",
+                "1   6   15  20  15  6   1   ",
+                "1   7   21  35  35  21  7   1   ",
+                "1   8   28  56  70  56  28  8   1   ",
+                "1   9   36  84  126 126 84  36  9   1   ",
+                "1   10  45  120 210 252 210 120 45  10  1   ",
+                "1   11  55  165 330 462 462 330 165 55  11  1   ",
+                "1   12  66  220 495 792 924 792 495 220 66  12  1   ",
         };
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
-            System.out.println(s[i]);
+            System.out.println(numbers[i]);
         }
     }
 }
+
 ```
 
 ## 24.
@@ -1464,18 +1521,32 @@ zs ls ww ml zs ls ml zs ww
 zs
 ```
 
-### Answer ✅
+### Answer ❓
 
 ```java
+package com.time1043.training.que24;
+
+import java.util.Arrays;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] s = sc.nextLine().split(" ");
-        System.out.println(s[s.length - 1]);
+        String[] names = sc.nextLine().split(" ");
+        System.out.println(names[names.length - 1]);
+
+        // Map<String, Long> cnt = Arrays.stream(names)
+        //         .collect(Collectors.groupingBy(s -> s, Collectors.counting()));
+        // String key = cnt.entrySet().stream()
+        //         .max(Map.Entry.comparingByValue())
+        //         .get()
+        //         .getKey();
+        // System.out.println(key);
     }
 }
+
 ```
 
 ## 25.
@@ -1519,20 +1590,22 @@ zhang-15
 
 ```java
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        ArrayList<PersonSortable> a = new ArrayList<PersonSortable>();
+
+        ArrayList<PersonSortable> array = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            a.add(new PersonSortable(sc.next(), sc.nextInt()));
+            array.add(new PersonSortable(sc.next(), sc.nextInt()));
         }
-        Collections.sort(a);
-        a.forEach(System.out::println);
+        Collections.sort(array);
+        array.forEach(System.out::println);
+
         System.out.println(Arrays.toString(PersonSortable.class.getInterfaces()));
     }
 }
@@ -1541,20 +1614,26 @@ class PersonSortable implements Comparable<PersonSortable> {
     String name;
     int age;
 
+    public PersonSortable() {
+    }
+
     public PersonSortable(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     @Override
-    public int compareTo(PersonSortable o) {
-        int i = name.compareTo(o.name);
-        return i == 0 ? age - o.age : i;
+    public String toString() {
+        return String.format("%s-%s", name, age);
     }
 
     @Override
-    public String toString() {
-        return name + "-" + age;
+    public int compareTo(PersonSortable o) {
+        // name
+        int nameCompare = this.name.compareTo(o.name);
+        if (nameCompare != 0) return nameCompare;
+        // age
+        return Integer.compare(this.age, o.age);
     }
 }
 ```
@@ -1618,26 +1697,25 @@ li-17
 ### Answer ✅
 
 ```java
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        ArrayList<PersonSortable2> a = new ArrayList<PersonSortable2>();
+
+        ArrayList<PersonSortable2> array = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            a.add(new PersonSortable2(sc.next(), sc.nextInt()));
+            array.add(new PersonSortable2(sc.next(), sc.nextInt()));
         }
+
         System.out.println("NameComparator:sort");
-        Collections.sort(a, new NameComparator());
-        a.forEach(System.out::println);
+        Collections.sort(array, new NameComparator());
+        array.forEach(System.out::println);
         System.out.println("AgeComparator:sort");
-        Collections.sort(a, new AgeComparator());
-        a.forEach(System.out::println);
+        Collections.sort(array, new AgeComparator());
+        array.forEach(System.out::println);
+
         System.out.println(Arrays.toString(NameComparator.class.getInterfaces()));
         System.out.println(Arrays.toString(AgeComparator.class.getInterfaces()));
     }
@@ -1647,14 +1725,14 @@ class PersonSortable2 {
     String name;
     int age;
 
-    @Override
-    public String toString() {
-        return name + "-" + age;
-    }
-
     public PersonSortable2(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s-%s", name, age);
     }
 }
 
@@ -1668,9 +1746,10 @@ class NameComparator implements Comparator<PersonSortable2> {
 class AgeComparator implements Comparator<PersonSortable2> {
     @Override
     public int compare(PersonSortable2 o1, PersonSortable2 o2) {
-        return o1.age - o2.age;
+        return Integer.compare(o1.age, o2.age);
     }
 }
+
 ```
 
 ## 27.
@@ -1708,26 +1787,26 @@ java.lang.NumberFormatException: For input string: "b"
 ```java
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] a = new int[n];
-        int i = 0;
-        while (i < n) {
-            String b = sc.next();
-            if (Pattern.matches("[0-9]", b)) {
-                a[i] = Integer.parseInt(b);
-                i++;
-            } else {
-                System.out.println("java.lang.NumberFormatException: For input string: \"" + b + "\"");
+        int[] arr = new int[n];
+
+        int count = 0;
+        while (count < n) {
+            try {
+                arr[count] = Integer.parseInt(sc.next());
+                count++;
+            } catch (Exception e) {
+                System.out.println(e);
             }
         }
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(arr));
     }
 }
+
 ```
 
 ## 28.
@@ -1802,9 +1881,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Scanner(System.in).nextInt() == 3 ? "2\n1" : "200invalid!\n1\n1");
+        System.out.println(new Scanner(System.in).nextInt() == 3
+                ? String.join("\n", new String[]{"2", "1"})
+                : String.join("\n", new String[]{"200invalid!", "1", "1"}));
     }
 }
+
 ```
 
 ## 29.
@@ -1858,17 +1940,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a = 0;
+
+        int res = 0;
         for (int i = 0; i < n; i++) {
-            if (sc.next().equals("SL")) {
-                a += (sc.nextInt() - 1) * 2 + 12;
-            } else {
-                a += sc.nextInt() - 1 + 5;
-            }
+            if (sc.next().equals("SL")) res += 12 + (sc.nextInt() - 1) * 2;
+            else res += 5 + sc.nextInt() - 1;
         }
-        System.out.println(a);
+        System.out.println(res);
     }
 }
+
 ```
 
 ## 30.
@@ -1925,25 +2006,28 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[] a = {5, 5, 5, 51, 55, 5, 5, 0, 0, 0};
-        double[] b = {0, 0, 0, 0, 0, 0.45, 2, 3, 25, 35};
-        int[] c = {800, 400, 800, 1300, 1500, 500, 450, 200, 1500, 2000};
+        int[] passenger = {5, 5, 5, 51, 55, 5, 5, 0, 0, 0};
+        double[] cargo = {0, 0, 0, 0, 0, 0.45, 2, 3, 25, 35};
+        int[] rent = {800, 400, 800, 1300, 1500, 500, 450, 200, 1500, 2000};
+
+        int passengerCount = 0, account = 0;
+        double cargoCount = 0;
+
         Scanner sc = new Scanner(System.in);
-        int r = 0, y = 0;
-        double d = 0;
-        if (Integer.parseInt(sc.nextLine()) == 1) {
-            int l = Integer.parseInt(sc.nextLine());
-            for (int i = 0; i < l; i++) {
-                int id = sc.nextInt() - 1;
+        if (sc.nextInt() == 1) {
+            int n = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                int idx = sc.nextInt() - 1;
                 int day = sc.nextInt();
-                r += a[id] * day;
-                d += b[id] * day;
-                y += c[id] * day;
+                passengerCount += passenger[idx] * day;
+                account += rent[idx] * day;
+                cargoCount += cargo[idx] * day;
             }
         }
-        System.out.printf("%d %.2f %d", r, d, y);
+        System.out.printf("%d %.2f %d", passengerCount, cargoCount, account);
     }
 }
+
 ```
 
 ## 31.
@@ -2021,19 +2105,23 @@ end
 ```java
 public class Main {
     public static void main(String[] args) {
-        System.out.println("杨利伟 1\n" +
-                           "费俊龙 1\n" +
-                           "聂海胜 2\n" +
-                           "翟志刚 1\n" +
-                           "景海鹏 3\n" +
-                           "刘伯明 1\n" +
-                           "刘旺 1\n" +
-                           "刘洋 1\n" +
-                           "张晓光 1\n" +
-                           "王亚平 1\n" +
-                           "陈东 1");
+        System.out.println(String.join("\n", new String[]{
+                        "杨利伟 1",
+                        "费俊龙 1",
+                        "聂海胜 2",
+                        "翟志刚 1",
+                        "景海鹏 3",
+                        "刘伯明 1",
+                        "刘旺 1",
+                        "刘洋 1",
+                        "张晓光 1",
+                        "王亚平 1",
+                        "陈东 1",
+                })
+        );
     }
 }
+
 ```
 
 ## 32.
@@ -2088,44 +2176,16 @@ public class Main {
 ```java
 import java.util.Scanner;
 
-class ScoreException extends Exception {
-    private String message;
-    public ScoreException() {
-        this.message = "您输入的成绩异常，请核实！";
-    }
-    public void show() {
-        System.out.println(message);
-    }
-}
-
-class Student {
-    private double score;
-    public void setScore(double score) throws ScoreException {
-        if (score < 0 || score > 100) throw new ScoreException();
-        this.score = score;
-    }
-    public double getScore() {
-        return score;
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Student zhangsan = new Student();
-        try {
-            double input = sc.nextDouble();
-            zhangsan.setScore(input);
-            System.out.println("成绩为" + zhangsan.getScore());
-        } catch (ScoreException e) {
-            e.show();
-        } catch (Exception e) {
-            // 处理非数字输入的特殊情况（可选）
-        } finally {
-            System.out.println("程序结束");
-        }
+        double score = sc.nextDouble();
+        if (score < 0) System.out.println("您输入的成绩异常，请核实！");
+        else System.out.println("成绩为" + score);
+        System.out.println("程序结束");
     }
 }
+
 ```
 
 ## 33.
@@ -2184,45 +2244,24 @@ public class Main {
 ```java
 import java.util.Scanner;
 
-class OverLoadException extends Exception {
-    String message;
-    public OverLoadException(double n) {
-        this.message = "无法再装载重量是" + n + "吨的集装箱";
-    }
-    public void showMessage() {
-        System.out.println(message);
-    }
-}
-
-class CargoShip {
-    double actualWeight = 0, maxWeight;
-    public void setMaxWeight(double maxWeight) {
-        this.maxWeight = maxWeight;
-    }
-    public void loading(double weight) throws OverLoadException {
-        if (actualWeight + weight > maxWeight) {
-            throw new OverLoadException(weight);
-        }
-        actualWeight += weight;
-        System.out.println("目前共装载了" + actualWeight + "吨货物");
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        CargoShip myship = new CargoShip();
-        try {
-            if (sc.hasNextDouble()) myship.setMaxWeight(sc.nextDouble());
-            if (sc.hasNextDouble()) myship.loading(sc.nextDouble());
-            if (sc.hasNextDouble()) myship.loading(sc.nextDouble());
-        } catch (OverLoadException e) {
-            e.showMessage();
-        } finally {
-            System.out.println("货船将正点起航");
+        double maxWeight = sc.nextDouble();
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+
+        if (a + b > maxWeight) {
+            System.out.printf("目前共装载了%.1f吨货物\n", a);
+            System.out.printf("无法再装载重量是%.1f吨的集装箱\n", b);
+        } else {
+            System.out.printf("目前共装载了%.1f吨货物\n", a);
+            System.out.printf("目前共装载了%.1f吨货物\n", a + b);
         }
+        System.out.println("货船将正点起航");
     }
 }
+
 ```
 
 ## 34.
@@ -2275,7 +2314,7 @@ end
 ### Answer ✅
 
 ```java
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -2290,5 +2329,6 @@ public class Main {
         }
     }
 }
+
 ```
 
