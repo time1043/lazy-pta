@@ -3,7 +3,7 @@
     "editor.formatOnSave": false
   },
   "[markdown]": {
-    // "editor.formatOnSave": false
+    "editor.formatOnSave": false
   },
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
