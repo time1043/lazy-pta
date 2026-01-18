@@ -14,7 +14,7 @@ C.
 D.
 数据的集合
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -34,7 +34,7 @@ C.
 D.
 软件验收方法
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -54,7 +54,7 @@ C.
 D.
 用户需求
 
-### Answer ❓
+### Answer ❌
 
 B
 
@@ -74,7 +74,7 @@ C.
 D.
 时序图
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -94,7 +94,7 @@ C.
 D.
 等价类划分
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -114,7 +114,7 @@ C.
 D.
 部署图
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -134,7 +134,7 @@ C.
 D.
 多态
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -154,7 +154,7 @@ C.
 D.
 多态
 
-### Answer ❓
+### Answer ❌
 
 B
 
@@ -174,7 +174,7 @@ C.
 D.
 以上都是
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -194,7 +194,7 @@ C.
 D.
 顺序图
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -214,7 +214,7 @@ C.
 D.
 社会可行性
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -234,7 +234,7 @@ C.
 D.
 维护文档
 
-### Answer ❓
+### Answer ❌
 
 C
 
@@ -254,7 +254,7 @@ C.
 D.
 时序图
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -274,7 +274,7 @@ C.
 D.
 详细
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -294,7 +294,7 @@ C.
 D.
 缺少有效的软件评测手段，提交用户软件质量差
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -314,7 +314,7 @@ C.
 D.
 数据库表结构
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -334,7 +334,7 @@ C.
 D.
 名称对象
 
-### Answer ❓
+### Answer ❌
 
 C
 
@@ -354,7 +354,7 @@ C.
 D.
 变换、数据存储、过程和数据流
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -374,7 +374,7 @@ C.
 D.
 可靠性
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -394,7 +394,7 @@ C.
 D.
 5280
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -414,7 +414,7 @@ C.
 D.
 较晚产生工作软件
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -434,7 +434,7 @@ C.
 D.
 瀑布
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -454,7 +454,7 @@ C.
 D.
 因果图法，场景法
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -474,7 +474,7 @@ C.
 D.
 及早提供全部完整软件
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -494,7 +494,7 @@ C.
 D.
 功能内聚
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -514,7 +514,7 @@ C.
 D.
 维护
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -534,7 +534,7 @@ C.
 D.
 软件的性能描述
 
-### Answer ❓
+### Answer ✅
 
 A
 
@@ -554,7 +554,7 @@ C.
 D.
 条件覆盖
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -574,7 +574,7 @@ C.
 D.
 产生对象
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -594,7 +594,7 @@ C.
 D.
 功能结构图、微规格说明
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -614,7 +614,7 @@ C.
 D.
 验收测试
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -634,7 +634,7 @@ C.
 D.
 逻辑性
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -654,7 +654,7 @@ C.
 D.
 高内聚，低耦合
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -674,7 +674,7 @@ C.
 D.
 和用户沟通，获取系统需求
 
-### Answer ❓
+### Answer ✅
 
 D
 
@@ -694,7 +694,7 @@ C.
 D.
 解决系统是“如何做的问题”
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -714,7 +714,7 @@ C.
 D.
 非整体性开发
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -734,7 +734,7 @@ C.
 D.
 开发时的错误
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -754,7 +754,7 @@ C.
 D.
 关联关系
 
-### Answer ❓
+### Answer ✅
 
 B
 
@@ -774,7 +774,7 @@ C.
 D.
 适应需求变化
 
-### Answer ❓
+### Answer ✅
 
 C
 
@@ -794,7 +794,7 @@ C.
 D.
 预防性维护
 
-### Answer ❓
+### Answer ✅
 
 C
 

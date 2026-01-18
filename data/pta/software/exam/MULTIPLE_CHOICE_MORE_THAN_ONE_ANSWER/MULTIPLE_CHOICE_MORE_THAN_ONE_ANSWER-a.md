@@ -1,6 +1,6 @@
 ## 1.
 
-### Answer ❓
+### Answer ✅
 
 A
 B
@@ -8,7 +8,7 @@ D
 
 ## 2.
 
-### Answer ❓
+### Answer ✅
 
 A
 B
@@ -16,7 +16,7 @@ D
 
 ## 3.
 
-### Answer ❓
+### Answer ✅
 
 A
 C
@@ -25,7 +25,7 @@ E
 
 ## 4.
 
-### Answer ❓
+### Answer ✅
 
 A
 B
@@ -33,7 +33,7 @@ D
 
 ## 5.
 
-### Answer ❓
+### Answer ✅
 
 B
 C
@@ -41,7 +41,7 @@ D
 
 ## 6.
 
-### Answer ❓
+### Answer ✅
 
 A
 B
@@ -49,7 +49,7 @@ D
 
 ## 7.
 
-### Answer ❓
+### Answer ✅
 
 A
 C
@@ -57,7 +57,7 @@ D
 
 ## 8.
 
-### Answer ❓
+### Answer 🍋
 
 A
 B
@@ -66,7 +66,7 @@ E
 
 ## 9.
 
-### Answer ❓
+### Answer 🍋
 
 A
 B
@@ -75,7 +75,7 @@ E
 
 ## 10.
 
-### Answer ❓
+### Answer ✅
 
 A
 B

@@ -5,8 +5,8 @@
     "problemType": "MULTIPLE_CHOICE_MORE_THAN_ONE_ANSWER",
     "problemSetProblemId": "0",
     "submitAt": "2026-01-08T08:44:50Z",
-    "status": "WAITING",
-    "score": 0,
+    "status": "PARTIAL_ACCEPTED",
+    "score": 18,
     "compiler": "NO_COMPILER",
     "time": 0,
     "memory": 0,
@@ -126,11 +126,62 @@
         "problemId": "0"
       }
     ],
-    "judgeResponseContents": [],
+    "judgeResponseContents": [
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853406"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853401"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853403"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853410"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853405"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853404"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853411"
+      },
+      {
+        "status": "PARTIAL_ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853412"
+      },
+      {
+        "status": "PARTIAL_ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853408"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 2,
+        "problemSetProblemId": "2005568343123853409"
+      }
+    ],
     "hints": {},
     "problemSetId": "2005568342876389376",
     "previewSubmission": false,
     "cause": "",
-    "judgeAt": "1970-01-01T00:00:00Z"
+    "judgeAt": "2026-01-17T11:09:05Z"
   }
 }

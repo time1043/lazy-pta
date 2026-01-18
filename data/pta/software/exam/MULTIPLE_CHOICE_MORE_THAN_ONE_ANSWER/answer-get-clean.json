@@ -5,7 +5,8 @@
       "A",
       "B",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853401",
@@ -13,7 +14,8 @@
       "A",
       "B",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853403",
@@ -22,7 +24,8 @@
       "C",
       "D",
       "E"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853410",
@@ -30,7 +33,8 @@
       "A",
       "B",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853405",
@@ -38,7 +42,8 @@
       "B",
       "C",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853404",
@@ -46,7 +51,8 @@
       "A",
       "B",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853411",
@@ -54,7 +60,8 @@
       "A",
       "C",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853412",
@@ -63,7 +70,8 @@
       "B",
       "D",
       "E"
-    ]
+    ],
+    "status": "PARTIAL_ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853408",
@@ -72,7 +80,8 @@
       "B",
       "D",
       "E"
-    ]
+    ],
+    "status": "PARTIAL_ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853409",
@@ -81,6 +90,7 @@
       "B",
       "C",
       "D"
-    ]
+    ],
+    "status": "ACCEPTED"
   }
 ]

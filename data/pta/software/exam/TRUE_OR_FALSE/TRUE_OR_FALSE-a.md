@@ -1,60 +1,60 @@
 ## 1.
 
-### Answer ❓
+### Answer ✅
 
 TRUE
 
 ## 2.
 
-### Answer ❓
+### Answer ✅
 
 FALSE
 
 ## 3.
 
-### Answer ❓
+### Answer ✅
 
 TRUE
 
 ## 4.
 
-### Answer ❓
+### Answer ✅
 
 TRUE
 
 ## 5.
 
-### Answer ❓
+### Answer ✅
 
 FALSE
 
 ## 6.
 
-### Answer ❓
+### Answer ✅
 
 FALSE
 
 ## 7.
 
-### Answer ❓
+### Answer ✅
 
 TRUE
 
 ## 8.
 
-### Answer ❓
+### Answer ✅
 
 TRUE
 
 ## 9.
 
-### Answer ❓
+### Answer ✅
 
 TRUE
 
 ## 10.
 
-### Answer ❓
+### Answer ✅
 
 FALSE
 

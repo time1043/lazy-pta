@@ -1,42 +1,52 @@
 [
   {
     "problemSetProblemId": "2005568343123853333",
-    "answer": "TRUE"
+    "answer": "TRUE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853316",
-    "answer": "FALSE"
+    "answer": "FALSE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343119659008",
-    "answer": "TRUE"
+    "answer": "TRUE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853326",
-    "answer": "TRUE"
+    "answer": "TRUE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853313",
-    "answer": "FALSE"
+    "answer": "FALSE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853334",
-    "answer": "FALSE"
+    "answer": "FALSE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853318",
-    "answer": "TRUE"
+    "answer": "TRUE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853335",
-    "answer": "TRUE"
+    "answer": "TRUE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853315",
-    "answer": "TRUE"
+    "answer": "TRUE",
+    "status": "ACCEPTED"
   },
   {
     "problemSetProblemId": "2005568343123853322",
-    "answer": "FALSE"
+    "answer": "FALSE",
+    "status": "ACCEPTED"
   }
 ]

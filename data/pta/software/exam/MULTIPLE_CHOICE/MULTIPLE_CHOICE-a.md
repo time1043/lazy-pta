@@ -1,240 +1,240 @@
 ## 1.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 2.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 3.
 
-### Answer ❓
+### Answer ❌
 
 B
 
 ## 4.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 5.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 6.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 7.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 8.
 
-### Answer ❓
+### Answer ❌
 
 B
 
 ## 9.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 10.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 11.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 12.
 
-### Answer ❓
+### Answer ❌
 
 C
 
 ## 13.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 14.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 15.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 16.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 17.
 
-### Answer ❓
+### Answer ❌
 
 C
 
 ## 18.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 19.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 20.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 21.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 22.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 23.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 24.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 25.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 26.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 27.
 
-### Answer ❓
+### Answer ✅
 
 A
 
 ## 28.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 29.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 30.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 31.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 32.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 33.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 34.
 
-### Answer ❓
+### Answer ✅
 
 D
 
 ## 35.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 36.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 37.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 38.
 
-### Answer ❓
+### Answer ✅
 
 B
 
 ## 39.
 
-### Answer ❓
+### Answer ✅
 
 C
 
 ## 40.
 
-### Answer ❓
+### Answer ✅
 
 C
 

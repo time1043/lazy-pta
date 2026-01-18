@@ -5,8 +5,8 @@
     "problemType": "TRUE_OR_FALSE",
     "problemSetProblemId": "0",
     "submitAt": "2026-01-08T08:44:40Z",
-    "status": "WAITING",
-    "score": 0,
+    "status": "ACCEPTED",
+    "score": 10,
     "compiler": "NO_COMPILER",
     "time": 0,
     "memory": 0,
@@ -82,11 +82,62 @@
         "problemId": "0"
       }
     ],
-    "judgeResponseContents": [],
+    "judgeResponseContents": [
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853333"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853316"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343119659008"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853326"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853313"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853334"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853318"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853335"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853315"
+      },
+      {
+        "status": "ACCEPTED",
+        "score": 1,
+        "problemSetProblemId": "2005568343123853322"
+      }
+    ],
     "hints": {},
     "problemSetId": "2005568342876389376",
     "previewSubmission": false,
     "cause": "",
-    "judgeAt": "1970-01-01T00:00:00Z"
+    "judgeAt": "2026-01-17T11:09:05Z"
   }
 }
