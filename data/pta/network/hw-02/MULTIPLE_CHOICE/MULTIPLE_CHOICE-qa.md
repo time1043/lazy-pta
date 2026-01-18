@@ -34,9 +34,9 @@ C.
 D.
 25MHz
 
-### Answer ❌
+### Answer ✅
 
-C
+D
 
 ## 3.
 
@@ -74,9 +74,9 @@ C.
 D.
 应用数据
 
-### Answer ❌
+### Answer ✅
 
-B
+A
 
 ## 5.
 
