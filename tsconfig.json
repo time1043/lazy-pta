@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/node-lts",
+  "compilerOptions": {
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "dist",
+    "moduleResolution": "bundler",
+    "module": "esnext"
+  },
+  "include": ["src", "tests"]
+}
