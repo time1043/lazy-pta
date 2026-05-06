@@ -3,6 +3,13 @@
   "ignorePatterns": [],
 
   "singleQuote": true,
+  // "overrides": [
+  //   {
+  //     "files": ["data/**/*.json"],
+  //     "excludeFiles": ["data/**/answer-submit.json"],
+  //     "options": { "objectWrap": "collapse", "printWidth": 150 }
+  //   }
+  // ],
 
   "sortImports": {
     "groups": [

@@ -10,7 +10,12 @@
     "dev": "tsc --noEmit && dotenvx run -- tsx watch src/main.ts",
     "env:gen": "sed 's/=.*/=/' .env > .env.example",
     "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check"
+    "fmt:check": "oxfmt --check",
+    "pta:answer-ai-submit": "dotenvx run -- playwright test answer-ai-submit.spec.ts",
+    "pta:answer-get": "dotenvx run -- playwright test answer-get.spec.ts",
+    "pta:answer-get-submit": "dotenvx run -- playwright test answer-get-submit.spec.ts",
+    "pta:login": "dotenvx run -- playwright test login.spec.ts",
+    "pta:question-get": "dotenvx run -- playwright test question-get.spec.ts"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.65.0",

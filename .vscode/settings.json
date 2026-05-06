@@ -5,11 +5,11 @@
 
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "url-list.json": "url-list-*",
-    "url-get.json": "url-get-*",
+    "ids.json": "ids-*",
     "question-get.json": "question-get-*",
-    "answer-submit.json": "answer-submit-*",
+    "answer-ai.json": "answer-ai-*",
     "answer-get.json": "answer-get-*",
+
     "TRUE_OR_FALSE.md": "TRUE_OR_FALSE-*.md",
     "FILL_IN_THE_BLANK.md": "FILL_IN_THE_BLANK-*.md",
     "MULTIPLE_CHOICE.md": "MULTIPLE_CHOICE-*.md",
@@ -17,6 +17,7 @@
     "SQL_PROGRAMMING.md": "SQL_PROGRAMMING-*.md",
     "PROGRAMMING.md": "PROGRAMMING-*.md",
     "SUBJECTIVE.md": "SUBJECTIVE-*.md",
+
     "typed-router.d.ts": "auto-imports.d.ts, components.d.ts",
     "tsconfig.json": "tsconfig.*.json, env.d.ts",
     "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
