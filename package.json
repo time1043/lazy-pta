@@ -5,8 +5,10 @@
   "keywords": [],
   "license": "ISC",
   "author": "",
+  "type": "module",
   "main": "src/main.js",
   "scripts": {
+    "data:reset": "find ./data/workspace -type f \\( -name \"*clean*\" -o -name \"*.md\" \\) -delete",
     "dev": "tsc --noEmit && dotenvx run -- tsx watch src/main.ts",
     "env:gen": "sed 's/=.*/=/' .env > .env.example",
     "fmt": "oxfmt",

@@ -7,11 +7,14 @@ export const cookiePath = `${authDir}/${cookieFilename}`;
 
 export const questionGetFilename = `question-get.json`;
 export const questionGetCleanFilename = `question-get-clean.json`;
+export const questionGetCleanMdFilename = `question-get-clean.md`; // mdify
 export const answerAiFilename = `answer-ai.json`;
+export const answerAiMdFilename = `answer-ai.md`; // mdify
 export const answerAiSubmitFilename = `answer-ai-submit.json`;
 
 export const answerGetFilename = `answer-get.json`;
 export const answerGetCleanFilename = `answer-get-clean.json`;
+export const answerGetCleanMdFilename = `answer-get-clean.md`; // mdify
 export const answerGetSubmitFilename = `answer-get-submit.json`;
 
 export const idsFilename = `ids.json`;

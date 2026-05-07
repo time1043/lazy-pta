@@ -4,6 +4,8 @@
 
 ## ProblemType
 
+> `ids` alias url
+
 - Without ids
 
 1. MULTIPLE_CHOICE
@@ -51,9 +53,8 @@
 
 ## Transform question and answer (AI answer)
 
-- [ ] `pnpm dev` transform & type
-- [ ] Auto generate target file
-- [ ] When it takes effect? Target file not exists ✅ Always run again ❌
+- [ ] `pnpm dev` transform & type (questionGetController, answerAiController)
+- [ ] Auto generate target file! When it takes effect? Target file not exists ✅ Always run again ❌
 - [ ] `pnpm data:reset` to force re-run (delete `*clean*` and `*.md`)
 - [ ] Agent Skills: read `question-get-clean.json` -> generate answer -> write `answer-ai.json`
 
@@ -94,7 +95,7 @@
 
 ## Transform answer
 
-- [ ] `pnpm dev` transform & type (same gate: output not exists)
+- [ ] `pnpm dev` transform & type (answerGetController)
 
 ```shell
 # data/workspace/topic
