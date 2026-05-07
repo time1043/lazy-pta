@@ -12,7 +12,7 @@ export async function questionGetCleanController(qtPaths: string[]) {
     const problemType = path.basename(qtPath) as ProblemType;
 
     if (await checkDir(qtPath, { in: [questionGetFilename], ex: [questionGetCleanFilename] })) {
-      console.log(`[questionGetController] processing: ${qtPath}`);
+      console.log(`[questionGetCleanController] processing: ${qtPath}`);
       await questionGetClean(qtPath, problemType);
       await questionGetCleanMd(qtPath, problemType);
     }

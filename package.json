@@ -8,7 +8,11 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "data:reset": "find ./data/workspace -type f \\( -name \"*clean*\" -o -name \"*.md\" \\) -delete",
+    "data:down": "find ./data/workspace -type f \\( -name \"*clean*\" -o -name \"*.md\" -o -name \"*-submit.json\" \\) -delete",
+    "data:down:ai-submit": "find ./data/workspace -type f -name \"*-ai-submit.json\" -delete",
+    "data:down:get-submit": "find ./data/workspace -type f -name \"*-get-submit.json\" -delete",
+    "data:down:submit": "find ./data/workspace -type f -name \"*-submit.json\" -delete",
+    "data:up": "pnpm dev",
     "dev": "tsc --noEmit && dotenvx run -- tsx watch src/main.ts",
     "env:gen": "sed 's/=.*/=/' .env > .env.example",
     "fmt": "oxfmt",
