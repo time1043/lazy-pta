@@ -63,10 +63,10 @@
 
 ## Transform question and answer (AI answer)
 
-- [x] `pnpm dev` transform & type (questionGetController, answerAiController)
+- [x] `pnpm dev` transform & type (questionGetCleanController, answerAiSubmitController)
 - [x] Auto generate target file! When it takes effect? Target file not exists ✅ Always run again ❌
 - [x] `pnpm data:down` to force re-run (delete `*clean*`, `*.md` and `*submit.json`)
-- [ ] Agent Skills: read `question-get-clean.json` -> generate answer -> write `answer-ai.json`
+- [x] Agent Skills: read `question-get-clean.json` -> generate answer -> write `answer-ai.json`
 
 ```shell
 # data/workspace/topic
@@ -106,7 +106,8 @@
 
 ## Transform answer
 
-- [ ] `pnpm dev` transform & type (answerGetController)
+- [ ] `pnpm dev` transform & type (answerGetCleanController)
+- [ ] Need `statusMap` (`ACCEPTED`→✅, `PARTIAL_ACCEPTED`→🍋, `WRONG_ANSWER`→❌, `UNKNOWN`→❓) from `answer-get.json`'s `judgeResponseContents`
 
 ```shell
 # data/workspace/topic

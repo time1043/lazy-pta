@@ -1,16 +1,12 @@
 import path from 'path';
 
-import type {
-  AnswerAiSingle,
-  AnswerAiMultiple,
-  AnswerAiProgramming,
-} from '@/libs/types/answer-ai';
+import type { AnswerAiSingle, AnswerAiMultiple, AnswerAiProgramming } from '@/libs/types/answer-ai';
 
 import { answerAiFilename, answerAiSubmitFilename } from '@/libs/constants/file';
 import { ProblemType } from '@/libs/types/problem-type';
 import { readJson, writeJson } from '@/libs/utils/file-io';
 
-export async function answerAiClean(dirPath: string, problemType: ProblemType) {
+export async function answerAiSubmit(dirPath: string, problemType: ProblemType) {
   const answerAiPath = path.join(dirPath, answerAiFilename);
   const answerAiSubmitPath = path.join(dirPath, answerAiSubmitFilename);
   const answerAiData = await readJson<any[]>(answerAiPath);
@@ -108,7 +104,7 @@ function programmingSubmit(
       {
         problemId: '0',
         problemSetProblemId: a.id,
-        ...buildProgrammingDetail(problemType, a.program),
+        ...buildProgrammingDetail(problemType, a.answer),
       },
     ],
   }));
