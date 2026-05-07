@@ -36,7 +36,7 @@ export type FillInTheBlankSubmit = {
 export type ProgrammingSubmit = {
   problemType: 'PROGRAMMING';
   details: SubmitDetail<{
-    programmingSubmissionDetail: { program: string };
+    programmingSubmissionDetail: { program: string; compiler: 'PYTHON3' };
   }>[];
 };
 

@@ -2,7 +2,7 @@ export const dataDir = process.env.DATA_DIR ?? 'data';
 export const wsDir = `${dataDir}/workspace`;
 export const authDir = `${dataDir}/auth`;
 
-const cookieFilename = process.env.COOKIE_NAME ?? 'pta-auth.json';
+const cookieFilename = process.env.COOKIE_FILENAME ?? 'pta-auth.json';
 export const cookiePath = `${authDir}/${cookieFilename}`;
 
 export const questionGetFilename = `question-get.json`;
