@@ -16,7 +16,11 @@ export async function answerAiSubmitPost(dirPath: string, page: Page, examId: st
   if (!submitData) return;
 
   await sleep();
-  await page.request.post(url, { headers, data: submitData });
+  const res = await page.request.post(url, { headers, data: submitData });
+  console.log(`[submit] ${dirPath} status=${res.status()}`);
+  if (res.status() !== 200) {
+    console.log(`[submit] body=${await res.text()}`);
+  }
 }
 
 export async function idsAnswerAiSubmitPost(
@@ -33,8 +37,10 @@ export async function idsAnswerAiSubmitPost(
 
   for (const data of submitData.slice(skip)) {
     await sleep();
-    console.log({ headers });
-    console.log(JSON.stringify(data, null, 2));
-    await page.request.post(url, { headers, data });
+    const res = await page.request.post(url, { headers, data });
+    console.log(`[submit] ${dirPath} id=${data.details?.[0]?.problemSetProblemId} status=${res.status()}`);
+    if (res.status() !== 200) {
+      console.log(`[submit] body=${await res.text()}`);
+    }
   }
 }

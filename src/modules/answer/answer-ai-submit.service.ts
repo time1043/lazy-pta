@@ -11,16 +11,14 @@ export async function answerAiSubmit(dirPath: string, problemType: ProblemType) 
   const data = await readJson<any[]>(answerAiPath);
   if (!data) return;
 
-  const submitData = data.map((a) => ({
+  const submitData = {
     problemType,
-    details: [
-      {
-        problemId: '0' as const,
-        problemSetProblemId: a.id,
-        ...buildDetail(problemType, a),
-      },
-    ],
-  }));
+    details: data.map((a) => ({
+      problemId: '0' as const,
+      problemSetProblemId: a.id,
+      ...buildDetail(problemType, a),
+    })),
+  };
 
   await writeJson(submitData, answerAiSubmitPath);
 }
